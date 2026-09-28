@@ -18,6 +18,14 @@ The prediction is made once, after qualifying, from a snapshot of facts. Earlier
 ### 2. The snapshot is facts as sentences, computed by code
 Per driver, one line: grid slot (and any known penalty), gap to pole, team, championship position and points, finishes in the last three races (including retirements), and the historical top-three rate from that grid slot. Then race-level lines: circuit, laps, whether it is a sprint weekend and the sprint result, recent safety car frequency at this circuit (f1db and OpenF1), and the weather at qualifying (OpenF1). Jev never does arithmetic.
 
+### 2b. Richer facts (added 2026-09-28, after the first backtest)
+The first backtest put 56 to 100% of the winner `choice` on the pole-sitter in all 14 races, including the 5 it lost, so the snapshot gains facts beyond the grid, each computed by code and written as a sentence:
+- Teammate head-to-head this season, in qualifying and in the race (Jolpica).
+- Power unit supplier per car and that supplier's results this season (f1db entrant data, not typed by hand).
+- An aero proxy from qualifying: speed-trap ranking (drag and power) and rank in each sector (cornering), from OpenF1 qualifying laps. No public aero data exists; the snapshot says what the proxy is.
+- Similar-track form: each circuit is tagged with traits (high altitude, long straights, street, high downforce); each driver's results this season at circuits sharing a trait with this one. The tags are this project's judgement, stored in one reviewed file and labelled as such.
+The effect is measured, not assumed: the backtest is rerun and podium Brier compared before and after (contaminated races, so only as a plumbing check).
+
 ### 3. The chaos rubric (shared by the question and the scorer)
 ```
 0 calm       no safety car or VSC, at most 2 retirements, winner led most laps
@@ -46,7 +54,7 @@ Weekend days vary (Las Vegas races on Saturday night local time, Sunday 04:00 UT
 Each run exits in seconds when there is nothing to do. The Vercel GitHub integration deploys on every push to `master`.
 
 ### 7. Scoring and the leaderboard
-Per race: podium Brier (mean over drivers), winner log loss and hit, chaos absolute error. Season: the same metrics accumulated over live races, plus a reliability table of podium probabilities (10 bins, low-sample under 10). Baselines scored identically: grid-slot rates, and a form baseline (podium rate over the last three races, smoothed). The raw podium answers are scored as given; the page also shows how far they sum from three and lists drivers whose win probability exceeds their podium probability.
+Per race: podium Brier (mean over drivers), winner log loss and hit, chaos absolute error. Jev's podium is the three drivers with the highest podium probability (no extra question); it is scored as the number of correct podium finishers, 0 to 3, next to the grid baseline's top three. Season: the same metrics accumulated over live races, plus a reliability table of podium probabilities (10 bins, low-sample under 10). Baselines scored identically: grid-slot rates, and a form baseline (podium rate over the last three races, smoothed). The raw podium answers are scored as given; the page also shows how far they sum from three and lists drivers whose win probability exceeds their podium probability.
 
 ### 8. Backtests are for plumbing, not for bragging
 Races before the model's date (`20260917`) are run once to test the pipeline end to end (2026 rounds 1 to 15, about 15 requests), stored under `predictions/backtest/`, and shown on a separate page labelled "the model may have seen these results".

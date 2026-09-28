@@ -4,6 +4,7 @@ import httpx
 import pytest
 import respx
 
+from race_calls.cache import JsonCache
 from race_calls.openf1.availability import available_at, is_available
 from race_calls.openf1.client import (
     BASE_URL,
@@ -137,3 +138,53 @@ def test_404_means_no_data():
     client, _ = _client()
     with pytest.raises(SessionNotFound):
         client.race_control(11377)
+
+
+def _cached_client(tmp_path) -> OpenF1Client:
+    cache = JsonCache(tmp_path / "data")
+    return OpenF1Client(httpx.Client(), limiter=SlidingWindowLimiter([(1000, 1.0)]), cache=cache)
+
+
+@respx.mock
+def test_cache_avoids_a_second_request(tmp_path):
+    route = respx.get(f"{BASE_URL}/weather").mock(
+        return_value=httpx.Response(200, json=[{"rainfall": 0}])
+    )
+    assert _cached_client(tmp_path).weather(9472) == [{"rainfall": 0}]
+    assert _cached_client(tmp_path).weather(9472) == [{"rainfall": 0}]
+    assert route.call_count == 1
+    assert list((tmp_path / "data").glob("openf1/*.json"))
+
+
+@respx.mock
+def test_empty_lists_are_never_cached(tmp_path):
+    route = respx.get(f"{BASE_URL}/race_control").mock(return_value=httpx.Response(200, json=[]))
+    client = _cached_client(tmp_path)
+    assert client.race_control(11377) == []
+    assert client.race_control(11377) == []
+    assert route.call_count == 2
+    assert not (tmp_path / "data").exists()
+
+
+@respx.mock
+def test_cache_keys_on_params(tmp_path):
+    route = respx.get(f"{BASE_URL}/weather").mock(
+        side_effect=lambda request: httpx.Response(
+            200, json=[{"session_key": int(request.url.params["session_key"])}]
+        )
+    )
+    client = _cached_client(tmp_path)
+    assert client.weather(1) == [{"session_key": 1}]
+    assert client.weather(2) == [{"session_key": 2}]
+    assert client.weather(1) == [{"session_key": 1}]
+    assert route.call_count == 2
+
+
+@respx.mock
+def test_live_lockout_is_not_cached(tmp_path):
+    respx.get(f"{BASE_URL}/weather").mock(
+        return_value=httpx.Response(401, json={"detail": "Live F1 session in progress"})
+    )
+    with pytest.raises(LiveSessionLockout):
+        _cached_client(tmp_path).weather(9472)
+    assert not (tmp_path / "data").exists()

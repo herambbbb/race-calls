@@ -1,0 +1,722 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 11,
+  "slug": "hungarian-grand-prix",
+  "race_name": "Hungarian Grand Prix",
+  "circuit_name": "Hungaroring",
+  "race_start": "2026-07-26T13:00:00Z",
+  "kind": "backtest",
+  "status": "ok",
+  "made_at": "2026-09-28T08:58:39.662437Z",
+  "late": false,
+  "note": "Backtest: the model may have seen these results.",
+  "grid_provisional": true,
+  "drivers": [
+    {
+      "code": "NOR",
+      "name": "Lando Norris",
+      "number": 1,
+      "constructor": "McLaren",
+      "constructor_id": "mclaren",
+      "grid": 1
+    },
+    {
+      "code": "HAM",
+      "name": "Lewis Hamilton",
+      "number": 44,
+      "constructor": "Ferrari",
+      "constructor_id": "ferrari",
+      "grid": 2
+    },
+    {
+      "code": "LEC",
+      "name": "Charles Leclerc",
+      "number": 16,
+      "constructor": "Ferrari",
+      "constructor_id": "ferrari",
+      "grid": 3
+    },
+    {
+      "code": "ANT",
+      "name": "Andrea Kimi Antonelli",
+      "number": 12,
+      "constructor": "Mercedes",
+      "constructor_id": "mercedes",
+      "grid": 4
+    },
+    {
+      "code": "PIA",
+      "name": "Oscar Piastri",
+      "number": 81,
+      "constructor": "McLaren",
+      "constructor_id": "mclaren",
+      "grid": 5
+    },
+    {
+      "code": "VER",
+      "name": "Max Verstappen",
+      "number": 3,
+      "constructor": "Red Bull",
+      "constructor_id": "red_bull",
+      "grid": 6
+    },
+    {
+      "code": "RUS",
+      "name": "George Russell",
+      "number": 63,
+      "constructor": "Mercedes",
+      "constructor_id": "mercedes",
+      "grid": 7
+    },
+    {
+      "code": "HAD",
+      "name": "Isack Hadjar",
+      "number": 6,
+      "constructor": "Red Bull",
+      "constructor_id": "red_bull",
+      "grid": 8
+    },
+    {
+      "code": "LIN",
+      "name": "Arvid Lindblad",
+      "number": 41,
+      "constructor": "RB F1 Team",
+      "constructor_id": "rb",
+      "grid": 9
+    },
+    {
+      "code": "HUL",
+      "name": "Nico Hülkenberg",
+      "number": 27,
+      "constructor": "Audi",
+      "constructor_id": "audi",
+      "grid": 10
+    },
+    {
+      "code": "LAW",
+      "name": "Liam Lawson",
+      "number": 30,
+      "constructor": "RB F1 Team",
+      "constructor_id": "rb",
+      "grid": 11
+    },
+    {
+      "code": "GAS",
+      "name": "Pierre Gasly",
+      "number": 10,
+      "constructor": "Alpine F1 Team",
+      "constructor_id": "alpine",
+      "grid": 12
+    },
+    {
+      "code": "COL",
+      "name": "Franco Colapinto",
+      "number": 43,
+      "constructor": "Alpine F1 Team",
+      "constructor_id": "alpine",
+      "grid": 13
+    },
+    {
+      "code": "BOR",
+      "name": "Gabriel Bortoleto",
+      "number": 5,
+      "constructor": "Audi",
+      "constructor_id": "audi",
+      "grid": 14
+    },
+    {
+      "code": "OCO",
+      "name": "Esteban Ocon",
+      "number": 31,
+      "constructor": "Haas F1 Team",
+      "constructor_id": "haas",
+      "grid": 15
+    },
+    {
+      "code": "ALO",
+      "name": "Fernando Alonso",
+      "number": 14,
+      "constructor": "Aston Martin",
+      "constructor_id": "aston_martin",
+      "grid": 16
+    },
+    {
+      "code": "BEA",
+      "name": "Oliver Bearman",
+      "number": 87,
+      "constructor": "Haas F1 Team",
+      "constructor_id": "haas",
+      "grid": 17
+    },
+    {
+      "code": "SAI",
+      "name": "Carlos Sainz",
+      "number": 55,
+      "constructor": "Williams",
+      "constructor_id": "williams",
+      "grid": 18
+    },
+    {
+      "code": "ALB",
+      "name": "Alexander Albon",
+      "number": 23,
+      "constructor": "Williams",
+      "constructor_id": "williams",
+      "grid": 19
+    },
+    {
+      "code": "STR",
+      "name": "Lance Stroll",
+      "number": 18,
+      "constructor": "Aston Martin",
+      "constructor_id": "aston_martin",
+      "grid": 20
+    },
+    {
+      "code": "BOT",
+      "name": "Valtteri Bottas",
+      "number": 77,
+      "constructor": "Cadillac F1 Team",
+      "constructor_id": "cadillac",
+      "grid": 21
+    },
+    {
+      "code": "PER",
+      "name": "Sergio Pérez",
+      "number": 11,
+      "constructor": "Cadillac F1 Team",
+      "constructor_id": "cadillac",
+      "grid": 22
+    }
+  ],
+  "snapshot_text": "Race: the Hungarian Grand Prix, round 11 of 23 in the 2026 season, at Hungaroring (Budapest, Hungary).\nThe race starts at 13:00 UTC on 26 July 2026, with 22 drivers on the grid.\nThe grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.\nThe 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.\nThis circuit has held 40 championship races, most recently in 2025.\nQualifying was dry (air 27 C, track 46 C).\nConstructors' championship after round 10: 1st Mercedes 358 points; 2nd Ferrari 285 points; 3rd McLaren 197 points; 4th Red Bull 154 points; 5th RB F1 Team 65 points.\n\nDrivers, in grid order:\nLando Norris (McLaren) starts 1st, on pole. Norris is 5th in the championship with 103 points. Last 3 races: finished 7th in the Belgian Grand Prix; finished 4th in the British Grand Prix; finished 7th in the Austrian Grand Prix. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts).\nLewis Hamilton (Ferrari) starts 2nd; Hamilton's best qualifying lap was 0.012 seconds slower than the pole lap. Hamilton is 2nd in the championship with 159 points, with 1 win. Last 3 races: finished 4th in the Belgian Grand Prix; finished 3rd in the British Grand Prix; finished 5th in the Austrian Grand Prix. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts).\nCharles Leclerc (Ferrari) starts 3rd; Leclerc's best qualifying lap was 0.238 seconds slower than the pole lap. Leclerc is 4th in the championship with 126 points, with 1 win. Last 3 races: finished 2nd in the Belgian Grand Prix; finished 1st in the British Grand Prix; finished 8th in the Austrian Grand Prix. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts).\nAndrea Kimi Antonelli (Mercedes) starts 4th; Antonelli's best qualifying lap was 0.272 seconds slower than the pole lap. Antonelli is 1st in the championship with 204 points, with 6 wins. Last 3 races: finished 1st in the Belgian Grand Prix; finished 15th in the British Grand Prix; finished 3rd in the Austrian Grand Prix. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts).\nOscar Piastri (McLaren) starts 5th; Piastri's best qualifying lap was 0.477 seconds slower than the pole lap. Piastri is 6th in the championship with 94 points. Last 3 races: finished 5th in the Belgian Grand Prix; finished 11th in the British Grand Prix; finished 4th in the Austrian Grand Prix. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts).\nMax Verstappen (Red Bull) starts 6th; Verstappen's best qualifying lap was 0.518 seconds slower than the pole lap. Verstappen is 7th in the championship with 91 points. Last 3 races: finished 3rd in the Belgian Grand Prix; finished 20th in the British Grand Prix; finished 2nd in the Austrian Grand Prix. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts).\nGeorge Russell (Mercedes) starts 7th; Russell's best qualifying lap was 0.553 seconds slower than the pole lap. Russell is 3rd in the championship with 154 points, with 2 wins. Last 3 races: retired in the Belgian Grand Prix; finished 2nd in the British Grand Prix; finished 1st in the Austrian Grand Prix. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts).\nIsack Hadjar (Red Bull) starts 8th; Hadjar's best qualifying lap was 0.649 seconds slower than the pole lap. Hadjar is 8th in the championship with 63 points. Last 3 races: finished 6th in the Belgian Grand Prix; finished 5th in the British Grand Prix; finished 6th in the Austrian Grand Prix. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts).\nArvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 1.074 seconds slower than the pole lap. Lindblad is 11th in the championship with 24 points. Last 3 races: finished 9th in the Belgian Grand Prix; finished 7th in the British Grand Prix; finished 10th in the Austrian Grand Prix. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts).\nNico Hülkenberg (Audi) starts 10th; Hülkenberg's best qualifying lap was 1.432 seconds slower than the pole lap. Hülkenberg has no championship points yet. Last 3 races: finished 13th in the Belgian Grand Prix; retired in the British Grand Prix; finished 12th in the Austrian Grand Prix. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts).\nLiam Lawson (RB F1 Team) starts 11th; Lawson's best qualifying lap was 1.558 seconds slower than the pole lap. Lawson is 9th in the championship with 41 points. Last 3 races: finished 12th in the Belgian Grand Prix; finished 6th in the British Grand Prix; finished 9th in the Austrian Grand Prix. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts).\nPierre Gasly (Alpine F1 Team) starts 12th; Gasly's best qualifying lap was 1.637 seconds slower than the pole lap. Gasly is 10th in the championship with 33 points. Last 3 races: finished 11th in the Belgian Grand Prix; finished 10th in the British Grand Prix; finished 13th in the Austrian Grand Prix. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nFranco Colapinto (Alpine F1 Team) starts 13th; Colapinto's best qualifying lap was 1.820 seconds slower than the pole lap. Colapinto is 12th in the championship with 19 points. Last 3 races: finished 10th in the Belgian Grand Prix; finished 9th in the British Grand Prix; finished 15th in the Austrian Grand Prix. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts).\nGabriel Bortoleto (Audi) starts 14th; Bortoleto's best qualifying lap was 1.862 seconds slower than the pole lap. Bortoleto is 14th in the championship with 10 points. Last 3 races: finished 8th in the Belgian Grand Prix; finished 8th in the British Grand Prix; finished 11th in the Austrian Grand Prix. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts).\nEsteban Ocon (Haas F1 Team) starts 15th; Ocon's best qualifying lap was 2.527 seconds slower than the pole lap. Ocon is 17th in the championship with 3 points. Last 3 races: finished 17th in the Belgian Grand Prix; finished 13th in the British Grand Prix; finished 16th in the Austrian Grand Prix. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nFernando Alonso (Aston Martin) starts 16th; Alonso's best qualifying lap was 2.601 seconds slower than the pole lap. Alonso is 18th in the championship with 1 points. Last 3 races: finished 19th in the Belgian Grand Prix; finished 18th in the British Grand Prix; finished 18th in the Austrian Grand Prix. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts).\nOliver Bearman (Haas F1 Team) starts 17th; Bearman's best qualifying lap was 3.026 seconds slower than the pole lap. Bearman is 13th in the championship with 18 points. Last 3 races: finished 14th in the Belgian Grand Prix; finished 12th in the British Grand Prix; finished 14th in the Austrian Grand Prix. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts).\nCarlos Sainz (Williams) starts 18th; Sainz's best qualifying lap was 3.414 seconds slower than the pole lap. Sainz is 15th in the championship with 6 points. Last 3 races: finished 16th in the Belgian Grand Prix; finished 17th in the British Grand Prix; retired in the Austrian Grand Prix. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts).\nAlexander Albon (Williams) starts 19th; Albon's best qualifying lap was 3.451 seconds slower than the pole lap. Albon is 16th in the championship with 5 points. Last 3 races: finished 15th in the Belgian Grand Prix; retired in the British Grand Prix; finished 17th in the Austrian Grand Prix. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts).\nLance Stroll (Aston Martin) starts 20th; Stroll's best qualifying lap was 3.452 seconds slower than the pole lap. Stroll has no championship points yet. Last 3 races: retired in the Belgian Grand Prix; finished 19th in the British Grand Prix; retired in the Austrian Grand Prix. From 20th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (170 starts).\nValtteri Bottas (Cadillac F1 Team) starts 21st; Bottas's best qualifying lap was 3.679 seconds slower than the pole lap. Bottas has no championship points yet. Last 3 races: finished 18th in the Belgian Grand Prix; finished 16th in the British Grand Prix; retired in the Austrian Grand Prix. From 21st on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (35 starts).\nSergio Pérez (Cadillac F1 Team) starts 22nd; Pérez's best qualifying lap was 4.115 seconds slower than the pole lap. Pérez has no championship points yet. Last 3 races: retired in the Belgian Grand Prix; finished 14th in the British Grand Prix; retired in the Austrian Grand Prix. From 22nd on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (22 starts).",
+  "request": {
+    "model": "typesafe/jev-1.13",
+    "state": "Race: the Hungarian Grand Prix, round 11 of 23 in the 2026 season, at Hungaroring (Budapest, Hungary).\nThe race starts at 13:00 UTC on 26 July 2026, with 22 drivers on the grid.\nThe grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.\nThe 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.\nThis circuit has held 40 championship races, most recently in 2025.\nQualifying was dry (air 27 C, track 46 C).\nConstructors' championship after round 10: 1st Mercedes 358 points; 2nd Ferrari 285 points; 3rd McLaren 197 points; 4th Red Bull 154 points; 5th RB F1 Team 65 points.\n\nDrivers, in grid order:\nLando Norris (McLaren) starts 1st, on pole. Norris is 5th in the championship with 103 points. Last 3 races: finished 7th in the Belgian Grand Prix; finished 4th in the British Grand Prix; finished 7th in the Austrian Grand Prix. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts).\nLewis Hamilton (Ferrari) starts 2nd; Hamilton's best qualifying lap was 0.012 seconds slower than the pole lap. Hamilton is 2nd in the championship with 159 points, with 1 win. Last 3 races: finished 4th in the Belgian Grand Prix; finished 3rd in the British Grand Prix; finished 5th in the Austrian Grand Prix. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts).\nCharles Leclerc (Ferrari) starts 3rd; Leclerc's best qualifying lap was 0.238 seconds slower than the pole lap. Leclerc is 4th in the championship with 126 points, with 1 win. Last 3 races: finished 2nd in the Belgian Grand Prix; finished 1st in the British Grand Prix; finished 8th in the Austrian Grand Prix. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts).\nAndrea Kimi Antonelli (Mercedes) starts 4th; Antonelli's best qualifying lap was 0.272 seconds slower than the pole lap. Antonelli is 1st in the championship with 204 points, with 6 wins. Last 3 races: finished 1st in the Belgian Grand Prix; finished 15th in the British Grand Prix; finished 3rd in the Austrian Grand Prix. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts).\nOscar Piastri (McLaren) starts 5th; Piastri's best qualifying lap was 0.477 seconds slower than the pole lap. Piastri is 6th in the championship with 94 points. Last 3 races: finished 5th in the Belgian Grand Prix; finished 11th in the British Grand Prix; finished 4th in the Austrian Grand Prix. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts).\nMax Verstappen (Red Bull) starts 6th; Verstappen's best qualifying lap was 0.518 seconds slower than the pole lap. Verstappen is 7th in the championship with 91 points. Last 3 races: finished 3rd in the Belgian Grand Prix; finished 20th in the British Grand Prix; finished 2nd in the Austrian Grand Prix. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts).\nGeorge Russell (Mercedes) starts 7th; Russell's best qualifying lap was 0.553 seconds slower than the pole lap. Russell is 3rd in the championship with 154 points, with 2 wins. Last 3 races: retired in the Belgian Grand Prix; finished 2nd in the British Grand Prix; finished 1st in the Austrian Grand Prix. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts).\nIsack Hadjar (Red Bull) starts 8th; Hadjar's best qualifying lap was 0.649 seconds slower than the pole lap. Hadjar is 8th in the championship with 63 points. Last 3 races: finished 6th in the Belgian Grand Prix; finished 5th in the British Grand Prix; finished 6th in the Austrian Grand Prix. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts).\nArvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 1.074 seconds slower than the pole lap. Lindblad is 11th in the championship with 24 points. Last 3 races: finished 9th in the Belgian Grand Prix; finished 7th in the British Grand Prix; finished 10th in the Austrian Grand Prix. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts).\nNico Hülkenberg (Audi) starts 10th; Hülkenberg's best qualifying lap was 1.432 seconds slower than the pole lap. Hülkenberg has no championship points yet. Last 3 races: finished 13th in the Belgian Grand Prix; retired in the British Grand Prix; finished 12th in the Austrian Grand Prix. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts).\nLiam Lawson (RB F1 Team) starts 11th; Lawson's best qualifying lap was 1.558 seconds slower than the pole lap. Lawson is 9th in the championship with 41 points. Last 3 races: finished 12th in the Belgian Grand Prix; finished 6th in the British Grand Prix; finished 9th in the Austrian Grand Prix. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts).\nPierre Gasly (Alpine F1 Team) starts 12th; Gasly's best qualifying lap was 1.637 seconds slower than the pole lap. Gasly is 10th in the championship with 33 points. Last 3 races: finished 11th in the Belgian Grand Prix; finished 10th in the British Grand Prix; finished 13th in the Austrian Grand Prix. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nFranco Colapinto (Alpine F1 Team) starts 13th; Colapinto's best qualifying lap was 1.820 seconds slower than the pole lap. Colapinto is 12th in the championship with 19 points. Last 3 races: finished 10th in the Belgian Grand Prix; finished 9th in the British Grand Prix; finished 15th in the Austrian Grand Prix. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts).\nGabriel Bortoleto (Audi) starts 14th; Bortoleto's best qualifying lap was 1.862 seconds slower than the pole lap. Bortoleto is 14th in the championship with 10 points. Last 3 races: finished 8th in the Belgian Grand Prix; finished 8th in the British Grand Prix; finished 11th in the Austrian Grand Prix. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts).\nEsteban Ocon (Haas F1 Team) starts 15th; Ocon's best qualifying lap was 2.527 seconds slower than the pole lap. Ocon is 17th in the championship with 3 points. Last 3 races: finished 17th in the Belgian Grand Prix; finished 13th in the British Grand Prix; finished 16th in the Austrian Grand Prix. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nFernando Alonso (Aston Martin) starts 16th; Alonso's best qualifying lap was 2.601 seconds slower than the pole lap. Alonso is 18th in the championship with 1 points. Last 3 races: finished 19th in the Belgian Grand Prix; finished 18th in the British Grand Prix; finished 18th in the Austrian Grand Prix. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts).\nOliver Bearman (Haas F1 Team) starts 17th; Bearman's best qualifying lap was 3.026 seconds slower than the pole lap. Bearman is 13th in the championship with 18 points. Last 3 races: finished 14th in the Belgian Grand Prix; finished 12th in the British Grand Prix; finished 14th in the Austrian Grand Prix. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts).\nCarlos Sainz (Williams) starts 18th; Sainz's best qualifying lap was 3.414 seconds slower than the pole lap. Sainz is 15th in the championship with 6 points. Last 3 races: finished 16th in the Belgian Grand Prix; finished 17th in the British Grand Prix; retired in the Austrian Grand Prix. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts).\nAlexander Albon (Williams) starts 19th; Albon's best qualifying lap was 3.451 seconds slower than the pole lap. Albon is 16th in the championship with 5 points. Last 3 races: finished 15th in the Belgian Grand Prix; retired in the British Grand Prix; finished 17th in the Austrian Grand Prix. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts).\nLance Stroll (Aston Martin) starts 20th; Stroll's best qualifying lap was 3.452 seconds slower than the pole lap. Stroll has no championship points yet. Last 3 races: retired in the Belgian Grand Prix; finished 19th in the British Grand Prix; retired in the Austrian Grand Prix. From 20th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (170 starts).\nValtteri Bottas (Cadillac F1 Team) starts 21st; Bottas's best qualifying lap was 3.679 seconds slower than the pole lap. Bottas has no championship points yet. Last 3 races: finished 18th in the Belgian Grand Prix; finished 16th in the British Grand Prix; retired in the Austrian Grand Prix. From 21st on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (35 starts).\nSergio Pérez (Cadillac F1 Team) starts 22nd; Pérez's best qualifying lap was 4.115 seconds slower than the pole lap. Pérez has no championship points yet. Last 3 races: retired in the Belgian Grand Prix; finished 14th in the British Grand Prix; retired in the Austrian Grand Prix. From 22nd on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (22 starts).",
+    "questions": {
+      "podium_NOR": {
+        "type": "noul",
+        "instructions": "Will Lando Norris (McLaren) finish this race in the top three?"
+      },
+      "podium_HAM": {
+        "type": "noul",
+        "instructions": "Will Lewis Hamilton (Ferrari) finish this race in the top three?"
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "instructions": "Will Charles Leclerc (Ferrari) finish this race in the top three?"
+      },
+      "podium_ANT": {
+        "type": "noul",
+        "instructions": "Will Andrea Kimi Antonelli (Mercedes) finish this race in the top three?"
+      },
+      "podium_PIA": {
+        "type": "noul",
+        "instructions": "Will Oscar Piastri (McLaren) finish this race in the top three?"
+      },
+      "podium_VER": {
+        "type": "noul",
+        "instructions": "Will Max Verstappen (Red Bull) finish this race in the top three?"
+      },
+      "podium_RUS": {
+        "type": "noul",
+        "instructions": "Will George Russell (Mercedes) finish this race in the top three?"
+      },
+      "podium_HAD": {
+        "type": "noul",
+        "instructions": "Will Isack Hadjar (Red Bull) finish this race in the top three?"
+      },
+      "podium_LIN": {
+        "type": "noul",
+        "instructions": "Will Arvid Lindblad (RB F1 Team) finish this race in the top three?"
+      },
+      "podium_HUL": {
+        "type": "noul",
+        "instructions": "Will Nico Hülkenberg (Audi) finish this race in the top three?"
+      },
+      "podium_LAW": {
+        "type": "noul",
+        "instructions": "Will Liam Lawson (RB F1 Team) finish this race in the top three?"
+      },
+      "podium_GAS": {
+        "type": "noul",
+        "instructions": "Will Pierre Gasly (Alpine F1 Team) finish this race in the top three?"
+      },
+      "podium_COL": {
+        "type": "noul",
+        "instructions": "Will Franco Colapinto (Alpine F1 Team) finish this race in the top three?"
+      },
+      "podium_BOR": {
+        "type": "noul",
+        "instructions": "Will Gabriel Bortoleto (Audi) finish this race in the top three?"
+      },
+      "podium_OCO": {
+        "type": "noul",
+        "instructions": "Will Esteban Ocon (Haas F1 Team) finish this race in the top three?"
+      },
+      "podium_ALO": {
+        "type": "noul",
+        "instructions": "Will Fernando Alonso (Aston Martin) finish this race in the top three?"
+      },
+      "podium_BEA": {
+        "type": "noul",
+        "instructions": "Will Oliver Bearman (Haas F1 Team) finish this race in the top three?"
+      },
+      "podium_SAI": {
+        "type": "noul",
+        "instructions": "Will Carlos Sainz (Williams) finish this race in the top three?"
+      },
+      "podium_ALB": {
+        "type": "noul",
+        "instructions": "Will Alexander Albon (Williams) finish this race in the top three?"
+      },
+      "podium_STR": {
+        "type": "noul",
+        "instructions": "Will Lance Stroll (Aston Martin) finish this race in the top three?"
+      },
+      "podium_BOT": {
+        "type": "noul",
+        "instructions": "Will Valtteri Bottas (Cadillac F1 Team) finish this race in the top three?"
+      },
+      "podium_PER": {
+        "type": "noul",
+        "instructions": "Will Sergio Pérez (Cadillac F1 Team) finish this race in the top three?"
+      },
+      "winner": {
+        "type": "choice",
+        "instructions": "Who will win this race?",
+        "criteria": {
+          "NOR": "Lando Norris (McLaren) wins the race.",
+          "HAM": "Lewis Hamilton (Ferrari) wins the race.",
+          "LEC": "Charles Leclerc (Ferrari) wins the race.",
+          "ANT": "Andrea Kimi Antonelli (Mercedes) wins the race.",
+          "PIA": "Oscar Piastri (McLaren) wins the race.",
+          "VER": "Max Verstappen (Red Bull) wins the race.",
+          "RUS": "George Russell (Mercedes) wins the race.",
+          "HAD": "Isack Hadjar (Red Bull) wins the race.",
+          "LIN": "Arvid Lindblad (RB F1 Team) wins the race.",
+          "HUL": "Nico Hülkenberg (Audi) wins the race.",
+          "LAW": "Liam Lawson (RB F1 Team) wins the race.",
+          "GAS": "Pierre Gasly (Alpine F1 Team) wins the race.",
+          "COL": "Franco Colapinto (Alpine F1 Team) wins the race.",
+          "BOR": "Gabriel Bortoleto (Audi) wins the race.",
+          "OCO": "Esteban Ocon (Haas F1 Team) wins the race.",
+          "ALO": "Fernando Alonso (Aston Martin) wins the race.",
+          "BEA": "Oliver Bearman (Haas F1 Team) wins the race.",
+          "SAI": "Carlos Sainz (Williams) wins the race.",
+          "ALB": "Alexander Albon (Williams) wins the race.",
+          "STR": "Lance Stroll (Aston Martin) wins the race.",
+          "BOT": "Valtteri Bottas (Cadillac F1 Team) wins the race.",
+          "PER": "Sergio Pérez (Cadillac F1 Team) wins the race."
+        }
+      },
+      "chaos": {
+        "type": "score",
+        "instructions": "How chaotic will this race be? Rate it on the five-level rubric. The actual level will be the highest level whose condition the race meets.",
+        "criteria": [
+          "0: calm - no safety car or virtual safety car, at most 2 retirements, and the winner led most laps.",
+          "1: lively - a virtual safety car, or 3 to 4 retirements, or 3 or more lead changes.",
+          "2: eventful - one full safety car, or a first-lap incident that brought out a yellow flag or a virtual safety car.",
+          "3: chaotic - two or more full safety cars, or 5 or more retirements.",
+          "4: bedlam - a red flag, or wet running, or a podium with none of the top six starters."
+        ]
+      }
+    }
+  },
+  "request_hash": "3f58d880f271e5474b9fc4d33a7d7fe967103f509f30a397c45d33cd9c31d44a",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "podium_NOR": {
+        "type": "noul",
+        "noul": 0.72
+      },
+      "podium_HAM": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "podium_ANT": {
+        "type": "noul",
+        "noul": 0.37
+      },
+      "podium_PIA": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "podium_VER": {
+        "type": "noul",
+        "noul": 0.15
+      },
+      "podium_RUS": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "podium_HAD": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "podium_LIN": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_HUL": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_LAW": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_GAS": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_COL": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_BOR": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_OCO": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_ALO": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_BEA": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_SAI": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "podium_ALB": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_STR": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_BOT": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_PER": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "winner": {
+        "type": "choice",
+        "choice": "NOR",
+        "probabilities": {
+          "SAI": 0,
+          "LIN": 0,
+          "OCO": 0,
+          "STR": 0,
+          "COL": 0,
+          "BOT": 0,
+          "HUL": 0,
+          "GAS": 0,
+          "ALB": 0,
+          "LEC": 0,
+          "BOR": 0,
+          "LAW": 0,
+          "ALO": 0,
+          "VER": 0,
+          "RUS": 0,
+          "HAD": 0,
+          "PER": 0,
+          "BEA": 0,
+          "ANT": 0.04,
+          "PIA": 0,
+          "HAM": 0.01,
+          "NOR": 0.95
+        },
+        "confidence": 0.95
+      },
+      "chaos": {
+        "type": "score",
+        "score": 0.87,
+        "legend": {
+          "0": "0: calm - no safety car or virtual safety car, at most 2 retirements, and the winner led most laps.",
+          "1": "1: lively - a virtual safety car, or 3 to 4 retirements, or 3 or more lead changes.",
+          "2": "2: eventful - one full safety car, or a first-lap incident that brought out a yellow flag or a virtual safety car.",
+          "3": "3: chaotic - two or more full safety cars, or 5 or more retirements.",
+          "4": "4: bedlam - a red flag, or wet running, or a podium with none of the top six starters."
+        },
+        "probabilities": {
+          "0": 0.59,
+          "1": 0.19,
+          "2": 0.04,
+          "3": 0.14,
+          "4": 0.04
+        },
+        "confidence": 0.27
+      }
+    },
+    "usage": {
+      "input_tokens": 4679,
+      "output_tokens": 610,
+      "cost": 0.000196518
+    },
+    "id": "gen-dec-1790585919-LdMzwZI44JF25EBjjptl",
+    "provider": "TypeSafe"
+  },
+  "jev": {
+    "url": "https://openrouter.ai/api/alpha/decisions",
+    "model_requested": "typesafe/jev-1.13",
+    "model_id": "typesafe/jev-1.13-20260917",
+    "provider": "TypeSafe",
+    "generation_id": "gen-dec-1790585919-LdMzwZI44JF25EBjjptl",
+    "cost_usd": 0.000196518,
+    "input_tokens": 4679,
+    "output_tokens": 610,
+    "latency_ms": 656,
+    "requested_at": "2026-09-28T08:58:39.006412Z"
+  },
+  "calls": {
+    "podium": {
+      "NOR": 0.72,
+      "HAM": 0.61,
+      "LEC": 0.48,
+      "ANT": 0.37,
+      "PIA": 0.11,
+      "VER": 0.15,
+      "RUS": 0.07,
+      "HAD": 0.04,
+      "LIN": 0.02,
+      "HUL": 0.03,
+      "LAW": 0.02,
+      "GAS": 0.02,
+      "COL": 0.02,
+      "BOR": 0.02,
+      "OCO": 0.02,
+      "ALO": 0.02,
+      "BEA": 0.02,
+      "SAI": 0.01,
+      "ALB": 0.02,
+      "STR": 0.02,
+      "BOT": 0.02,
+      "PER": 0.01
+    },
+    "winner": {
+      "choice": "NOR",
+      "confidence": 0.95,
+      "probabilities": {
+        "NOR": 0.95,
+        "HAM": 0.01,
+        "LEC": 0.0,
+        "ANT": 0.04,
+        "PIA": 0.0,
+        "VER": 0.0,
+        "RUS": 0.0,
+        "HAD": 0.0,
+        "LIN": 0.0,
+        "HUL": 0.0,
+        "LAW": 0.0,
+        "GAS": 0.0,
+        "COL": 0.0,
+        "BOR": 0.0,
+        "OCO": 0.0,
+        "ALO": 0.0,
+        "BEA": 0.0,
+        "SAI": 0.0,
+        "ALB": 0.0,
+        "STR": 0.0,
+        "BOT": 0.0,
+        "PER": 0.0
+      }
+    },
+    "chaos": {
+      "score": 0.87,
+      "confidence": 0.27
+    }
+  },
+  "error": null,
+  "extra": {
+    "snapshot": {
+      "season": 2026,
+      "round": 11,
+      "race_name": "Hungarian Grand Prix",
+      "built_at": "2026-09-28T08:58:35.619298Z",
+      "grid_provisional": true,
+      "drivers": [
+        {
+          "code": "NOR",
+          "name": "Lando Norris",
+          "constructor": "McLaren",
+          "grid": 1,
+          "line": "Lando Norris (McLaren) starts 1st, on pole. Norris is 5th in the championship with 103 points. Last 3 races: finished 7th in the Belgian Grand Prix; finished 4th in the British Grand Prix; finished 7th in the Austrian Grand Prix. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts)."
+        },
+        {
+          "code": "HAM",
+          "name": "Lewis Hamilton",
+          "constructor": "Ferrari",
+          "grid": 2,
+          "line": "Lewis Hamilton (Ferrari) starts 2nd; Hamilton's best qualifying lap was 0.012 seconds slower than the pole lap. Hamilton is 2nd in the championship with 159 points, with 1 win. Last 3 races: finished 4th in the Belgian Grand Prix; finished 3rd in the British Grand Prix; finished 5th in the Austrian Grand Prix. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts)."
+        },
+        {
+          "code": "LEC",
+          "name": "Charles Leclerc",
+          "constructor": "Ferrari",
+          "grid": 3,
+          "line": "Charles Leclerc (Ferrari) starts 3rd; Leclerc's best qualifying lap was 0.238 seconds slower than the pole lap. Leclerc is 4th in the championship with 126 points, with 1 win. Last 3 races: finished 2nd in the Belgian Grand Prix; finished 1st in the British Grand Prix; finished 8th in the Austrian Grand Prix. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts)."
+        },
+        {
+          "code": "ANT",
+          "name": "Andrea Kimi Antonelli",
+          "constructor": "Mercedes",
+          "grid": 4,
+          "line": "Andrea Kimi Antonelli (Mercedes) starts 4th; Antonelli's best qualifying lap was 0.272 seconds slower than the pole lap. Antonelli is 1st in the championship with 204 points, with 6 wins. Last 3 races: finished 1st in the Belgian Grand Prix; finished 15th in the British Grand Prix; finished 3rd in the Austrian Grand Prix. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts)."
+        },
+        {
+          "code": "PIA",
+          "name": "Oscar Piastri",
+          "constructor": "McLaren",
+          "grid": 5,
+          "line": "Oscar Piastri (McLaren) starts 5th; Piastri's best qualifying lap was 0.477 seconds slower than the pole lap. Piastri is 6th in the championship with 94 points. Last 3 races: finished 5th in the Belgian Grand Prix; finished 11th in the British Grand Prix; finished 4th in the Austrian Grand Prix. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts)."
+        },
+        {
+          "code": "VER",
+          "name": "Max Verstappen",
+          "constructor": "Red Bull",
+          "grid": 6,
+          "line": "Max Verstappen (Red Bull) starts 6th; Verstappen's best qualifying lap was 0.518 seconds slower than the pole lap. Verstappen is 7th in the championship with 91 points. Last 3 races: finished 3rd in the Belgian Grand Prix; finished 20th in the British Grand Prix; finished 2nd in the Austrian Grand Prix. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts)."
+        },
+        {
+          "code": "RUS",
+          "name": "George Russell",
+          "constructor": "Mercedes",
+          "grid": 7,
+          "line": "George Russell (Mercedes) starts 7th; Russell's best qualifying lap was 0.553 seconds slower than the pole lap. Russell is 3rd in the championship with 154 points, with 2 wins. Last 3 races: retired in the Belgian Grand Prix; finished 2nd in the British Grand Prix; finished 1st in the Austrian Grand Prix. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "HAD",
+          "name": "Isack Hadjar",
+          "constructor": "Red Bull",
+          "grid": 8,
+          "line": "Isack Hadjar (Red Bull) starts 8th; Hadjar's best qualifying lap was 0.649 seconds slower than the pole lap. Hadjar is 8th in the championship with 63 points. Last 3 races: finished 6th in the Belgian Grand Prix; finished 5th in the British Grand Prix; finished 6th in the Austrian Grand Prix. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts)."
+        },
+        {
+          "code": "LIN",
+          "name": "Arvid Lindblad",
+          "constructor": "RB F1 Team",
+          "grid": 9,
+          "line": "Arvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 1.074 seconds slower than the pole lap. Lindblad is 11th in the championship with 24 points. Last 3 races: finished 9th in the Belgian Grand Prix; finished 7th in the British Grand Prix; finished 10th in the Austrian Grand Prix. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts)."
+        },
+        {
+          "code": "HUL",
+          "name": "Nico Hülkenberg",
+          "constructor": "Audi",
+          "grid": 10,
+          "line": "Nico Hülkenberg (Audi) starts 10th; Hülkenberg's best qualifying lap was 1.432 seconds slower than the pole lap. Hülkenberg has no championship points yet. Last 3 races: finished 13th in the Belgian Grand Prix; retired in the British Grand Prix; finished 12th in the Austrian Grand Prix. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts)."
+        },
+        {
+          "code": "LAW",
+          "name": "Liam Lawson",
+          "constructor": "RB F1 Team",
+          "grid": 11,
+          "line": "Liam Lawson (RB F1 Team) starts 11th; Lawson's best qualifying lap was 1.558 seconds slower than the pole lap. Lawson is 9th in the championship with 41 points. Last 3 races: finished 12th in the Belgian Grand Prix; finished 6th in the British Grand Prix; finished 9th in the Austrian Grand Prix. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "GAS",
+          "name": "Pierre Gasly",
+          "constructor": "Alpine F1 Team",
+          "grid": 12,
+          "line": "Pierre Gasly (Alpine F1 Team) starts 12th; Gasly's best qualifying lap was 1.637 seconds slower than the pole lap. Gasly is 10th in the championship with 33 points. Last 3 races: finished 11th in the Belgian Grand Prix; finished 10th in the British Grand Prix; finished 13th in the Austrian Grand Prix. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "COL",
+          "name": "Franco Colapinto",
+          "constructor": "Alpine F1 Team",
+          "grid": 13,
+          "line": "Franco Colapinto (Alpine F1 Team) starts 13th; Colapinto's best qualifying lap was 1.820 seconds slower than the pole lap. Colapinto is 12th in the championship with 19 points. Last 3 races: finished 10th in the Belgian Grand Prix; finished 9th in the British Grand Prix; finished 15th in the Austrian Grand Prix. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts)."
+        },
+        {
+          "code": "BOR",
+          "name": "Gabriel Bortoleto",
+          "constructor": "Audi",
+          "grid": 14,
+          "line": "Gabriel Bortoleto (Audi) starts 14th; Bortoleto's best qualifying lap was 1.862 seconds slower than the pole lap. Bortoleto is 14th in the championship with 10 points. Last 3 races: finished 8th in the Belgian Grand Prix; finished 8th in the British Grand Prix; finished 11th in the Austrian Grand Prix. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts)."
+        },
+        {
+          "code": "OCO",
+          "name": "Esteban Ocon",
+          "constructor": "Haas F1 Team",
+          "grid": 15,
+          "line": "Esteban Ocon (Haas F1 Team) starts 15th; Ocon's best qualifying lap was 2.527 seconds slower than the pole lap. Ocon is 17th in the championship with 3 points. Last 3 races: finished 17th in the Belgian Grand Prix; finished 13th in the British Grand Prix; finished 16th in the Austrian Grand Prix. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "ALO",
+          "name": "Fernando Alonso",
+          "constructor": "Aston Martin",
+          "grid": 16,
+          "line": "Fernando Alonso (Aston Martin) starts 16th; Alonso's best qualifying lap was 2.601 seconds slower than the pole lap. Alonso is 18th in the championship with 1 points. Last 3 races: finished 19th in the Belgian Grand Prix; finished 18th in the British Grand Prix; finished 18th in the Austrian Grand Prix. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts)."
+        },
+        {
+          "code": "BEA",
+          "name": "Oliver Bearman",
+          "constructor": "Haas F1 Team",
+          "grid": 17,
+          "line": "Oliver Bearman (Haas F1 Team) starts 17th; Bearman's best qualifying lap was 3.026 seconds slower than the pole lap. Bearman is 13th in the championship with 18 points. Last 3 races: finished 14th in the Belgian Grand Prix; finished 12th in the British Grand Prix; finished 14th in the Austrian Grand Prix. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts)."
+        },
+        {
+          "code": "SAI",
+          "name": "Carlos Sainz",
+          "constructor": "Williams",
+          "grid": 18,
+          "line": "Carlos Sainz (Williams) starts 18th; Sainz's best qualifying lap was 3.414 seconds slower than the pole lap. Sainz is 15th in the championship with 6 points. Last 3 races: finished 16th in the Belgian Grand Prix; finished 17th in the British Grand Prix; retired in the Austrian Grand Prix. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts)."
+        },
+        {
+          "code": "ALB",
+          "name": "Alexander Albon",
+          "constructor": "Williams",
+          "grid": 19,
+          "line": "Alexander Albon (Williams) starts 19th; Albon's best qualifying lap was 3.451 seconds slower than the pole lap. Albon is 16th in the championship with 5 points. Last 3 races: finished 15th in the Belgian Grand Prix; retired in the British Grand Prix; finished 17th in the Austrian Grand Prix. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts)."
+        },
+        {
+          "code": "STR",
+          "name": "Lance Stroll",
+          "constructor": "Aston Martin",
+          "grid": 20,
+          "line": "Lance Stroll (Aston Martin) starts 20th; Stroll's best qualifying lap was 3.452 seconds slower than the pole lap. Stroll has no championship points yet. Last 3 races: retired in the Belgian Grand Prix; finished 19th in the British Grand Prix; retired in the Austrian Grand Prix. From 20th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (170 starts)."
+        },
+        {
+          "code": "BOT",
+          "name": "Valtteri Bottas",
+          "constructor": "Cadillac F1 Team",
+          "grid": 21,
+          "line": "Valtteri Bottas (Cadillac F1 Team) starts 21st; Bottas's best qualifying lap was 3.679 seconds slower than the pole lap. Bottas has no championship points yet. Last 3 races: finished 18th in the Belgian Grand Prix; finished 16th in the British Grand Prix; retired in the Austrian Grand Prix. From 21st on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (35 starts)."
+        },
+        {
+          "code": "PER",
+          "name": "Sergio Pérez",
+          "constructor": "Cadillac F1 Team",
+          "grid": 22,
+          "line": "Sergio Pérez (Cadillac F1 Team) starts 22nd; Pérez's best qualifying lap was 4.115 seconds slower than the pole lap. Pérez has no championship points yet. Last 3 races: retired in the Belgian Grand Prix; finished 14th in the British Grand Prix; retired in the Austrian Grand Prix. From 22nd on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (22 starts)."
+        }
+      ],
+      "race_lines": [
+        "Race: the Hungarian Grand Prix, round 11 of 23 in the 2026 season, at Hungaroring (Budapest, Hungary).",
+        "The race starts at 13:00 UTC on 26 July 2026, with 22 drivers on the grid.",
+        "The grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.",
+        "The 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.",
+        "This circuit has held 40 championship races, most recently in 2025.",
+        "Qualifying was dry (air 27 C, track 46 C).",
+        "Constructors' championship after round 10: 1st Mercedes 358 points; 2nd Ferrari 285 points; 3rd McLaren 197 points; 4th Red Bull 154 points; 5th RB F1 Team 65 points."
+      ]
+    },
+    "notes": []
+  }
+}

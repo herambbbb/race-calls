@@ -1,0 +1,640 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 1,
+  "slug": "australian-grand-prix",
+  "race_name": "Australian Grand Prix",
+  "circuit_name": "Albert Park Grand Prix Circuit",
+  "race_start": "2026-03-08T04:00:00Z",
+  "kind": "backtest",
+  "status": "ok",
+  "made_at": "2026-09-28T08:57:58.367423Z",
+  "late": false,
+  "note": "Backtest: the model may have seen these results.",
+  "grid_provisional": true,
+  "drivers": [
+    {
+      "code": "RUS",
+      "name": "George Russell",
+      "number": 63,
+      "constructor": "Mercedes",
+      "constructor_id": "mercedes",
+      "grid": 1
+    },
+    {
+      "code": "ANT",
+      "name": "Andrea Kimi Antonelli",
+      "number": 12,
+      "constructor": "Mercedes",
+      "constructor_id": "mercedes",
+      "grid": 2
+    },
+    {
+      "code": "HAD",
+      "name": "Isack Hadjar",
+      "number": 6,
+      "constructor": "Red Bull",
+      "constructor_id": "red_bull",
+      "grid": 3
+    },
+    {
+      "code": "LEC",
+      "name": "Charles Leclerc",
+      "number": 16,
+      "constructor": "Ferrari",
+      "constructor_id": "ferrari",
+      "grid": 4
+    },
+    {
+      "code": "PIA",
+      "name": "Oscar Piastri",
+      "number": 81,
+      "constructor": "McLaren",
+      "constructor_id": "mclaren",
+      "grid": 5
+    },
+    {
+      "code": "NOR",
+      "name": "Lando Norris",
+      "number": 1,
+      "constructor": "McLaren",
+      "constructor_id": "mclaren",
+      "grid": 6
+    },
+    {
+      "code": "HAM",
+      "name": "Lewis Hamilton",
+      "number": 44,
+      "constructor": "Ferrari",
+      "constructor_id": "ferrari",
+      "grid": 7
+    },
+    {
+      "code": "LAW",
+      "name": "Liam Lawson",
+      "number": 30,
+      "constructor": "RB F1 Team",
+      "constructor_id": "rb",
+      "grid": 8
+    },
+    {
+      "code": "LIN",
+      "name": "Arvid Lindblad",
+      "number": 41,
+      "constructor": "RB F1 Team",
+      "constructor_id": "rb",
+      "grid": 9
+    },
+    {
+      "code": "BOR",
+      "name": "Gabriel Bortoleto",
+      "number": 5,
+      "constructor": "Audi",
+      "constructor_id": "audi",
+      "grid": 10
+    },
+    {
+      "code": "HUL",
+      "name": "Nico Hülkenberg",
+      "number": 27,
+      "constructor": "Audi",
+      "constructor_id": "audi",
+      "grid": 11
+    },
+    {
+      "code": "BEA",
+      "name": "Oliver Bearman",
+      "number": 87,
+      "constructor": "Haas F1 Team",
+      "constructor_id": "haas",
+      "grid": 12
+    },
+    {
+      "code": "OCO",
+      "name": "Esteban Ocon",
+      "number": 31,
+      "constructor": "Haas F1 Team",
+      "constructor_id": "haas",
+      "grid": 13
+    },
+    {
+      "code": "GAS",
+      "name": "Pierre Gasly",
+      "number": 10,
+      "constructor": "Alpine F1 Team",
+      "constructor_id": "alpine",
+      "grid": 14
+    },
+    {
+      "code": "ALB",
+      "name": "Alexander Albon",
+      "number": 23,
+      "constructor": "Williams",
+      "constructor_id": "williams",
+      "grid": 15
+    },
+    {
+      "code": "COL",
+      "name": "Franco Colapinto",
+      "number": 43,
+      "constructor": "Alpine F1 Team",
+      "constructor_id": "alpine",
+      "grid": 16
+    },
+    {
+      "code": "ALO",
+      "name": "Fernando Alonso",
+      "number": 14,
+      "constructor": "Aston Martin",
+      "constructor_id": "aston_martin",
+      "grid": 17
+    },
+    {
+      "code": "PER",
+      "name": "Sergio Pérez",
+      "number": 11,
+      "constructor": "Cadillac F1 Team",
+      "constructor_id": "cadillac",
+      "grid": 18
+    },
+    {
+      "code": "BOT",
+      "name": "Valtteri Bottas",
+      "number": 77,
+      "constructor": "Cadillac F1 Team",
+      "constructor_id": "cadillac",
+      "grid": 19
+    }
+  ],
+  "snapshot_text": "Race: the Australian Grand Prix, round 1 of 23 in the 2026 season, at Albert Park Grand Prix Circuit (Melbourne, Australia).\nThe race starts at 04:00 UTC on 8 March 2026, with 19 drivers on the grid.\nThe grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.\nThe 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.\nThis circuit has held 28 championship races, most recently in 2025.\nQualifying was dry (air 20 C, track 34 C).\n\nDrivers, in grid order:\nGeorge Russell (Mercedes) starts 1st, on pole. Russell has no championship points yet. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts).\nAndrea Kimi Antonelli (Mercedes) starts 2nd; Antonelli's best qualifying lap was 0.293 seconds slower than the pole lap. Antonelli has no championship points yet. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts).\nIsack Hadjar (Red Bull) starts 3rd; Hadjar's best qualifying lap was 0.785 seconds slower than the pole lap. Hadjar has no championship points yet. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts).\nCharles Leclerc (Ferrari) starts 4th; Leclerc's best qualifying lap was 0.809 seconds slower than the pole lap. Leclerc has no championship points yet. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts).\nOscar Piastri (McLaren) starts 5th; Piastri's best qualifying lap was 0.862 seconds slower than the pole lap. Piastri has no championship points yet. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts).\nLando Norris (McLaren) starts 6th; Norris's best qualifying lap was 0.957 seconds slower than the pole lap. Norris has no championship points yet. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts).\nLewis Hamilton (Ferrari) starts 7th; Hamilton's best qualifying lap was 0.960 seconds slower than the pole lap. Hamilton has no championship points yet. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts).\nLiam Lawson (RB F1 Team) starts 8th; Lawson's best qualifying lap was 1.476 seconds slower than the pole lap. Lawson has no championship points yet. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts).\nArvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 1.453 seconds slower than the pole lap. Lindblad has no championship points yet. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts).\nGabriel Bortoleto (Audi) starts 10th; Bortoleto's best qualifying lap was 1.703 seconds slower than the pole lap. Bortoleto has no championship points yet. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts).\nNico Hülkenberg (Audi) starts 11th; Hülkenberg's best qualifying lap was 1.785 seconds slower than the pole lap. Hülkenberg has no championship points yet. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts).\nOliver Bearman (Haas F1 Team) starts 12th; Bearman's best qualifying lap was 1.793 seconds slower than the pole lap. Bearman has no championship points yet. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nEsteban Ocon (Haas F1 Team) starts 13th; Ocon's best qualifying lap was 1.973 seconds slower than the pole lap. Ocon has no championship points yet. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts).\nPierre Gasly (Alpine F1 Team) starts 14th; Gasly's best qualifying lap was 1.983 seconds slower than the pole lap. Gasly has no championship points yet. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts).\nAlexander Albon (Williams) starts 15th; Albon's best qualifying lap was 2.423 seconds slower than the pole lap. Albon has no championship points yet. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nFranco Colapinto (Alpine F1 Team) starts 16th; Colapinto's best qualifying lap was 2.682 seconds slower than the pole lap. Colapinto has no championship points yet. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts).\nFernando Alonso (Aston Martin) starts 17th; Alonso's best qualifying lap was 3.451 seconds slower than the pole lap. Alonso has no championship points yet. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts).\nSergio Pérez (Cadillac F1 Team) starts 18th; Pérez's best qualifying lap was 4.087 seconds slower than the pole lap. Pérez has no championship points yet. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts).\nValtteri Bottas (Cadillac F1 Team) starts 19th; Bottas's best qualifying lap was 4.726 seconds slower than the pole lap. Bottas has no championship points yet. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts).",
+  "request": {
+    "model": "typesafe/jev-1.13",
+    "state": "Race: the Australian Grand Prix, round 1 of 23 in the 2026 season, at Albert Park Grand Prix Circuit (Melbourne, Australia).\nThe race starts at 04:00 UTC on 8 March 2026, with 19 drivers on the grid.\nThe grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.\nThe 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.\nThis circuit has held 28 championship races, most recently in 2025.\nQualifying was dry (air 20 C, track 34 C).\n\nDrivers, in grid order:\nGeorge Russell (Mercedes) starts 1st, on pole. Russell has no championship points yet. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts).\nAndrea Kimi Antonelli (Mercedes) starts 2nd; Antonelli's best qualifying lap was 0.293 seconds slower than the pole lap. Antonelli has no championship points yet. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts).\nIsack Hadjar (Red Bull) starts 3rd; Hadjar's best qualifying lap was 0.785 seconds slower than the pole lap. Hadjar has no championship points yet. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts).\nCharles Leclerc (Ferrari) starts 4th; Leclerc's best qualifying lap was 0.809 seconds slower than the pole lap. Leclerc has no championship points yet. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts).\nOscar Piastri (McLaren) starts 5th; Piastri's best qualifying lap was 0.862 seconds slower than the pole lap. Piastri has no championship points yet. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts).\nLando Norris (McLaren) starts 6th; Norris's best qualifying lap was 0.957 seconds slower than the pole lap. Norris has no championship points yet. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts).\nLewis Hamilton (Ferrari) starts 7th; Hamilton's best qualifying lap was 0.960 seconds slower than the pole lap. Hamilton has no championship points yet. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts).\nLiam Lawson (RB F1 Team) starts 8th; Lawson's best qualifying lap was 1.476 seconds slower than the pole lap. Lawson has no championship points yet. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts).\nArvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 1.453 seconds slower than the pole lap. Lindblad has no championship points yet. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts).\nGabriel Bortoleto (Audi) starts 10th; Bortoleto's best qualifying lap was 1.703 seconds slower than the pole lap. Bortoleto has no championship points yet. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts).\nNico Hülkenberg (Audi) starts 11th; Hülkenberg's best qualifying lap was 1.785 seconds slower than the pole lap. Hülkenberg has no championship points yet. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts).\nOliver Bearman (Haas F1 Team) starts 12th; Bearman's best qualifying lap was 1.793 seconds slower than the pole lap. Bearman has no championship points yet. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nEsteban Ocon (Haas F1 Team) starts 13th; Ocon's best qualifying lap was 1.973 seconds slower than the pole lap. Ocon has no championship points yet. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts).\nPierre Gasly (Alpine F1 Team) starts 14th; Gasly's best qualifying lap was 1.983 seconds slower than the pole lap. Gasly has no championship points yet. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts).\nAlexander Albon (Williams) starts 15th; Albon's best qualifying lap was 2.423 seconds slower than the pole lap. Albon has no championship points yet. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nFranco Colapinto (Alpine F1 Team) starts 16th; Colapinto's best qualifying lap was 2.682 seconds slower than the pole lap. Colapinto has no championship points yet. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts).\nFernando Alonso (Aston Martin) starts 17th; Alonso's best qualifying lap was 3.451 seconds slower than the pole lap. Alonso has no championship points yet. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts).\nSergio Pérez (Cadillac F1 Team) starts 18th; Pérez's best qualifying lap was 4.087 seconds slower than the pole lap. Pérez has no championship points yet. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts).\nValtteri Bottas (Cadillac F1 Team) starts 19th; Bottas's best qualifying lap was 4.726 seconds slower than the pole lap. Bottas has no championship points yet. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts).",
+    "questions": {
+      "podium_RUS": {
+        "type": "noul",
+        "instructions": "Will George Russell (Mercedes) finish this race in the top three?"
+      },
+      "podium_ANT": {
+        "type": "noul",
+        "instructions": "Will Andrea Kimi Antonelli (Mercedes) finish this race in the top three?"
+      },
+      "podium_HAD": {
+        "type": "noul",
+        "instructions": "Will Isack Hadjar (Red Bull) finish this race in the top three?"
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "instructions": "Will Charles Leclerc (Ferrari) finish this race in the top three?"
+      },
+      "podium_PIA": {
+        "type": "noul",
+        "instructions": "Will Oscar Piastri (McLaren) finish this race in the top three?"
+      },
+      "podium_NOR": {
+        "type": "noul",
+        "instructions": "Will Lando Norris (McLaren) finish this race in the top three?"
+      },
+      "podium_HAM": {
+        "type": "noul",
+        "instructions": "Will Lewis Hamilton (Ferrari) finish this race in the top three?"
+      },
+      "podium_LAW": {
+        "type": "noul",
+        "instructions": "Will Liam Lawson (RB F1 Team) finish this race in the top three?"
+      },
+      "podium_LIN": {
+        "type": "noul",
+        "instructions": "Will Arvid Lindblad (RB F1 Team) finish this race in the top three?"
+      },
+      "podium_BOR": {
+        "type": "noul",
+        "instructions": "Will Gabriel Bortoleto (Audi) finish this race in the top three?"
+      },
+      "podium_HUL": {
+        "type": "noul",
+        "instructions": "Will Nico Hülkenberg (Audi) finish this race in the top three?"
+      },
+      "podium_BEA": {
+        "type": "noul",
+        "instructions": "Will Oliver Bearman (Haas F1 Team) finish this race in the top three?"
+      },
+      "podium_OCO": {
+        "type": "noul",
+        "instructions": "Will Esteban Ocon (Haas F1 Team) finish this race in the top three?"
+      },
+      "podium_GAS": {
+        "type": "noul",
+        "instructions": "Will Pierre Gasly (Alpine F1 Team) finish this race in the top three?"
+      },
+      "podium_ALB": {
+        "type": "noul",
+        "instructions": "Will Alexander Albon (Williams) finish this race in the top three?"
+      },
+      "podium_COL": {
+        "type": "noul",
+        "instructions": "Will Franco Colapinto (Alpine F1 Team) finish this race in the top three?"
+      },
+      "podium_ALO": {
+        "type": "noul",
+        "instructions": "Will Fernando Alonso (Aston Martin) finish this race in the top three?"
+      },
+      "podium_PER": {
+        "type": "noul",
+        "instructions": "Will Sergio Pérez (Cadillac F1 Team) finish this race in the top three?"
+      },
+      "podium_BOT": {
+        "type": "noul",
+        "instructions": "Will Valtteri Bottas (Cadillac F1 Team) finish this race in the top three?"
+      },
+      "winner": {
+        "type": "choice",
+        "instructions": "Who will win this race?",
+        "criteria": {
+          "RUS": "George Russell (Mercedes) wins the race.",
+          "ANT": "Andrea Kimi Antonelli (Mercedes) wins the race.",
+          "HAD": "Isack Hadjar (Red Bull) wins the race.",
+          "LEC": "Charles Leclerc (Ferrari) wins the race.",
+          "PIA": "Oscar Piastri (McLaren) wins the race.",
+          "NOR": "Lando Norris (McLaren) wins the race.",
+          "HAM": "Lewis Hamilton (Ferrari) wins the race.",
+          "LAW": "Liam Lawson (RB F1 Team) wins the race.",
+          "LIN": "Arvid Lindblad (RB F1 Team) wins the race.",
+          "BOR": "Gabriel Bortoleto (Audi) wins the race.",
+          "HUL": "Nico Hülkenberg (Audi) wins the race.",
+          "BEA": "Oliver Bearman (Haas F1 Team) wins the race.",
+          "OCO": "Esteban Ocon (Haas F1 Team) wins the race.",
+          "GAS": "Pierre Gasly (Alpine F1 Team) wins the race.",
+          "ALB": "Alexander Albon (Williams) wins the race.",
+          "COL": "Franco Colapinto (Alpine F1 Team) wins the race.",
+          "ALO": "Fernando Alonso (Aston Martin) wins the race.",
+          "PER": "Sergio Pérez (Cadillac F1 Team) wins the race.",
+          "BOT": "Valtteri Bottas (Cadillac F1 Team) wins the race."
+        }
+      },
+      "chaos": {
+        "type": "score",
+        "instructions": "How chaotic will this race be? Rate it on the five-level rubric. The actual level will be the highest level whose condition the race meets.",
+        "criteria": [
+          "0: calm - no safety car or virtual safety car, at most 2 retirements, and the winner led most laps.",
+          "1: lively - a virtual safety car, or 3 to 4 retirements, or 3 or more lead changes.",
+          "2: eventful - one full safety car, or a first-lap incident that brought out a yellow flag or a virtual safety car.",
+          "3: chaotic - two or more full safety cars, or 5 or more retirements.",
+          "4: bedlam - a red flag, or wet running, or a podium with none of the top six starters."
+        ]
+      }
+    }
+  },
+  "request_hash": "6d1cb1139d6e81604661b82da414206dad7d1df5445a4c9bff97d8f7adbe9998",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "podium_RUS": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "podium_ANT": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "podium_HAD": {
+        "type": "noul",
+        "noul": 0.5
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "noul": 0.2
+      },
+      "podium_PIA": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "podium_NOR": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "podium_HAM": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "podium_LAW": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_LIN": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_BOR": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "podium_HUL": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_BEA": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_OCO": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_GAS": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_ALB": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_COL": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_ALO": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_PER": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_BOT": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "winner": {
+        "type": "choice",
+        "choice": "RUS",
+        "probabilities": {
+          "HAD": 0,
+          "HUL": 0,
+          "BEA": 0,
+          "LEC": 0,
+          "PER": 0,
+          "BOR": 0,
+          "COL": 0,
+          "LAW": 0,
+          "GAS": 0,
+          "NOR": 0,
+          "RUS": 0.99,
+          "ALO": 0,
+          "ALB": 0,
+          "HAM": 0,
+          "ANT": 0.01,
+          "BOT": 0,
+          "PIA": 0,
+          "LIN": 0,
+          "OCO": 0
+        },
+        "confidence": 0.99
+      },
+      "chaos": {
+        "type": "score",
+        "score": 0.3,
+        "legend": {
+          "0": "0: calm - no safety car or virtual safety car, at most 2 retirements, and the winner led most laps.",
+          "1": "1: lively - a virtual safety car, or 3 to 4 retirements, or 3 or more lead changes.",
+          "2": "2: eventful - one full safety car, or a first-lap incident that brought out a yellow flag or a virtual safety car.",
+          "3": "3: chaotic - two or more full safety cars, or 5 or more retirements.",
+          "4": "4: bedlam - a red flag, or wet running, or a podium with none of the top six starters."
+        },
+        "probabilities": {
+          "0": 0.86,
+          "1": 0.06,
+          "2": 0.02,
+          "3": 0.02,
+          "4": 0.04
+        },
+        "confidence": 0.75
+      }
+    },
+    "usage": {
+      "input_tokens": 3277,
+      "output_tokens": 534,
+      "cost": 0.000137634
+    },
+    "id": "gen-dec-1790585878-9UwPJ4zACEJrqBHsNk0E",
+    "provider": "TypeSafe"
+  },
+  "jev": {
+    "url": "https://openrouter.ai/api/alpha/decisions",
+    "model_requested": "typesafe/jev-1.13",
+    "model_id": "typesafe/jev-1.13-20260917",
+    "provider": "TypeSafe",
+    "generation_id": "gen-dec-1790585878-9UwPJ4zACEJrqBHsNk0E",
+    "cost_usd": 0.000137634,
+    "input_tokens": 3277,
+    "output_tokens": 534,
+    "latency_ms": 909,
+    "requested_at": "2026-09-28T08:57:57.454109Z"
+  },
+  "calls": {
+    "podium": {
+      "RUS": 0.8,
+      "ANT": 0.73,
+      "HAD": 0.5,
+      "LEC": 0.2,
+      "PIA": 0.1,
+      "NOR": 0.09,
+      "HAM": 0.06,
+      "LAW": 0.03,
+      "LIN": 0.03,
+      "BOR": 0.04,
+      "HUL": 0.03,
+      "BEA": 0.02,
+      "OCO": 0.03,
+      "GAS": 0.03,
+      "ALB": 0.03,
+      "COL": 0.02,
+      "ALO": 0.02,
+      "PER": 0.02,
+      "BOT": 0.02
+    },
+    "winner": {
+      "choice": "RUS",
+      "confidence": 0.99,
+      "probabilities": {
+        "RUS": 0.99,
+        "ANT": 0.01,
+        "HAD": 0.0,
+        "LEC": 0.0,
+        "PIA": 0.0,
+        "NOR": 0.0,
+        "HAM": 0.0,
+        "LAW": 0.0,
+        "LIN": 0.0,
+        "BOR": 0.0,
+        "HUL": 0.0,
+        "BEA": 0.0,
+        "OCO": 0.0,
+        "GAS": 0.0,
+        "ALB": 0.0,
+        "COL": 0.0,
+        "ALO": 0.0,
+        "PER": 0.0,
+        "BOT": 0.0
+      }
+    },
+    "chaos": {
+      "score": 0.3,
+      "confidence": 0.75
+    }
+  },
+  "error": null,
+  "extra": {
+    "snapshot": {
+      "season": 2026,
+      "round": 1,
+      "race_name": "Australian Grand Prix",
+      "built_at": "2026-09-28T08:57:55.794088Z",
+      "grid_provisional": true,
+      "drivers": [
+        {
+          "code": "RUS",
+          "name": "George Russell",
+          "constructor": "Mercedes",
+          "grid": 1,
+          "line": "George Russell (Mercedes) starts 1st, on pole. Russell has no championship points yet. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts)."
+        },
+        {
+          "code": "ANT",
+          "name": "Andrea Kimi Antonelli",
+          "constructor": "Mercedes",
+          "grid": 2,
+          "line": "Andrea Kimi Antonelli (Mercedes) starts 2nd; Antonelli's best qualifying lap was 0.293 seconds slower than the pole lap. Antonelli has no championship points yet. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts)."
+        },
+        {
+          "code": "HAD",
+          "name": "Isack Hadjar",
+          "constructor": "Red Bull",
+          "grid": 3,
+          "line": "Isack Hadjar (Red Bull) starts 3rd; Hadjar's best qualifying lap was 0.785 seconds slower than the pole lap. Hadjar has no championship points yet. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts)."
+        },
+        {
+          "code": "LEC",
+          "name": "Charles Leclerc",
+          "constructor": "Ferrari",
+          "grid": 4,
+          "line": "Charles Leclerc (Ferrari) starts 4th; Leclerc's best qualifying lap was 0.809 seconds slower than the pole lap. Leclerc has no championship points yet. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts)."
+        },
+        {
+          "code": "PIA",
+          "name": "Oscar Piastri",
+          "constructor": "McLaren",
+          "grid": 5,
+          "line": "Oscar Piastri (McLaren) starts 5th; Piastri's best qualifying lap was 0.862 seconds slower than the pole lap. Piastri has no championship points yet. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts)."
+        },
+        {
+          "code": "NOR",
+          "name": "Lando Norris",
+          "constructor": "McLaren",
+          "grid": 6,
+          "line": "Lando Norris (McLaren) starts 6th; Norris's best qualifying lap was 0.957 seconds slower than the pole lap. Norris has no championship points yet. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts)."
+        },
+        {
+          "code": "HAM",
+          "name": "Lewis Hamilton",
+          "constructor": "Ferrari",
+          "grid": 7,
+          "line": "Lewis Hamilton (Ferrari) starts 7th; Hamilton's best qualifying lap was 0.960 seconds slower than the pole lap. Hamilton has no championship points yet. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "LAW",
+          "name": "Liam Lawson",
+          "constructor": "RB F1 Team",
+          "grid": 8,
+          "line": "Liam Lawson (RB F1 Team) starts 8th; Lawson's best qualifying lap was 1.476 seconds slower than the pole lap. Lawson has no championship points yet. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts)."
+        },
+        {
+          "code": "LIN",
+          "name": "Arvid Lindblad",
+          "constructor": "RB F1 Team",
+          "grid": 9,
+          "line": "Arvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 1.453 seconds slower than the pole lap. Lindblad has no championship points yet. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts)."
+        },
+        {
+          "code": "BOR",
+          "name": "Gabriel Bortoleto",
+          "constructor": "Audi",
+          "grid": 10,
+          "line": "Gabriel Bortoleto (Audi) starts 10th; Bortoleto's best qualifying lap was 1.703 seconds slower than the pole lap. Bortoleto has no championship points yet. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts)."
+        },
+        {
+          "code": "HUL",
+          "name": "Nico Hülkenberg",
+          "constructor": "Audi",
+          "grid": 11,
+          "line": "Nico Hülkenberg (Audi) starts 11th; Hülkenberg's best qualifying lap was 1.785 seconds slower than the pole lap. Hülkenberg has no championship points yet. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "BEA",
+          "name": "Oliver Bearman",
+          "constructor": "Haas F1 Team",
+          "grid": 12,
+          "line": "Oliver Bearman (Haas F1 Team) starts 12th; Bearman's best qualifying lap was 1.793 seconds slower than the pole lap. Bearman has no championship points yet. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "OCO",
+          "name": "Esteban Ocon",
+          "constructor": "Haas F1 Team",
+          "grid": 13,
+          "line": "Esteban Ocon (Haas F1 Team) starts 13th; Ocon's best qualifying lap was 1.973 seconds slower than the pole lap. Ocon has no championship points yet. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts)."
+        },
+        {
+          "code": "GAS",
+          "name": "Pierre Gasly",
+          "constructor": "Alpine F1 Team",
+          "grid": 14,
+          "line": "Pierre Gasly (Alpine F1 Team) starts 14th; Gasly's best qualifying lap was 1.983 seconds slower than the pole lap. Gasly has no championship points yet. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts)."
+        },
+        {
+          "code": "ALB",
+          "name": "Alexander Albon",
+          "constructor": "Williams",
+          "grid": 15,
+          "line": "Alexander Albon (Williams) starts 15th; Albon's best qualifying lap was 2.423 seconds slower than the pole lap. Albon has no championship points yet. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "COL",
+          "name": "Franco Colapinto",
+          "constructor": "Alpine F1 Team",
+          "grid": 16,
+          "line": "Franco Colapinto (Alpine F1 Team) starts 16th; Colapinto's best qualifying lap was 2.682 seconds slower than the pole lap. Colapinto has no championship points yet. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts)."
+        },
+        {
+          "code": "ALO",
+          "name": "Fernando Alonso",
+          "constructor": "Aston Martin",
+          "grid": 17,
+          "line": "Fernando Alonso (Aston Martin) starts 17th; Alonso's best qualifying lap was 3.451 seconds slower than the pole lap. Alonso has no championship points yet. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts)."
+        },
+        {
+          "code": "PER",
+          "name": "Sergio Pérez",
+          "constructor": "Cadillac F1 Team",
+          "grid": 18,
+          "line": "Sergio Pérez (Cadillac F1 Team) starts 18th; Pérez's best qualifying lap was 4.087 seconds slower than the pole lap. Pérez has no championship points yet. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts)."
+        },
+        {
+          "code": "BOT",
+          "name": "Valtteri Bottas",
+          "constructor": "Cadillac F1 Team",
+          "grid": 19,
+          "line": "Valtteri Bottas (Cadillac F1 Team) starts 19th; Bottas's best qualifying lap was 4.726 seconds slower than the pole lap. Bottas has no championship points yet. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts)."
+        }
+      ],
+      "race_lines": [
+        "Race: the Australian Grand Prix, round 1 of 23 in the 2026 season, at Albert Park Grand Prix Circuit (Melbourne, Australia).",
+        "The race starts at 04:00 UTC on 8 March 2026, with 19 drivers on the grid.",
+        "The grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.",
+        "The 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.",
+        "This circuit has held 28 championship races, most recently in 2025.",
+        "Qualifying was dry (air 20 C, track 34 C)."
+      ]
+    },
+    "notes": []
+  }
+}

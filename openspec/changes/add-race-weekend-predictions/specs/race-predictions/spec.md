@@ -14,6 +14,13 @@ Every number in the snapshot (gaps to pole, points, finishing streaks, historica
 - **WHEN** a driver's line is built
 - **THEN** it states the grid slot, the gap to pole in seconds, points and position in the championship, and results in the last three races
 
+### Requirement: Context beyond the grid
+The snapshot SHALL also state, per driver, the season's teammate head-to-head in qualifying and races, the car's power unit supplier and that supplier's season results, the qualifying speed-trap and sector rankings, and results this season at circuits that share a trait with this one, all computed by code from pre-race data, with circuit traits labelled as the project's own classification.
+
+#### Scenario: Teammate line
+- **WHEN** a driver has a teammate who has raced this season
+- **THEN** the driver's facts state how many times each out-qualified and out-finished the other
+
 ### Requirement: Three typed questions in one request
 The system SHALL send one Jev request per race containing: a `noul` question per driver asking whether that driver will finish in the top three, a `choice` question over every driver on the grid asking who will win, and a `score` question rating how chaotic the race will be against the published chaos rubric.
 

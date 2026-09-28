@@ -1,0 +1,357 @@
+{
+  "circuits": [
+    {
+      "circuit_id": "albert_park",
+      "last_held": 2025,
+      "races": 28,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "americas",
+      "last_held": 2025,
+      "races": 13,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "bahrain",
+      "last_held": 2025,
+      "races": 22,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "baku",
+      "last_held": 2025,
+      "races": 9,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "catalunya",
+      "last_held": 2025,
+      "races": 35,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "hungaroring",
+      "last_held": 2025,
+      "races": 40,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "imola",
+      "last_held": 2025,
+      "races": 32,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "interlagos",
+      "last_held": 2025,
+      "races": 42,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "jeddah",
+      "last_held": 2025,
+      "races": 5,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "losail",
+      "last_held": 2025,
+      "races": 4,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "madring",
+      "last_held": null,
+      "races": 0,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "marina_bay",
+      "last_held": 2025,
+      "races": 16,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "miami",
+      "last_held": 2025,
+      "races": 4,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "monaco",
+      "last_held": 2025,
+      "races": 71,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "monza",
+      "last_held": 2025,
+      "races": 75,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "red_bull_ring",
+      "last_held": 2025,
+      "races": 39,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "rodriguez",
+      "last_held": 2025,
+      "races": 25,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "sepang",
+      "last_held": 2017,
+      "races": 19,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "shanghai",
+      "last_held": 2025,
+      "races": 18,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "silverstone",
+      "last_held": 2025,
+      "races": 60,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "spa",
+      "last_held": 2025,
+      "races": 58,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "suzuka",
+      "last_held": 2025,
+      "races": 35,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "vegas",
+      "last_held": 2025,
+      "races": 3,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "villeneuve",
+      "last_held": 2025,
+      "races": 44,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "yas_marina",
+      "last_held": 2025,
+      "races": 17,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    },
+    {
+      "circuit_id": "zandvoort",
+      "last_held": 2025,
+      "races": 35,
+      "safety_car_races": null,
+      "safety_car_seasons": [],
+      "safety_car_source": null
+    }
+  ],
+  "grid_slots": [
+    {
+      "podiums": 2,
+      "slot": 0,
+      "starts": 114,
+      "wins": 0
+    },
+    {
+      "podiums": 204,
+      "slot": 1,
+      "starts": 251,
+      "wins": 135
+    },
+    {
+      "podiums": 181,
+      "slot": 2,
+      "starts": 250,
+      "wins": 59
+    },
+    {
+      "podiums": 139,
+      "slot": 3,
+      "starts": 251,
+      "wins": 27
+    },
+    {
+      "podiums": 86,
+      "slot": 4,
+      "starts": 252,
+      "wins": 10
+    },
+    {
+      "podiums": 42,
+      "slot": 5,
+      "starts": 252,
+      "wins": 4
+    },
+    {
+      "podiums": 34,
+      "slot": 6,
+      "starts": 252,
+      "wins": 7
+    },
+    {
+      "podiums": 17,
+      "slot": 7,
+      "starts": 249,
+      "wins": 1
+    },
+    {
+      "podiums": 7,
+      "slot": 8,
+      "starts": 251,
+      "wins": 1
+    },
+    {
+      "podiums": 7,
+      "slot": 9,
+      "starts": 252,
+      "wins": 1
+    },
+    {
+      "podiums": 9,
+      "slot": 10,
+      "starts": 250,
+      "wins": 4
+    },
+    {
+      "podiums": 4,
+      "slot": 11,
+      "starts": 249,
+      "wins": 0
+    },
+    {
+      "podiums": 3,
+      "slot": 12,
+      "starts": 249,
+      "wins": 0
+    },
+    {
+      "podiums": 2,
+      "slot": 13,
+      "starts": 251,
+      "wins": 0
+    },
+    {
+      "podiums": 4,
+      "slot": 14,
+      "starts": 251,
+      "wins": 2
+    },
+    {
+      "podiums": 3,
+      "slot": 15,
+      "starts": 249,
+      "wins": 0
+    },
+    {
+      "podiums": 1,
+      "slot": 16,
+      "starts": 251,
+      "wins": 0
+    },
+    {
+      "podiums": 2,
+      "slot": 17,
+      "starts": 248,
+      "wins": 1
+    },
+    {
+      "podiums": 1,
+      "slot": 18,
+      "starts": 244,
+      "wins": 0
+    },
+    {
+      "podiums": 3,
+      "slot": 19,
+      "starts": 226,
+      "wins": 0
+    },
+    {
+      "podiums": 4,
+      "slot": 20,
+      "starts": 170,
+      "wins": 0
+    },
+    {
+      "podiums": 1,
+      "slot": 21,
+      "starts": 35,
+      "wins": 0
+    },
+    {
+      "podiums": 0,
+      "slot": 22,
+      "starts": 22,
+      "wins": 0
+    }
+  ],
+  "seasons": [
+    2014,
+    2025
+  ],
+  "source": "f1db v2026.15.1"
+}

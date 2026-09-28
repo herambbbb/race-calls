@@ -1,0 +1,723 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 5,
+  "slug": "canadian-grand-prix",
+  "race_name": "Canadian Grand Prix",
+  "circuit_name": "Circuit Gilles Villeneuve",
+  "race_start": "2026-05-24T20:00:00Z",
+  "kind": "backtest",
+  "status": "ok",
+  "made_at": "2026-09-28T08:58:15.900260Z",
+  "late": false,
+  "note": "Backtest: the model may have seen these results.",
+  "grid_provisional": true,
+  "drivers": [
+    {
+      "code": "RUS",
+      "name": "George Russell",
+      "number": 63,
+      "constructor": "Mercedes",
+      "constructor_id": "mercedes",
+      "grid": 1
+    },
+    {
+      "code": "ANT",
+      "name": "Andrea Kimi Antonelli",
+      "number": 12,
+      "constructor": "Mercedes",
+      "constructor_id": "mercedes",
+      "grid": 2
+    },
+    {
+      "code": "NOR",
+      "name": "Lando Norris",
+      "number": 1,
+      "constructor": "McLaren",
+      "constructor_id": "mclaren",
+      "grid": 3
+    },
+    {
+      "code": "PIA",
+      "name": "Oscar Piastri",
+      "number": 81,
+      "constructor": "McLaren",
+      "constructor_id": "mclaren",
+      "grid": 4
+    },
+    {
+      "code": "HAM",
+      "name": "Lewis Hamilton",
+      "number": 44,
+      "constructor": "Ferrari",
+      "constructor_id": "ferrari",
+      "grid": 5
+    },
+    {
+      "code": "VER",
+      "name": "Max Verstappen",
+      "number": 3,
+      "constructor": "Red Bull",
+      "constructor_id": "red_bull",
+      "grid": 6
+    },
+    {
+      "code": "HAD",
+      "name": "Isack Hadjar",
+      "number": 6,
+      "constructor": "Red Bull",
+      "constructor_id": "red_bull",
+      "grid": 7
+    },
+    {
+      "code": "LEC",
+      "name": "Charles Leclerc",
+      "number": 16,
+      "constructor": "Ferrari",
+      "constructor_id": "ferrari",
+      "grid": 8
+    },
+    {
+      "code": "LIN",
+      "name": "Arvid Lindblad",
+      "number": 41,
+      "constructor": "RB F1 Team",
+      "constructor_id": "rb",
+      "grid": 9
+    },
+    {
+      "code": "COL",
+      "name": "Franco Colapinto",
+      "number": 43,
+      "constructor": "Alpine F1 Team",
+      "constructor_id": "alpine",
+      "grid": 10
+    },
+    {
+      "code": "HUL",
+      "name": "Nico Hülkenberg",
+      "number": 27,
+      "constructor": "Audi",
+      "constructor_id": "audi",
+      "grid": 11
+    },
+    {
+      "code": "LAW",
+      "name": "Liam Lawson",
+      "number": 30,
+      "constructor": "RB F1 Team",
+      "constructor_id": "rb",
+      "grid": 12
+    },
+    {
+      "code": "BOR",
+      "name": "Gabriel Bortoleto",
+      "number": 5,
+      "constructor": "Audi",
+      "constructor_id": "audi",
+      "grid": 13
+    },
+    {
+      "code": "GAS",
+      "name": "Pierre Gasly",
+      "number": 10,
+      "constructor": "Alpine F1 Team",
+      "constructor_id": "alpine",
+      "grid": 14
+    },
+    {
+      "code": "SAI",
+      "name": "Carlos Sainz",
+      "number": 55,
+      "constructor": "Williams",
+      "constructor_id": "williams",
+      "grid": 15
+    },
+    {
+      "code": "BEA",
+      "name": "Oliver Bearman",
+      "number": 87,
+      "constructor": "Haas F1 Team",
+      "constructor_id": "haas",
+      "grid": 16
+    },
+    {
+      "code": "OCO",
+      "name": "Esteban Ocon",
+      "number": 31,
+      "constructor": "Haas F1 Team",
+      "constructor_id": "haas",
+      "grid": 17
+    },
+    {
+      "code": "ALB",
+      "name": "Alexander Albon",
+      "number": 23,
+      "constructor": "Williams",
+      "constructor_id": "williams",
+      "grid": 18
+    },
+    {
+      "code": "ALO",
+      "name": "Fernando Alonso",
+      "number": 14,
+      "constructor": "Aston Martin",
+      "constructor_id": "aston_martin",
+      "grid": 19
+    },
+    {
+      "code": "PER",
+      "name": "Sergio Pérez",
+      "number": 11,
+      "constructor": "Cadillac F1 Team",
+      "constructor_id": "cadillac",
+      "grid": 20
+    },
+    {
+      "code": "STR",
+      "name": "Lance Stroll",
+      "number": 18,
+      "constructor": "Aston Martin",
+      "constructor_id": "aston_martin",
+      "grid": 21
+    },
+    {
+      "code": "BOT",
+      "name": "Valtteri Bottas",
+      "number": 77,
+      "constructor": "Cadillac F1 Team",
+      "constructor_id": "cadillac",
+      "grid": 22
+    }
+  ],
+  "snapshot_text": "Race: the Canadian Grand Prix, round 5 of 23 in the 2026 season, at Circuit Gilles Villeneuve (Montreal, Canada).\nThe race starts at 20:00 UTC on 24 May 2026, with 22 drivers on the grid.\nThe grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.\nThe 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.\nThis circuit has held 44 championship races, most recently in 2025.\nThis is a sprint weekend. Sprint result: 1st George Russell; 2nd Lando Norris; 3rd Andrea Kimi Antonelli; 4th Oscar Piastri; 5th Charles Leclerc; 6th Lewis Hamilton; 7th Max Verstappen; 8th Arvid Lindblad.\nRain fell during qualifying (air 21 C, track 31 C).\nConstructors' championship after round 4: 1st Mercedes 180 points; 2nd Ferrari 110 points; 3rd McLaren 94 points; 4th Red Bull 30 points; 5th Alpine F1 Team 23 points.\n\nDrivers, in grid order:\nGeorge Russell (Mercedes) starts 1st, on pole. Russell is 2nd in the championship with 80 points, with 1 win. Last 3 races: finished 4th in the Miami Grand Prix; finished 4th in the Japanese Grand Prix; finished 2nd in the Chinese Grand Prix. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts).\nAndrea Kimi Antonelli (Mercedes) starts 2nd; Antonelli's best qualifying lap was 0.068 seconds slower than the pole lap. Antonelli is 1st in the championship with 100 points, with 3 wins. Last 3 races: finished 1st in the Miami Grand Prix; finished 1st in the Japanese Grand Prix; finished 1st in the Chinese Grand Prix. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts).\nLando Norris (McLaren) starts 3rd; Norris's best qualifying lap was 0.151 seconds slower than the pole lap. Norris is 4th in the championship with 51 points. Last 3 races: finished 2nd in the Miami Grand Prix; finished 5th in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts).\nOscar Piastri (McLaren) starts 4th; Piastri's best qualifying lap was 0.203 seconds slower than the pole lap. Piastri is 6th in the championship with 43 points. Last 3 races: finished 3rd in the Miami Grand Prix; finished 2nd in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts).\nLewis Hamilton (Ferrari) starts 5th; Hamilton's best qualifying lap was 0.290 seconds slower than the pole lap. Hamilton is 5th in the championship with 51 points. Last 3 races: finished 6th in the Miami Grand Prix; finished 6th in the Japanese Grand Prix; finished 3rd in the Chinese Grand Prix. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts).\nMax Verstappen (Red Bull) starts 6th; Verstappen's best qualifying lap was 0.329 seconds slower than the pole lap. Verstappen is 7th in the championship with 26 points. Last 3 races: finished 5th in the Miami Grand Prix; finished 8th in the Japanese Grand Prix; retired in the Chinese Grand Prix. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts).\nIsack Hadjar (Red Bull) starts 7th; Hadjar's best qualifying lap was 0.357 seconds slower than the pole lap. Hadjar is 13th in the championship with 4 points. Last 3 races: retired in the Miami Grand Prix; finished 12th in the Japanese Grand Prix; finished 8th in the Chinese Grand Prix. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts).\nCharles Leclerc (Ferrari) starts 8th; Leclerc's best qualifying lap was 0.398 seconds slower than the pole lap. Leclerc is 3rd in the championship with 59 points. Last 3 races: finished 8th in the Miami Grand Prix; finished 3rd in the Japanese Grand Prix; finished 4th in the Chinese Grand Prix. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts).\nArvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 0.702 seconds slower than the pole lap. Lindblad is 12th in the championship with 4 points. Last 3 races: finished 14th in the Miami Grand Prix; finished 14th in the Japanese Grand Prix; finished 12th in the Chinese Grand Prix. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts).\nFranco Colapinto (Alpine F1 Team) starts 10th; Colapinto's best qualifying lap was 1.119 seconds slower than the pole lap. Colapinto is 11th in the championship with 7 points. Last 3 races: finished 7th in the Miami Grand Prix; finished 16th in the Japanese Grand Prix; finished 10th in the Chinese Grand Prix. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts).\nNico Hülkenberg (Audi) starts 11th; Hülkenberg's best qualifying lap was 1.308 seconds slower than the pole lap. Hülkenberg has no championship points yet. Last 3 races: retired in the Miami Grand Prix; finished 11th in the Japanese Grand Prix; finished 11th in the Chinese Grand Prix. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts).\nLiam Lawson (RB F1 Team) starts 12th; Lawson's best qualifying lap was 1.319 seconds slower than the pole lap. Lawson is 10th in the championship with 10 points. Last 3 races: retired in the Miami Grand Prix; finished 9th in the Japanese Grand Prix; finished 7th in the Chinese Grand Prix. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nGabriel Bortoleto (Audi) starts 13th; Bortoleto's best qualifying lap was 1.493 seconds slower than the pole lap. Bortoleto is 15th in the championship with 2 points. Last 3 races: finished 12th in the Miami Grand Prix; finished 13th in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts).\nPierre Gasly (Alpine F1 Team) starts 14th; Gasly's best qualifying lap was 1.609 seconds slower than the pole lap. Gasly is 9th in the championship with 16 points. Last 3 races: retired in the Miami Grand Prix; finished 7th in the Japanese Grand Prix; finished 6th in the Chinese Grand Prix. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts).\nCarlos Sainz (Williams) starts 15th; Sainz's best qualifying lap was 1.695 seconds slower than the pole lap. Sainz is 14th in the championship with 4 points. Last 3 races: finished 9th in the Miami Grand Prix; finished 15th in the Japanese Grand Prix; finished 9th in the Chinese Grand Prix. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nOliver Bearman (Haas F1 Team) starts 16th; Bearman's best qualifying lap was 1.838 seconds slower than the pole lap. Bearman is 8th in the championship with 17 points. Last 3 races: finished 11th in the Miami Grand Prix; retired in the Japanese Grand Prix; finished 5th in the Chinese Grand Prix. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts).\nEsteban Ocon (Haas F1 Team) starts 17th; Ocon's best qualifying lap was 2.267 seconds slower than the pole lap. Ocon is 16th in the championship with 1 points. Last 3 races: finished 13th in the Miami Grand Prix; finished 10th in the Japanese Grand Prix; finished 14th in the Chinese Grand Prix. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts).\nAlexander Albon (Williams) starts 18th; Albon's best qualifying lap was 2.273 seconds slower than the pole lap. Albon is 17th in the championship with 1 points. Last 3 races: finished 10th in the Miami Grand Prix; finished 20th in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts).\nFernando Alonso (Aston Martin) starts 19th; Alonso's best qualifying lap was 2.618 seconds slower than the pole lap. Alonso has no championship points yet. Last 3 races: finished 15th in the Miami Grand Prix; finished 18th in the Japanese Grand Prix; retired in the Chinese Grand Prix. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts).\nSergio Pérez (Cadillac F1 Team) starts 20th; Pérez's best qualifying lap was 2.851 seconds slower than the pole lap. Pérez has no championship points yet. Last 3 races: finished 16th in the Miami Grand Prix; finished 17th in the Japanese Grand Prix; finished 15th in the Chinese Grand Prix. From 20th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (170 starts).\nLance Stroll (Aston Martin) starts 21st; Stroll's best qualifying lap was 3.617 seconds slower than the pole lap. Stroll has no championship points yet. Last 3 races: finished 17th in the Miami Grand Prix; retired in the Japanese Grand Prix; retired in the Chinese Grand Prix. From 21st on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (35 starts).\nValtteri Bottas (Cadillac F1 Team) starts 22nd; Bottas's best qualifying lap was 3.694 seconds slower than the pole lap. Bottas has no championship points yet. Last 3 races: finished 18th in the Miami Grand Prix; finished 19th in the Japanese Grand Prix; finished 13th in the Chinese Grand Prix. From 22nd on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (22 starts).",
+  "request": {
+    "model": "typesafe/jev-1.13",
+    "state": "Race: the Canadian Grand Prix, round 5 of 23 in the 2026 season, at Circuit Gilles Villeneuve (Montreal, Canada).\nThe race starts at 20:00 UTC on 24 May 2026, with 22 drivers on the grid.\nThe grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.\nThe 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.\nThis circuit has held 44 championship races, most recently in 2025.\nThis is a sprint weekend. Sprint result: 1st George Russell; 2nd Lando Norris; 3rd Andrea Kimi Antonelli; 4th Oscar Piastri; 5th Charles Leclerc; 6th Lewis Hamilton; 7th Max Verstappen; 8th Arvid Lindblad.\nRain fell during qualifying (air 21 C, track 31 C).\nConstructors' championship after round 4: 1st Mercedes 180 points; 2nd Ferrari 110 points; 3rd McLaren 94 points; 4th Red Bull 30 points; 5th Alpine F1 Team 23 points.\n\nDrivers, in grid order:\nGeorge Russell (Mercedes) starts 1st, on pole. Russell is 2nd in the championship with 80 points, with 1 win. Last 3 races: finished 4th in the Miami Grand Prix; finished 4th in the Japanese Grand Prix; finished 2nd in the Chinese Grand Prix. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts).\nAndrea Kimi Antonelli (Mercedes) starts 2nd; Antonelli's best qualifying lap was 0.068 seconds slower than the pole lap. Antonelli is 1st in the championship with 100 points, with 3 wins. Last 3 races: finished 1st in the Miami Grand Prix; finished 1st in the Japanese Grand Prix; finished 1st in the Chinese Grand Prix. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts).\nLando Norris (McLaren) starts 3rd; Norris's best qualifying lap was 0.151 seconds slower than the pole lap. Norris is 4th in the championship with 51 points. Last 3 races: finished 2nd in the Miami Grand Prix; finished 5th in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts).\nOscar Piastri (McLaren) starts 4th; Piastri's best qualifying lap was 0.203 seconds slower than the pole lap. Piastri is 6th in the championship with 43 points. Last 3 races: finished 3rd in the Miami Grand Prix; finished 2nd in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts).\nLewis Hamilton (Ferrari) starts 5th; Hamilton's best qualifying lap was 0.290 seconds slower than the pole lap. Hamilton is 5th in the championship with 51 points. Last 3 races: finished 6th in the Miami Grand Prix; finished 6th in the Japanese Grand Prix; finished 3rd in the Chinese Grand Prix. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts).\nMax Verstappen (Red Bull) starts 6th; Verstappen's best qualifying lap was 0.329 seconds slower than the pole lap. Verstappen is 7th in the championship with 26 points. Last 3 races: finished 5th in the Miami Grand Prix; finished 8th in the Japanese Grand Prix; retired in the Chinese Grand Prix. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts).\nIsack Hadjar (Red Bull) starts 7th; Hadjar's best qualifying lap was 0.357 seconds slower than the pole lap. Hadjar is 13th in the championship with 4 points. Last 3 races: retired in the Miami Grand Prix; finished 12th in the Japanese Grand Prix; finished 8th in the Chinese Grand Prix. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts).\nCharles Leclerc (Ferrari) starts 8th; Leclerc's best qualifying lap was 0.398 seconds slower than the pole lap. Leclerc is 3rd in the championship with 59 points. Last 3 races: finished 8th in the Miami Grand Prix; finished 3rd in the Japanese Grand Prix; finished 4th in the Chinese Grand Prix. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts).\nArvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 0.702 seconds slower than the pole lap. Lindblad is 12th in the championship with 4 points. Last 3 races: finished 14th in the Miami Grand Prix; finished 14th in the Japanese Grand Prix; finished 12th in the Chinese Grand Prix. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts).\nFranco Colapinto (Alpine F1 Team) starts 10th; Colapinto's best qualifying lap was 1.119 seconds slower than the pole lap. Colapinto is 11th in the championship with 7 points. Last 3 races: finished 7th in the Miami Grand Prix; finished 16th in the Japanese Grand Prix; finished 10th in the Chinese Grand Prix. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts).\nNico Hülkenberg (Audi) starts 11th; Hülkenberg's best qualifying lap was 1.308 seconds slower than the pole lap. Hülkenberg has no championship points yet. Last 3 races: retired in the Miami Grand Prix; finished 11th in the Japanese Grand Prix; finished 11th in the Chinese Grand Prix. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts).\nLiam Lawson (RB F1 Team) starts 12th; Lawson's best qualifying lap was 1.319 seconds slower than the pole lap. Lawson is 10th in the championship with 10 points. Last 3 races: retired in the Miami Grand Prix; finished 9th in the Japanese Grand Prix; finished 7th in the Chinese Grand Prix. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nGabriel Bortoleto (Audi) starts 13th; Bortoleto's best qualifying lap was 1.493 seconds slower than the pole lap. Bortoleto is 15th in the championship with 2 points. Last 3 races: finished 12th in the Miami Grand Prix; finished 13th in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts).\nPierre Gasly (Alpine F1 Team) starts 14th; Gasly's best qualifying lap was 1.609 seconds slower than the pole lap. Gasly is 9th in the championship with 16 points. Last 3 races: retired in the Miami Grand Prix; finished 7th in the Japanese Grand Prix; finished 6th in the Chinese Grand Prix. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts).\nCarlos Sainz (Williams) starts 15th; Sainz's best qualifying lap was 1.695 seconds slower than the pole lap. Sainz is 14th in the championship with 4 points. Last 3 races: finished 9th in the Miami Grand Prix; finished 15th in the Japanese Grand Prix; finished 9th in the Chinese Grand Prix. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts).\nOliver Bearman (Haas F1 Team) starts 16th; Bearman's best qualifying lap was 1.838 seconds slower than the pole lap. Bearman is 8th in the championship with 17 points. Last 3 races: finished 11th in the Miami Grand Prix; retired in the Japanese Grand Prix; finished 5th in the Chinese Grand Prix. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts).\nEsteban Ocon (Haas F1 Team) starts 17th; Ocon's best qualifying lap was 2.267 seconds slower than the pole lap. Ocon is 16th in the championship with 1 points. Last 3 races: finished 13th in the Miami Grand Prix; finished 10th in the Japanese Grand Prix; finished 14th in the Chinese Grand Prix. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts).\nAlexander Albon (Williams) starts 18th; Albon's best qualifying lap was 2.273 seconds slower than the pole lap. Albon is 17th in the championship with 1 points. Last 3 races: finished 10th in the Miami Grand Prix; finished 20th in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts).\nFernando Alonso (Aston Martin) starts 19th; Alonso's best qualifying lap was 2.618 seconds slower than the pole lap. Alonso has no championship points yet. Last 3 races: finished 15th in the Miami Grand Prix; finished 18th in the Japanese Grand Prix; retired in the Chinese Grand Prix. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts).\nSergio Pérez (Cadillac F1 Team) starts 20th; Pérez's best qualifying lap was 2.851 seconds slower than the pole lap. Pérez has no championship points yet. Last 3 races: finished 16th in the Miami Grand Prix; finished 17th in the Japanese Grand Prix; finished 15th in the Chinese Grand Prix. From 20th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (170 starts).\nLance Stroll (Aston Martin) starts 21st; Stroll's best qualifying lap was 3.617 seconds slower than the pole lap. Stroll has no championship points yet. Last 3 races: finished 17th in the Miami Grand Prix; retired in the Japanese Grand Prix; retired in the Chinese Grand Prix. From 21st on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (35 starts).\nValtteri Bottas (Cadillac F1 Team) starts 22nd; Bottas's best qualifying lap was 3.694 seconds slower than the pole lap. Bottas has no championship points yet. Last 3 races: finished 18th in the Miami Grand Prix; finished 19th in the Japanese Grand Prix; finished 13th in the Chinese Grand Prix. From 22nd on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (22 starts).",
+    "questions": {
+      "podium_RUS": {
+        "type": "noul",
+        "instructions": "Will George Russell (Mercedes) finish this race in the top three?"
+      },
+      "podium_ANT": {
+        "type": "noul",
+        "instructions": "Will Andrea Kimi Antonelli (Mercedes) finish this race in the top three?"
+      },
+      "podium_NOR": {
+        "type": "noul",
+        "instructions": "Will Lando Norris (McLaren) finish this race in the top three?"
+      },
+      "podium_PIA": {
+        "type": "noul",
+        "instructions": "Will Oscar Piastri (McLaren) finish this race in the top three?"
+      },
+      "podium_HAM": {
+        "type": "noul",
+        "instructions": "Will Lewis Hamilton (Ferrari) finish this race in the top three?"
+      },
+      "podium_VER": {
+        "type": "noul",
+        "instructions": "Will Max Verstappen (Red Bull) finish this race in the top three?"
+      },
+      "podium_HAD": {
+        "type": "noul",
+        "instructions": "Will Isack Hadjar (Red Bull) finish this race in the top three?"
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "instructions": "Will Charles Leclerc (Ferrari) finish this race in the top three?"
+      },
+      "podium_LIN": {
+        "type": "noul",
+        "instructions": "Will Arvid Lindblad (RB F1 Team) finish this race in the top three?"
+      },
+      "podium_COL": {
+        "type": "noul",
+        "instructions": "Will Franco Colapinto (Alpine F1 Team) finish this race in the top three?"
+      },
+      "podium_HUL": {
+        "type": "noul",
+        "instructions": "Will Nico Hülkenberg (Audi) finish this race in the top three?"
+      },
+      "podium_LAW": {
+        "type": "noul",
+        "instructions": "Will Liam Lawson (RB F1 Team) finish this race in the top three?"
+      },
+      "podium_BOR": {
+        "type": "noul",
+        "instructions": "Will Gabriel Bortoleto (Audi) finish this race in the top three?"
+      },
+      "podium_GAS": {
+        "type": "noul",
+        "instructions": "Will Pierre Gasly (Alpine F1 Team) finish this race in the top three?"
+      },
+      "podium_SAI": {
+        "type": "noul",
+        "instructions": "Will Carlos Sainz (Williams) finish this race in the top three?"
+      },
+      "podium_BEA": {
+        "type": "noul",
+        "instructions": "Will Oliver Bearman (Haas F1 Team) finish this race in the top three?"
+      },
+      "podium_OCO": {
+        "type": "noul",
+        "instructions": "Will Esteban Ocon (Haas F1 Team) finish this race in the top three?"
+      },
+      "podium_ALB": {
+        "type": "noul",
+        "instructions": "Will Alexander Albon (Williams) finish this race in the top three?"
+      },
+      "podium_ALO": {
+        "type": "noul",
+        "instructions": "Will Fernando Alonso (Aston Martin) finish this race in the top three?"
+      },
+      "podium_PER": {
+        "type": "noul",
+        "instructions": "Will Sergio Pérez (Cadillac F1 Team) finish this race in the top three?"
+      },
+      "podium_STR": {
+        "type": "noul",
+        "instructions": "Will Lance Stroll (Aston Martin) finish this race in the top three?"
+      },
+      "podium_BOT": {
+        "type": "noul",
+        "instructions": "Will Valtteri Bottas (Cadillac F1 Team) finish this race in the top three?"
+      },
+      "winner": {
+        "type": "choice",
+        "instructions": "Who will win this race?",
+        "criteria": {
+          "RUS": "George Russell (Mercedes) wins the race.",
+          "ANT": "Andrea Kimi Antonelli (Mercedes) wins the race.",
+          "NOR": "Lando Norris (McLaren) wins the race.",
+          "PIA": "Oscar Piastri (McLaren) wins the race.",
+          "HAM": "Lewis Hamilton (Ferrari) wins the race.",
+          "VER": "Max Verstappen (Red Bull) wins the race.",
+          "HAD": "Isack Hadjar (Red Bull) wins the race.",
+          "LEC": "Charles Leclerc (Ferrari) wins the race.",
+          "LIN": "Arvid Lindblad (RB F1 Team) wins the race.",
+          "COL": "Franco Colapinto (Alpine F1 Team) wins the race.",
+          "HUL": "Nico Hülkenberg (Audi) wins the race.",
+          "LAW": "Liam Lawson (RB F1 Team) wins the race.",
+          "BOR": "Gabriel Bortoleto (Audi) wins the race.",
+          "GAS": "Pierre Gasly (Alpine F1 Team) wins the race.",
+          "SAI": "Carlos Sainz (Williams) wins the race.",
+          "BEA": "Oliver Bearman (Haas F1 Team) wins the race.",
+          "OCO": "Esteban Ocon (Haas F1 Team) wins the race.",
+          "ALB": "Alexander Albon (Williams) wins the race.",
+          "ALO": "Fernando Alonso (Aston Martin) wins the race.",
+          "PER": "Sergio Pérez (Cadillac F1 Team) wins the race.",
+          "STR": "Lance Stroll (Aston Martin) wins the race.",
+          "BOT": "Valtteri Bottas (Cadillac F1 Team) wins the race."
+        }
+      },
+      "chaos": {
+        "type": "score",
+        "instructions": "How chaotic will this race be? Rate it on the five-level rubric. The actual level will be the highest level whose condition the race meets.",
+        "criteria": [
+          "0: calm - no safety car or virtual safety car, at most 2 retirements, and the winner led most laps.",
+          "1: lively - a virtual safety car, or 3 to 4 retirements, or 3 or more lead changes.",
+          "2: eventful - one full safety car, or a first-lap incident that brought out a yellow flag or a virtual safety car.",
+          "3: chaotic - two or more full safety cars, or 5 or more retirements.",
+          "4: bedlam - a red flag, or wet running, or a podium with none of the top six starters."
+        ]
+      }
+    }
+  },
+  "request_hash": "528ed18e75d2379d27782f5f8160132403ffbd2cb1b4efa33c504012e58f85a2",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "podium_RUS": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "podium_ANT": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "podium_NOR": {
+        "type": "noul",
+        "noul": 0.45
+      },
+      "podium_PIA": {
+        "type": "noul",
+        "noul": 0.29
+      },
+      "podium_HAM": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "podium_VER": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "podium_HAD": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "podium_LIN": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_COL": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "podium_HUL": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_LAW": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_BOR": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_GAS": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_SAI": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_BEA": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_OCO": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_ALB": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_ALO": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_PER": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_STR": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_BOT": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "winner": {
+        "type": "choice",
+        "choice": "RUS",
+        "probabilities": {
+          "HUL": 0,
+          "LIN": 0,
+          "BOR": 0,
+          "GAS": 0,
+          "BEA": 0,
+          "ALO": 0,
+          "RUS": 0.6,
+          "PER": 0,
+          "LEC": 0,
+          "HAM": 0,
+          "BOT": 0,
+          "LAW": 0,
+          "STR": 0,
+          "ANT": 0.4,
+          "VER": 0,
+          "ALB": 0,
+          "NOR": 0,
+          "HAD": 0,
+          "OCO": 0,
+          "PIA": 0,
+          "SAI": 0,
+          "COL": 0
+        },
+        "confidence": 0.58
+      },
+      "chaos": {
+        "type": "score",
+        "score": 2.72,
+        "legend": {
+          "0": "0: calm - no safety car or virtual safety car, at most 2 retirements, and the winner led most laps.",
+          "1": "1: lively - a virtual safety car, or 3 to 4 retirements, or 3 or more lead changes.",
+          "2": "2: eventful - one full safety car, or a first-lap incident that brought out a yellow flag or a virtual safety car.",
+          "3": "3: chaotic - two or more full safety cars, or 5 or more retirements.",
+          "4": "4: bedlam - a red flag, or wet running, or a podium with none of the top six starters."
+        },
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.07,
+          "2": 0.02,
+          "3": 0.04,
+          "4": 0.63
+        },
+        "confidence": 0
+      }
+    },
+    "usage": {
+      "input_tokens": 4702,
+      "output_tokens": 611,
+      "cost": 0.000197484
+    },
+    "id": "gen-dec-1790585895-NDZjucQOvM50jA95aSPk",
+    "provider": "TypeSafe"
+  },
+  "jev": {
+    "url": "https://openrouter.ai/api/alpha/decisions",
+    "model_requested": "typesafe/jev-1.13",
+    "model_id": "typesafe/jev-1.13-20260917",
+    "provider": "TypeSafe",
+    "generation_id": "gen-dec-1790585895-NDZjucQOvM50jA95aSPk",
+    "cost_usd": 0.000197484,
+    "input_tokens": 4702,
+    "output_tokens": 611,
+    "latency_ms": 556,
+    "requested_at": "2026-09-28T08:58:15.344571Z"
+  },
+  "calls": {
+    "podium": {
+      "RUS": 0.75,
+      "ANT": 0.73,
+      "NOR": 0.45,
+      "PIA": 0.29,
+      "HAM": 0.11,
+      "VER": 0.09,
+      "HAD": 0.04,
+      "LEC": 0.07,
+      "LIN": 0.03,
+      "COL": 0.05,
+      "HUL": 0.02,
+      "LAW": 0.02,
+      "BOR": 0.02,
+      "GAS": 0.03,
+      "SAI": 0.02,
+      "BEA": 0.02,
+      "OCO": 0.02,
+      "ALB": 0.02,
+      "ALO": 0.02,
+      "PER": 0.02,
+      "STR": 0.02,
+      "BOT": 0.02
+    },
+    "winner": {
+      "choice": "RUS",
+      "confidence": 0.58,
+      "probabilities": {
+        "RUS": 0.6,
+        "ANT": 0.4,
+        "NOR": 0.0,
+        "PIA": 0.0,
+        "HAM": 0.0,
+        "VER": 0.0,
+        "HAD": 0.0,
+        "LEC": 0.0,
+        "LIN": 0.0,
+        "COL": 0.0,
+        "HUL": 0.0,
+        "LAW": 0.0,
+        "BOR": 0.0,
+        "GAS": 0.0,
+        "SAI": 0.0,
+        "BEA": 0.0,
+        "OCO": 0.0,
+        "ALB": 0.0,
+        "ALO": 0.0,
+        "PER": 0.0,
+        "STR": 0.0,
+        "BOT": 0.0
+      }
+    },
+    "chaos": {
+      "score": 2.72,
+      "confidence": 0.0
+    }
+  },
+  "error": null,
+  "extra": {
+    "snapshot": {
+      "season": 2026,
+      "round": 5,
+      "race_name": "Canadian Grand Prix",
+      "built_at": "2026-09-28T08:58:11.331007Z",
+      "grid_provisional": true,
+      "drivers": [
+        {
+          "code": "RUS",
+          "name": "George Russell",
+          "constructor": "Mercedes",
+          "grid": 1,
+          "line": "George Russell (Mercedes) starts 1st, on pole. Russell is 2nd in the championship with 80 points, with 1 win. Last 3 races: finished 4th in the Miami Grand Prix; finished 4th in the Japanese Grand Prix; finished 2nd in the Chinese Grand Prix. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts)."
+        },
+        {
+          "code": "ANT",
+          "name": "Andrea Kimi Antonelli",
+          "constructor": "Mercedes",
+          "grid": 2,
+          "line": "Andrea Kimi Antonelli (Mercedes) starts 2nd; Antonelli's best qualifying lap was 0.068 seconds slower than the pole lap. Antonelli is 1st in the championship with 100 points, with 3 wins. Last 3 races: finished 1st in the Miami Grand Prix; finished 1st in the Japanese Grand Prix; finished 1st in the Chinese Grand Prix. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts)."
+        },
+        {
+          "code": "NOR",
+          "name": "Lando Norris",
+          "constructor": "McLaren",
+          "grid": 3,
+          "line": "Lando Norris (McLaren) starts 3rd; Norris's best qualifying lap was 0.151 seconds slower than the pole lap. Norris is 4th in the championship with 51 points. Last 3 races: finished 2nd in the Miami Grand Prix; finished 5th in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts)."
+        },
+        {
+          "code": "PIA",
+          "name": "Oscar Piastri",
+          "constructor": "McLaren",
+          "grid": 4,
+          "line": "Oscar Piastri (McLaren) starts 4th; Piastri's best qualifying lap was 0.203 seconds slower than the pole lap. Piastri is 6th in the championship with 43 points. Last 3 races: finished 3rd in the Miami Grand Prix; finished 2nd in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts)."
+        },
+        {
+          "code": "HAM",
+          "name": "Lewis Hamilton",
+          "constructor": "Ferrari",
+          "grid": 5,
+          "line": "Lewis Hamilton (Ferrari) starts 5th; Hamilton's best qualifying lap was 0.290 seconds slower than the pole lap. Hamilton is 5th in the championship with 51 points. Last 3 races: finished 6th in the Miami Grand Prix; finished 6th in the Japanese Grand Prix; finished 3rd in the Chinese Grand Prix. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts)."
+        },
+        {
+          "code": "VER",
+          "name": "Max Verstappen",
+          "constructor": "Red Bull",
+          "grid": 6,
+          "line": "Max Verstappen (Red Bull) starts 6th; Verstappen's best qualifying lap was 0.329 seconds slower than the pole lap. Verstappen is 7th in the championship with 26 points. Last 3 races: finished 5th in the Miami Grand Prix; finished 8th in the Japanese Grand Prix; retired in the Chinese Grand Prix. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts)."
+        },
+        {
+          "code": "HAD",
+          "name": "Isack Hadjar",
+          "constructor": "Red Bull",
+          "grid": 7,
+          "line": "Isack Hadjar (Red Bull) starts 7th; Hadjar's best qualifying lap was 0.357 seconds slower than the pole lap. Hadjar is 13th in the championship with 4 points. Last 3 races: retired in the Miami Grand Prix; finished 12th in the Japanese Grand Prix; finished 8th in the Chinese Grand Prix. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "LEC",
+          "name": "Charles Leclerc",
+          "constructor": "Ferrari",
+          "grid": 8,
+          "line": "Charles Leclerc (Ferrari) starts 8th; Leclerc's best qualifying lap was 0.398 seconds slower than the pole lap. Leclerc is 3rd in the championship with 59 points. Last 3 races: finished 8th in the Miami Grand Prix; finished 3rd in the Japanese Grand Prix; finished 4th in the Chinese Grand Prix. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts)."
+        },
+        {
+          "code": "LIN",
+          "name": "Arvid Lindblad",
+          "constructor": "RB F1 Team",
+          "grid": 9,
+          "line": "Arvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 0.702 seconds slower than the pole lap. Lindblad is 12th in the championship with 4 points. Last 3 races: finished 14th in the Miami Grand Prix; finished 14th in the Japanese Grand Prix; finished 12th in the Chinese Grand Prix. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts)."
+        },
+        {
+          "code": "COL",
+          "name": "Franco Colapinto",
+          "constructor": "Alpine F1 Team",
+          "grid": 10,
+          "line": "Franco Colapinto (Alpine F1 Team) starts 10th; Colapinto's best qualifying lap was 1.119 seconds slower than the pole lap. Colapinto is 11th in the championship with 7 points. Last 3 races: finished 7th in the Miami Grand Prix; finished 16th in the Japanese Grand Prix; finished 10th in the Chinese Grand Prix. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts)."
+        },
+        {
+          "code": "HUL",
+          "name": "Nico Hülkenberg",
+          "constructor": "Audi",
+          "grid": 11,
+          "line": "Nico Hülkenberg (Audi) starts 11th; Hülkenberg's best qualifying lap was 1.308 seconds slower than the pole lap. Hülkenberg has no championship points yet. Last 3 races: retired in the Miami Grand Prix; finished 11th in the Japanese Grand Prix; finished 11th in the Chinese Grand Prix. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "LAW",
+          "name": "Liam Lawson",
+          "constructor": "RB F1 Team",
+          "grid": 12,
+          "line": "Liam Lawson (RB F1 Team) starts 12th; Lawson's best qualifying lap was 1.319 seconds slower than the pole lap. Lawson is 10th in the championship with 10 points. Last 3 races: retired in the Miami Grand Prix; finished 9th in the Japanese Grand Prix; finished 7th in the Chinese Grand Prix. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "BOR",
+          "name": "Gabriel Bortoleto",
+          "constructor": "Audi",
+          "grid": 13,
+          "line": "Gabriel Bortoleto (Audi) starts 13th; Bortoleto's best qualifying lap was 1.493 seconds slower than the pole lap. Bortoleto is 15th in the championship with 2 points. Last 3 races: finished 12th in the Miami Grand Prix; finished 13th in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts)."
+        },
+        {
+          "code": "GAS",
+          "name": "Pierre Gasly",
+          "constructor": "Alpine F1 Team",
+          "grid": 14,
+          "line": "Pierre Gasly (Alpine F1 Team) starts 14th; Gasly's best qualifying lap was 1.609 seconds slower than the pole lap. Gasly is 9th in the championship with 16 points. Last 3 races: retired in the Miami Grand Prix; finished 7th in the Japanese Grand Prix; finished 6th in the Chinese Grand Prix. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts)."
+        },
+        {
+          "code": "SAI",
+          "name": "Carlos Sainz",
+          "constructor": "Williams",
+          "grid": 15,
+          "line": "Carlos Sainz (Williams) starts 15th; Sainz's best qualifying lap was 1.695 seconds slower than the pole lap. Sainz is 14th in the championship with 4 points. Last 3 races: finished 9th in the Miami Grand Prix; finished 15th in the Japanese Grand Prix; finished 9th in the Chinese Grand Prix. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts)."
+        },
+        {
+          "code": "BEA",
+          "name": "Oliver Bearman",
+          "constructor": "Haas F1 Team",
+          "grid": 16,
+          "line": "Oliver Bearman (Haas F1 Team) starts 16th; Bearman's best qualifying lap was 1.838 seconds slower than the pole lap. Bearman is 8th in the championship with 17 points. Last 3 races: finished 11th in the Miami Grand Prix; retired in the Japanese Grand Prix; finished 5th in the Chinese Grand Prix. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts)."
+        },
+        {
+          "code": "OCO",
+          "name": "Esteban Ocon",
+          "constructor": "Haas F1 Team",
+          "grid": 17,
+          "line": "Esteban Ocon (Haas F1 Team) starts 17th; Ocon's best qualifying lap was 2.267 seconds slower than the pole lap. Ocon is 16th in the championship with 1 points. Last 3 races: finished 13th in the Miami Grand Prix; finished 10th in the Japanese Grand Prix; finished 14th in the Chinese Grand Prix. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts)."
+        },
+        {
+          "code": "ALB",
+          "name": "Alexander Albon",
+          "constructor": "Williams",
+          "grid": 18,
+          "line": "Alexander Albon (Williams) starts 18th; Albon's best qualifying lap was 2.273 seconds slower than the pole lap. Albon is 17th in the championship with 1 points. Last 3 races: finished 10th in the Miami Grand Prix; finished 20th in the Japanese Grand Prix; withdrew in the Chinese Grand Prix. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts)."
+        },
+        {
+          "code": "ALO",
+          "name": "Fernando Alonso",
+          "constructor": "Aston Martin",
+          "grid": 19,
+          "line": "Fernando Alonso (Aston Martin) starts 19th; Alonso's best qualifying lap was 2.618 seconds slower than the pole lap. Alonso has no championship points yet. Last 3 races: finished 15th in the Miami Grand Prix; finished 18th in the Japanese Grand Prix; retired in the Chinese Grand Prix. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts)."
+        },
+        {
+          "code": "PER",
+          "name": "Sergio Pérez",
+          "constructor": "Cadillac F1 Team",
+          "grid": 20,
+          "line": "Sergio Pérez (Cadillac F1 Team) starts 20th; Pérez's best qualifying lap was 2.851 seconds slower than the pole lap. Pérez has no championship points yet. Last 3 races: finished 16th in the Miami Grand Prix; finished 17th in the Japanese Grand Prix; finished 15th in the Chinese Grand Prix. From 20th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (170 starts)."
+        },
+        {
+          "code": "STR",
+          "name": "Lance Stroll",
+          "constructor": "Aston Martin",
+          "grid": 21,
+          "line": "Lance Stroll (Aston Martin) starts 21st; Stroll's best qualifying lap was 3.617 seconds slower than the pole lap. Stroll has no championship points yet. Last 3 races: finished 17th in the Miami Grand Prix; retired in the Japanese Grand Prix; retired in the Chinese Grand Prix. From 21st on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (35 starts)."
+        },
+        {
+          "code": "BOT",
+          "name": "Valtteri Bottas",
+          "constructor": "Cadillac F1 Team",
+          "grid": 22,
+          "line": "Valtteri Bottas (Cadillac F1 Team) starts 22nd; Bottas's best qualifying lap was 3.694 seconds slower than the pole lap. Bottas has no championship points yet. Last 3 races: finished 18th in the Miami Grand Prix; finished 19th in the Japanese Grand Prix; finished 13th in the Chinese Grand Prix. From 22nd on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (22 starts)."
+        }
+      ],
+      "race_lines": [
+        "Race: the Canadian Grand Prix, round 5 of 23 in the 2026 season, at Circuit Gilles Villeneuve (Montreal, Canada).",
+        "The race starts at 20:00 UTC on 24 May 2026, with 22 drivers on the grid.",
+        "The grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.",
+        "The 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.",
+        "This circuit has held 44 championship races, most recently in 2025.",
+        "This is a sprint weekend. Sprint result: 1st George Russell; 2nd Lando Norris; 3rd Andrea Kimi Antonelli; 4th Oscar Piastri; 5th Charles Leclerc; 6th Lewis Hamilton; 7th Max Verstappen; 8th Arvid Lindblad.",
+        "Rain fell during qualifying (air 21 C, track 31 C).",
+        "Constructors' championship after round 4: 1st Mercedes 180 points; 2nd Ferrari 110 points; 3rd McLaren 94 points; 4th Red Bull 30 points; 5th Alpine F1 Team 23 points."
+      ]
+    },
+    "notes": []
+  }
+}

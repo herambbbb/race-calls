@@ -21,6 +21,13 @@ Podium probabilities SHALL be scored as Jev returned them, and the scorecard SHA
 - **WHEN** a driver's win probability is higher than their podium probability
 - **THEN** the scorecard lists that driver as an inconsistency
 
+### Requirement: Podium pick
+Jev's podium pick SHALL be the three drivers with the highest podium probability, scored as how many of them finished in the top three, alongside the grid baseline's pick of the top three starters.
+
+#### Scenario: Podium pick scored
+- **WHEN** a race is scored
+- **THEN** the scorecard shows Jev's three podium picks, how many were right, and the same for the grid baseline
+
 ### Requirement: Baselines on the same races
 Every scored race SHALL also score a grid-position baseline (historical top-three and win rates by starting slot in the current era, from f1db) and a recent-form baseline, on the same drivers.
 

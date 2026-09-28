@@ -1,0 +1,53 @@
+# Hourly, every day: the calendar decides whether there is anything to do (design
+# Decision 6). After qualifying, predict once the data is in; one hour before the start,
+# give up and publish "no prediction". Each run exits in seconds when nothing is due.
+name: pre-race
+
+on:
+  schedule:
+    # Twice an hour: scheduled runs can start late under load, and the give-up window
+    # before the start is only one hour.
+    - cron: "17 * * * *"
+    - cron: "47 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: predictions
+  cancel-in-progress: false
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        working-directory: pipeline
+        run: uv sync --frozen
+
+      - name: Predict if due
+        working-directory: pipeline
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: uv run --frozen rc prerace
+
+      - name: Commit the prediction
+        run: |
+          git add predictions/
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Prediction: $(git diff --cached --name-only | xargs -n1 basename | tr '\n' ' ')"
+          git pull --rebase --quiet
+          git push
