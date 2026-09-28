@@ -10,11 +10,11 @@
 - [x] 2.2 Question set: 22 podium `noul`s, the winner `choice` over the grid, the chaos `score` with the rubric as criteria, in one request
 - [x] 2.3 `ui predict --season --round`: build the snapshot, call Jev once, save the record (request, response, model version, provider, cost, inputs, timestamp, request hash) to `predictions/`
 - [x] 2.4 Dry run on 2026 rounds 1 to 15 as labelled backtests to test the pipeline, and measure cost and latency
-- [ ] 2.5 Teammate head-to-head facts (qualifying and race, this season)
-- [ ] 2.6 Power unit supplier facts from f1db entrant data, with the supplier's season results
-- [ ] 2.7 Aero proxy facts from OpenF1 qualifying laps: speed-trap ranking and sector ranks
-- [ ] 2.8 Circuit trait tags and similar-track form this season
-- [ ] 2.9 Rerun the backtest with the richer snapshot and compare podium Brier before and after
+- [x] 2.5 Teammate head-to-head facts (qualifying and race, this season)
+- [x] 2.6 Power unit supplier facts from f1db entrant data, with the supplier's season results
+- [x] 2.7 Aero proxy facts from OpenF1 qualifying laps: speed-trap ranking and sector ranks
+- [x] 2.8 Circuit trait tags and similar-track form this season
+- [x] 2.9 Rerun the backtest with the richer snapshot and compare podium Brier before and after
 
 ## 3. Scoring
 

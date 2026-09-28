@@ -29,7 +29,8 @@ BEFORE = datetime(2026, 10, 3, 10, tzinfo=UTC)
 
 
 def client(max_attempts: int = 1) -> JevClient:
-    settings = Settings(_env_file=None, openrouter_api_key=SECRET)
+    # OpenRouter's response carries cost and a dated model; TypeSafe's is covered in test_cli.
+    settings = Settings(_env_file=None, openrouter_api_key=SECRET, jev_transport="openrouter")
     return JevClient(settings, http=httpx.Client(), sleep=lambda _: None, max_attempts=max_attempts)
 
 
@@ -199,7 +200,7 @@ class FakeData:
 def test_gather_asks_only_for_earlier_rounds():
     data = FakeData(QUALI)
     inputs = gather(data, CALENDAR, BAHRAIN, PRIORS, BEFORE)
-    assert inputs is not None and data.results_asked == [15, 14, 13]
+    assert inputs is not None and data.results_asked == list(range(15, 0, -1))
     assert [d.code for d in inputs.snapshot.drivers] == ["NOR", "VER", "PIA"]
 
 
@@ -214,3 +215,29 @@ def test_a_weather_failure_does_not_block_the_prediction():
     inputs = gather(FakeData(QUALI), CALENDAR, BAHRAIN, PRIORS, BEFORE, weather=broken)
     assert inputs is not None and "weather unavailable" in inputs.notes[0]
     assert "Weather during qualifying is not available." in inputs.snapshot.text
+
+
+def test_a_laps_failure_is_a_note_not_a_blocker():
+    from race_calls.predict import FactSources
+
+    def broken(_):
+        raise RuntimeError("401 live session")
+
+    facts = FactSources(engines={}, traits={"sepang": ("hot",)}, laps=broken)
+    inputs = gather(FakeData(QUALI), CALENDAR, BAHRAIN, PRIORS, BEFORE, facts=facts)
+    assert inputs is not None and any("qualifying laps unavailable" in n for n in inputs.notes)
+
+
+def test_a_leak_inside_a_fact_module_stops_the_prediction():
+    from race_calls.predict import FactSources
+    from race_calls.snapshot import LeakError
+
+    class LeakyData(FakeData):
+        def results(self, season, round):
+            # Pretend Jolpica answered an earlier round with this race's own result.
+            r = super().results(season, round)
+            return r.model_copy(update={"round": 16}) if r is not None else None
+
+    facts = FactSources(engines={}, traits={"sepang": ("hot",)})
+    with pytest.raises(LeakError):
+        gather(LeakyData(QUALI), CALENDAR, BAHRAIN, PRIORS, BEFORE, facts=facts)

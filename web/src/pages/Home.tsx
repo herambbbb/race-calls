@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 import { useDocumentTitle } from '../components/useDocumentTitle'
 import { formatDate } from '../data/format'
 import { byKind, RECORDS } from '../data/load'
-import type { LoadedRecord, PredictionRecord } from '../data/types'
+import type { LoadedRecord, SlimRecord } from '../data/types'
 
 export function Home({ records = RECORDS }: { records?: LoadedRecord[] }) {
   useDocumentTitle(null)
@@ -55,7 +55,7 @@ function SeasonSummary() {
   return null
 }
 
-function statusLabel(r: PredictionRecord): string {
+function statusLabel(r: SlimRecord): string {
   if (r.status === 'no_prediction') return 'No prediction'
   if (r.status === 'failed') return 'Failed'
   return r.late ? 'Late, not scored' : 'Called'

@@ -6,13 +6,17 @@ final. A live call made at or after the scheduled start is marked late and never
 """
 
 import json
-from collections.abc import Callable, Iterable, Sequence
+from collections.abc import Callable, Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from datetime import UTC, date, datetime, timedelta
 from enum import StrEnum
 from pathlib import Path
-from typing import Protocol
+from typing import Any, Protocol
 
+from race_calls.facts.engines import engine_facts
+from race_calls.facts.pace import pace_facts
+from race_calls.facts.teammates import teammate_facts
+from race_calls.facts.tracks import similar_track_facts
 from race_calls.jev import PATIENT, JevClient, JevError, RetryPolicy, request_hash
 from race_calls.models import (
     JevMeta,
@@ -30,9 +34,11 @@ from race_calls.models import (
     model_date,
 )
 from race_calls.questions import AnswerError, build_questions, parse_calls
-from race_calls.snapshot import RECENT_RACES, build_snapshot
+from race_calls.snapshot import build_snapshot
 
-# The version OpenRouter reported on 2026-09-26. Races on or before it are backtests.
+# The build date OpenRouter reported for jev-1.13 on 2026-09-26 (typesafe/jev-1.13-20260917).
+# TypeSafe's own API reports the version without a date (jev-1.13.0), so this is the
+# cutoff used for it too. Races on or before it are backtests.
 KNOWN_MODEL_DATE = date(2026, 9, 17)
 GIVE_UP_BEFORE_START = timedelta(hours=1)
 QUALIFYING_LENGTH = timedelta(hours=1)
@@ -196,6 +202,16 @@ class RaceData(Protocol):
 
 
 WeatherLookup = Callable[[Weekend], SessionWeather | None]
+LapsLookup = Callable[[Weekend], Sequence[Mapping[str, Any]]]
+
+
+@dataclass(frozen=True)
+class FactSources:
+    """Inputs for the richer facts (design Decision 2b)."""
+
+    engines: Mapping[str, str]  # Jolpica constructor_id -> power unit maker
+    traits: Mapping[str, Sequence[str]]  # Jolpica circuit_id -> circuit traits
+    laps: LapsLookup | None = None  # this weekend's qualifying laps from OpenF1
 
 
 @dataclass(frozen=True)
@@ -206,6 +222,40 @@ class Inputs:
     notes: tuple[str, ...]
 
 
+def _fact_sentences(
+    data: RaceData,
+    calendar: Sequence[Weekend],
+    weekend: Weekend,
+    qualifying: Sequence[QualifyingEntry],
+    results_by_round: Mapping[int, RaceResult],
+    facts: FactSources,
+    notes: list[str],
+) -> tuple[dict[str, list[str]], list[str]]:
+    """Per-driver sentences in a fixed order: teammate, power unit, pace, similar tracks."""
+    season, rnd = weekend.season, weekend.round
+    qualifying_by_round = {r: q for r in range(1, rnd) if (q := data.qualifying(season, r))}
+    per_driver: dict[str, list[str]] = {}
+    race_lines: list[str] = []
+
+    def add(lines: Sequence[str], sentences: Mapping[str, str]) -> None:
+        race_lines.extend(lines)
+        for driver_id, sentence in sentences.items():
+            per_driver.setdefault(driver_id, []).append(sentence)
+
+    add((), teammate_facts(season, rnd, qualifying, qualifying_by_round, results_by_round))
+    add(*engine_facts(season, rnd, qualifying, results_by_round, facts.engines))
+    if facts.laps is not None:
+        try:
+            laps = facts.laps(weekend)
+        except Exception as error:  # pace is optional; a lookup failure must not block
+            notes.append(f"qualifying laps unavailable: {type(error).__name__}: {error}")
+            laps = []
+        if laps:
+            add(*pace_facts(laps, qualifying))
+    add(*similar_track_facts(weekend, calendar, qualifying, results_by_round, facts.traits))
+    return per_driver, race_lines
+
+
 def gather(
     data: RaceData,
     calendar: Sequence[Weekend],
@@ -213,16 +263,17 @@ def gather(
     priors: Priors,
     built_at: datetime,
     weather: WeatherLookup | None = None,
+    facts: FactSources | None = None,
 ) -> Inputs | None:
     """Everything known after qualifying, or None if qualifying is not published yet."""
     qualifying = data.qualifying(weekend.season, weekend.round)
     if not qualifying:
         return None
-    previous = [
-        r
-        for rnd in range(weekend.round - 1, max(0, weekend.round - 1 - RECENT_RACES), -1)
+    results_by_round = {
+        rnd: r
+        for rnd in range(weekend.round - 1, 0, -1)
         if (r := data.results(weekend.season, rnd)) is not None
-    ]
+    }
     standings = data.standings(weekend.season, weekend.round - 1)
     sprint = data.sprint(weekend.season, weekend.round) if weekend.is_sprint else None
     notes: list[str] = []
@@ -232,16 +283,24 @@ def gather(
             session_weather = weather(weekend)
         except Exception as error:  # weather is optional; a lookup failure must not block
             notes.append(f"qualifying weather unavailable: {type(error).__name__}: {error}")
+    driver_extras: dict[str, list[str]] = {}
+    race_extras: list[str] = []
+    if facts is not None:
+        driver_extras, race_extras = _fact_sentences(
+            data, calendar, weekend, qualifying, results_by_round, facts, notes
+        )
     snapshot = build_snapshot(
         weekend=weekend,
         calendar=calendar,
         qualifying=qualifying,
         standings=standings,
-        previous=previous,
+        previous=list(results_by_round.values()),
         priors=priors,
         built_at=built_at,
         sprint=sprint,
         qualifying_weather=session_weather,
+        driver_extras=driver_extras,
+        race_extras=race_extras,
     )
     return Inputs(weekend, qualifying, snapshot, tuple(notes))
 

@@ -68,6 +68,7 @@ The existing `web/` app gets two routes: `/` (the season) and `/race/:round`. Th
 - [A grid penalty lands after the prediction] → the snapshot records whether the grid was provisional; the page shows it.
 - [Jev memorised past results] → live-only leaderboard; backtests labelled.
 - [OpenRouter changes the alpha endpoint] → the transport is one setting; the gateway transport remains.
+- [Transport, 2026-09-28] Jev is now called through TypeSafe's own API (`api.typesafe.ai/v1/systemone`, model `jev-1.13.0`) with the `TYPESAFE_API_KEY` secret; OpenRouter stays a one-setting fallback. TypeSafe reports tokens but no cost and no build date, so records carry `cost_usd: null` and the contamination cutoff (17 September 2026) comes from the dated version OpenRouter reported for the same release.
 - [Eight races is a tiny sample] → the site states the count everywhere and shows intervals, not just point scores; the tracker continues into 2027.
 
 ## Open Questions

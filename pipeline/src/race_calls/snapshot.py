@@ -6,7 +6,7 @@ no parameter for the race's results, and it rejects results or standings from th
 or later.
 """
 
-from collections.abc import Sequence
+from collections.abc import Mapping, Sequence
 from datetime import datetime
 
 from race_calls.models import (
@@ -153,7 +153,14 @@ def build_snapshot(
     built_at: datetime,
     sprint: RaceResult | None = None,
     qualifying_weather: SessionWeather | None = None,
+    driver_extras: Mapping[str, Sequence[str]] | None = None,
+    race_extras: Sequence[str] = (),
 ) -> Snapshot:
+    """`previous` may hold every earlier round; the lines use the last three.
+
+    driver_extras (driver_id -> sentences) and race_extras come from the fact modules in
+    race_calls.facts, which check their own inputs for leaks.
+    """
     if not qualifying:
         raise ValueError("no qualifying results: nothing to predict from")
     _check_inputs(weekend, standings, previous, sprint, priors)
@@ -172,8 +179,13 @@ def build_snapshot(
             name=entry.driver.name,
             constructor=entry.constructor.name,
             grid=grid,
-            line=_driver_line(
-                entry, grid, pole_lap, standings, recent, priors.slot(grid), priors.seasons
+            line=" ".join(
+                [
+                    _driver_line(
+                        entry, grid, pole_lap, standings, recent, priors.slot(grid), priors.seasons
+                    ),
+                    *(driver_extras or {}).get(entry.driver.driver_id, ()),
+                ]
             ),
         )
         for grid, entry in enumerate(order, start=1)
@@ -186,10 +198,11 @@ def build_snapshot(
         built_at=built_at,
         grid_provisional=True,
         drivers=drivers,
-        race_lines=tuple(
-            _race_lines(
+        race_lines=(
+            *_race_lines(
                 weekend, calendar, standings, priors, sprint, qualifying_weather, len(order)
-            )
+            ),
+            *race_extras,
         ),
     )
 

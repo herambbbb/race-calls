@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "reviewed": "2026-09-28",
+  "note": "Circuit traits are this project's own judgement, not data from any source. Only well-established traits are listed (1 to 3 per circuit); when unsure, a trait is left off. Keyed by Jolpica circuit id.",
+  "circuits": {
+    "albert_park": {
+      "traits": ["street"],
+      "reason": "Temporary circuit on public park roads around Albert Park lake."
+    },
+    "americas": {
+      "traits": ["high_speed_corners"],
+      "reason": "Permanent circuit whose first sector is a run of fast esses."
+    },
+    "baku": {
+      "traits": ["street", "long_straights"],
+      "reason": "City street circuit with a flat-out run of about 2 km to the finish line."
+    },
+    "catalunya": {
+      "traits": ["high_speed_corners"],
+      "reason": "Long fast corners (turns 3 and 9) make it a classic aero benchmark."
+    },
+    "hungaroring": {
+      "traits": ["high_downforce", "hot"],
+      "reason": "Slow, twisty and hard to pass on; usually run in midsummer heat."
+    },
+    "interlagos": {
+      "traits": ["high_altitude"],
+      "reason": "About 800 m above sea level, which lowers downforce and cooling."
+    },
+    "jeddah": {
+      "traits": ["street", "long_straights", "high_speed_corners"],
+      "reason": "Fast street circuit of flat-out sweeps and long straights."
+    },
+    "losail": {
+      "traits": ["high_speed_corners", "hot"],
+      "reason": "Flowing medium and high-speed corners; hot and humid in Qatar."
+    },
+    "madring": {
+      "traits": ["street"],
+      "reason": "New semi-street circuit around the IFEMA area of Madrid."
+    },
+    "marina_bay": {
+      "traits": ["street", "high_downforce", "hot"],
+      "reason": "Slow street circuit with many corners, in hot and very humid conditions."
+    },
+    "miami": {
+      "traits": ["street", "hot"],
+      "reason": "Temporary circuit around the Hard Rock Stadium; hot and humid in Miami."
+    },
+    "monaco": {
+      "traits": ["street", "high_downforce"],
+      "reason": "Tight street circuit run with maximum downforce."
+    },
+    "monza": {
+      "traits": ["long_straights"],
+      "reason": "The lowest-drag, most power-sensitive circuit on the calendar."
+    },
+    "red_bull_ring": {
+      "traits": ["long_straights"],
+      "reason": "Short lap dominated by three uphill and downhill straights."
+    },
+    "rodriguez": {
+      "traits": ["high_altitude", "long_straights"],
+      "reason": "About 2,200 m above sea level, with a very long main straight."
+    },
+    "sepang": {
+      "traits": ["high_speed_corners", "hot"],
+      "reason": "Fast sweeping corners; hot and humid in Malaysia."
+    },
+    "shanghai": {
+      "traits": ["long_straights"],
+      "reason": "Back straight of over 1 km, one of the longest on the calendar."
+    },
+    "silverstone": {
+      "traits": ["high_speed_corners"],
+      "reason": "Fast sweeps such as Copse and Maggotts-Becketts."
+    },
+    "spa": {
+      "traits": ["long_straights", "high_speed_corners"],
+      "reason": "Long flat-out stretch through Eau Rouge to Les Combes, plus fast corners like Pouhon."
+    },
+    "suzuka": {
+      "traits": ["high_speed_corners"],
+      "reason": "Fast first-sector esses and 130R."
+    },
+    "vegas": {
+      "traits": ["street", "long_straights"],
+      "reason": "Street circuit with the long Strip straight, run with low drag."
+    },
+    "villeneuve": {
+      "traits": ["long_straights"],
+      "reason": "Stop-go layout of straights and chicanes, run with low downforce."
+    },
+    "yas_marina": {
+      "traits": ["long_straights"],
+      "reason": "Long back straight of over 1 km after the hairpin."
+    },
+    "zandvoort": {
+      "traits": ["high_downforce"],
+      "reason": "Narrow, twisty and banked, run with high downforce; overtaking is hard."
+    }
+  }
+}

@@ -33,7 +33,9 @@ TYPESAFE_URL = "https://api.typesafe.ai/v1/systemone"
 OPENROUTER_URL = "https://openrouter.ai/api/alpha/decisions"
 OPENROUTER_MODEL = "typesafe/jev-1.13"
 TYPESAFE_MODEL = "jev-1.13.0"
-RETRYABLE_STATUS = frozenset({429, 500, 502, 503, 504, 529})
+# 520 to 524 are Cloudflare's transient origin errors; OpenRouter returned a 520 once
+# during a backtest (2026-09-28), and it cleared on the next request.
+RETRYABLE_STATUS = frozenset({429, 500, 502, 503, 504, 520, 521, 522, 523, 524, 529})
 GATEWAY_PROVIDER_ORDER = ("typesafe-ai", "digitalocean")
 
 

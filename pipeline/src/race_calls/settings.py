@@ -24,7 +24,9 @@ class Settings(BaseSettings):
     ai_gateway_api_key: SecretStr | None = None
     typesafe_api_key: SecretStr | None = None
     openrouter_api_key: SecretStr | None = None
-    jev_transport: JevTransport = JevTransport.OPENROUTER
+    # TypeSafe's own API (key access granted 2026-09-28); OpenRouter and the gateway remain
+    # as fallbacks selected with JEV_TRANSPORT.
+    jev_transport: JevTransport = JevTransport.TYPESAFE
 
     # data_dir is a local, gitignored cache of API responses; the other two are committed.
     data_dir: Path = PROJECT_ROOT / "data"

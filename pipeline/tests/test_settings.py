@@ -1,10 +1,10 @@
 from race_calls.settings import JevTransport, Settings
 
 
-def test_openrouter_is_the_default_transport(monkeypatch):
+def test_typesafe_is_the_default_transport(monkeypatch):
     monkeypatch.delenv("JEV_TRANSPORT", raising=False)
     settings = Settings(_env_file=None)
-    assert settings.jev_transport is JevTransport.OPENROUTER
+    assert settings.jev_transport is JevTransport.TYPESAFE
 
 
 def test_key_follows_the_chosen_transport():

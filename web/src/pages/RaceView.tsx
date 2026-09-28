@@ -5,9 +5,9 @@ import { Bar } from '../components/Bar'
 import { Banner } from '../components/Banner'
 import { TeamSwatch } from '../components/TeamSwatch'
 import { commitHistoryUrl, formatLatency, formatLocal, formatUtc, formatUsd, pct } from '../data/format'
-import { chaosCriteria } from '../data/record'
+import { chaosCriteria, podiumPick } from '../data/record'
 import { teamColour } from '../data/teams'
-import type { Calls, JevMeta, LoadedRecord, PredictionRecord, RecordDriver } from '../data/types'
+import type { Calls, JevMeta, LoadedRecord, SlimRecord, RecordDriver } from '../data/types'
 
 export function RaceView({ entry }: { entry: LoadedRecord }) {
   const { record, path } = entry
@@ -32,6 +32,7 @@ export function RaceView({ entry }: { entry: LoadedRecord }) {
       {calls && (
         <>
           <WinnerSection calls={calls} drivers={drivers} />
+          <PodiumPick calls={calls} drivers={drivers} />
           <GridSection calls={calls} drivers={drivers} />
           <ChaosSection score={calls.chaos.score} criteria={chaosCriteria(record)} />
         </>
@@ -47,7 +48,7 @@ export function RaceView({ entry }: { entry: LoadedRecord }) {
   )
 }
 
-function RaceHeader({ record }: { record: PredictionRecord }) {
+function RaceHeader({ record }: { record: SlimRecord }) {
   return (
     <header className="space-y-2">
       <p className="figures text-xs tracking-widest text-muted uppercase">
@@ -64,7 +65,7 @@ function RaceHeader({ record }: { record: PredictionRecord }) {
   )
 }
 
-function StatusBanners({ record }: { record: PredictionRecord }) {
+function StatusBanners({ record }: { record: SlimRecord }) {
   return (
     <div className="space-y-2">
       {record.kind === 'backtest' && <Banner tone="yellow">Backtest: the model may have seen these results.</Banner>}
@@ -123,6 +124,38 @@ function WinnerSection({ calls, drivers }: { calls: Calls; drivers: RecordDriver
               </span>
               <Bar value={p} colour={teamColour(d?.constructor_id ?? '')} />
               <span className="figures text-right">{pct(p)}</span>
+            </li>
+          )
+        })}
+      </ol>
+    </section>
+  )
+}
+
+function PodiumPick({ calls, drivers }: { calls: Calls; drivers: RecordDriver[] }) {
+  const byCode = driverLookup(drivers)
+  const pick = podiumPick(calls.podium)
+  return (
+    <section aria-labelledby="podium-pick-heading" className="space-y-3">
+      <div>
+        <h2 id="podium-pick-heading" className="text-xs tracking-widest text-muted uppercase">
+          Jev's podium
+        </h2>
+        <p className="mt-1 text-sm text-muted">
+          The three most likely top-three finishers, from the podium probabilities.
+        </p>
+      </div>
+      <ol aria-label="Jev's podium" className="grid gap-2 sm:grid-cols-3" data-testid="podium-pick">
+        {pick.map(([code, p], i) => {
+          const d = byCode.get(code)
+          return (
+            <li key={code} className="flex items-center gap-3 bg-panel px-3 py-2">
+              <span className="figures text-sm text-muted">P{i + 1}</span>
+              <span className="flex min-w-0 flex-1 items-center gap-2">
+                {d && <TeamSwatch constructorId={d.constructor_id} />}
+                <span className="truncate">{d?.name ?? code}</span>
+              </span>
+              <span className="figures">{pct(p)}</span>
             </li>
           )
         })}
@@ -276,7 +309,7 @@ function ChaosSection({ score, criteria }: { score: number; criteria: string[] }
  * AFTER-RACE slot (task 5.1, second half): results, the scorecard, and the baselines.
  * Renders nothing until scores are committed alongside the record.
  */
-function AfterRace(_props: { record: PredictionRecord }) {
+function AfterRace(_props: { record: SlimRecord }) {
   return null
 }
 

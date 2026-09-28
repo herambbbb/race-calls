@@ -231,3 +231,13 @@ def test_no_qualifying_means_no_snapshot():
 )
 def test_ordinal(n, expected):
     assert ordinal(n) == expected
+
+
+def test_extra_facts_are_appended_per_driver_and_race():
+    snap = build(
+        driver_extras={"norris": ["Norris's McLaren uses a Mercedes power unit."]},
+        race_extras=["Power units this season: Mercedes has 9 wins."],
+    )
+    assert snap.drivers[0].line.endswith("Norris's McLaren uses a Mercedes power unit.")
+    assert "Mercedes power unit" not in snap.drivers[1].line
+    assert snap.race_lines[-1] == "Power units this season: Mercedes has 9 wins."

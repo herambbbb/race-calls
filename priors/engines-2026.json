@@ -1,0 +1,18 @@
+{
+  "engines": {
+    "alpine": "Mercedes",
+    "aston_martin": "Honda",
+    "audi": "Audi",
+    "cadillac": "Ferrari",
+    "ferrari": "Ferrari",
+    "haas": "Ferrari",
+    "mclaren": "Mercedes",
+    "mercedes": "Mercedes",
+    "rb": "Red Bull Ford",
+    "red_bull": "Red Bull Ford",
+    "williams": "Mercedes"
+  },
+  "notes": [],
+  "season": 2026,
+  "source": "f1db v2026.15.1"
+}

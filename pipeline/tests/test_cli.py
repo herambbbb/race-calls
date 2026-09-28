@@ -10,7 +10,7 @@ import respx
 from typer.testing import CliRunner
 
 from race_calls.cli import app
-from race_calls.jev import OPENROUTER_URL
+from race_calls.jev import TYPESAFE_MODEL, TYPESAFE_URL
 from race_calls.jolpica import BASE_URL
 from race_calls.models import PredictionRecord, Status
 from race_calls.settings import get_settings
@@ -18,6 +18,14 @@ from race_calls.settings import get_settings
 FIXTURES = Path(__file__).parent / "fixtures" / "jolpica"
 EMPTY = json.loads((FIXTURES / "2026_16_qualifying_empty.json").read_text())
 runner = CliRunner()
+
+
+@pytest.fixture(autouse=True)
+def no_rate_limit_sleeps(monkeypatch):
+    # The limiter itself is tested elsewhere; here it would only make the test slow.
+    from race_calls.openf1.ratelimit import SlidingWindowLimiter
+
+    monkeypatch.setattr(SlidingWindowLimiter, "acquire", lambda self: None)
 
 
 def fixture(name: str) -> dict:
@@ -34,7 +42,11 @@ def mock_jolpica(qualifying: dict) -> None:
     respx.get(f"{BASE_URL}/2026/15/results/").mock(
         return_value=httpx.Response(200, json=fixture("2026_15_results.json"))
     )
-    respx.get(url__regex=rf"{re.escape(BASE_URL)}/2026/1[34]/results/").mock(
+    # Every other earlier round: nothing published (routes match in the order added).
+    respx.get(url__regex=rf"{re.escape(BASE_URL)}/2026/\d+/results/").mock(
+        return_value=httpx.Response(200, json=EMPTY)
+    )
+    respx.get(url__regex=rf"{re.escape(BASE_URL)}/2026/\d+/qualifying/").mock(
         return_value=httpx.Response(200, json=EMPTY)
     )
     respx.get(f"{BASE_URL}/2026/15/driverStandings/").mock(
@@ -59,21 +71,21 @@ def jev_answers(request: httpx.Request) -> httpx.Response:
         "probabilities": {c: 1 / len(codes) for c in codes},
     }
     answers["chaos"] = {"type": "score", "score": 1.0, "confidence": 0.5, "legend": {}}
+    # TypeSafe's documented response (docs.typesafe.ai/api.md): an undated model version and
+    # token usage, with no cost, provider, or id.
     return httpx.Response(
         200,
         json={
-            "model": "typesafe/jev-1.13-20260917",
-            "provider": "TypeSafe",
-            "id": "gen-dec-cli",
-            "usage": {"input_tokens": 2000, "output_tokens": 400, "cost": 3.5e-05},
+            "model": "jev-1.13.0",
             "answers": answers,
+            "usage": {"input_tokens": 2000, "output_tokens": 400},
         },
     )
 
 
 @pytest.fixture
 def key(monkeypatch):
-    monkeypatch.setenv("OPENROUTER_API_KEY", "test-key-not-real")
+    monkeypatch.setenv("TYPESAFE_API_KEY", "test-key-not-real")
     get_settings.cache_clear()
 
 
@@ -111,14 +123,24 @@ def test_gives_up_an_hour_before_the_start():
 def test_predicts_once_qualifying_is_in_and_then_stops(key):
     qualifying = fixture("2026_15_qualifying.json")  # a real 22-car qualifying table
     mock_jolpica(qualifying)
-    jev = respx.post(OPENROUTER_URL).mock(side_effect=jev_answers)
+    jev = respx.post(TYPESAFE_URL).mock(side_effect=jev_answers)
     now = ["prerace", "--season", "2026", "--now", "2026-10-03T09:30+00:00"]
     result = runner.invoke(app, now)
     assert result.exit_code == 0, result.output
     [path] = records()
     record = PredictionRecord.model_validate_json(path.read_text())
     assert record.status is Status.OK and record.kind == "live" and len(record.drivers) == 22
-    assert jev.call_count == 1 and len(json.loads(jev.calls[0].request.content)["questions"]) == 24
+    sent = json.loads(jev.calls[0].request.content)
+    assert sent["model"] == TYPESAFE_MODEL  # the pinned version, not jev-latest
+    assert jev.calls[0].request.headers["authorization"] == "Bearer test-key-not-real"
+    assert record.jev is not None and record.jev.model_id == "jev-1.13.0"
+    assert record.jev.provider == "typesafe-ai" and record.jev.cost_usd is None
+    assert (record.jev.input_tokens, record.jev.output_tokens) == (2000, 400)
+    assert jev.call_count == 1 and len(sent["questions"]) == 24
+    # The richer facts reach Jev's state (engine and similar-track lines).
+    assert "Power units this season" in sent["state"]
+    assert "uses a Mercedes power unit" in sent["state"]
+    assert "this project's own classification" in sent["state"]
     assert "test-key-not-real" not in path.read_text()
     # The next hourly run finds a final record and does nothing.
     again = runner.invoke(app, now)

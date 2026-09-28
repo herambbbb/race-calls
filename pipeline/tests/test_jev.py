@@ -191,3 +191,16 @@ def test_request_hash_is_stable_and_content_sensitive():
     c, _ = client()
     assert request_hash(body(c)) == request_hash(body(c))
     assert request_hash(body(c)) != request_hash(body(c, "Different facts."))
+
+
+@respx.mock
+def test_cloudflare_520_is_transient_and_retried():
+    route = respx.post(OPENROUTER_URL).mock(
+        side_effect=[
+            httpx.Response(520, json={"error": {"message": "HTTP 520", "code": 520}}),
+            openrouter_ok(),
+        ]
+    )
+    c, sleeps = client()
+    c.send(body(c))
+    assert route.call_count == 2 and sleeps == [1.0]

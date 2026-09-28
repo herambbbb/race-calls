@@ -2,13 +2,15 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router'
 import { describe, expect, it } from 'vitest'
 import example from '../../../contracts/prediction-record.example.json'
-import type { LoadedRecord, PredictionRecord } from '../data/types'
+import { slimRecord } from '../data/slim'
+import type { LoadedRecord, SlimRecord } from '../data/types'
 import { RaceView } from './RaceView'
 
-const record = example as PredictionRecord
+// Rendered from the slimmed record, exactly what the build ships.
+const record = slimRecord(example) as SlimRecord
 const PATH = 'predictions/2026/99-example-grand-prix.json'
 
-function render(r: PredictionRecord): string {
+function render(r: SlimRecord): string {
   const entry: LoadedRecord = { record: r, path: PATH }
   return renderToStaticMarkup(
     <MemoryRouter>
@@ -41,6 +43,12 @@ describe('RaceView before the race', () => {
     expect(rows[2]).toContain('Charles Leclerc')
   })
 
+  it("shows Jev's podium from the podium probabilities, in order", () => {
+    expect(t).toContain("Jev's podium The three most likely top-three finishers, from the podium probabilities.")
+    const pick = text(html.split('data-testid="podium-pick"')[1]!.split('</ol>')[0]!)
+    expect(pick).toMatch(/P1 Lando Norris 61% P2 Max Verstappen 55% P3 Charles Leclerc 38%/)
+  })
+
   it('shows the podium sum and no inconsistency for the example', () => {
     expect(t).toContain('Podium probabilities sum to 1.54 (three drivers finish on the podium)')
     expect(t).toContain("No driver's win probability exceeds their podium probability.")
@@ -70,6 +78,13 @@ describe('RaceView before the race', () => {
 })
 
 describe('RaceView variants', () => {
+  it("breaks a tie in Jev's podium by driver code", () => {
+    const calls = record.calls!
+    const html = render({ ...record, calls: { ...calls, podium: { NOR: 0.4, VER: 0.5, LEC: 0.4 } } })
+    const pick = text(html.split('data-testid="podium-pick"')[1]!.split('</ol>')[0]!)
+    expect(pick).toMatch(/P1 Max Verstappen 50% P2 Charles Leclerc 40% P3 Lando Norris 40%/)
+  })
+
   it('flags a late call', () => {
     const t = text(render({ ...record, late: true }))
     expect(t).toContain('Made after the start: published, not scored.')

@@ -1,9 +1,13 @@
 from collections.abc import Callable
 from datetime import datetime
+from typing import Any
 
 import typer
 
 from race_calls.cache import JsonCache
+from race_calls.facts.engines import load_engines
+from race_calls.facts.pace import qualifying_laps
+from race_calls.facts.tracks import load_traits
 from race_calls.http import make_client
 from race_calls.jev import PATIENT, JevClient, RetryPolicy
 from race_calls.jolpica import JolpicaClient
@@ -13,6 +17,7 @@ from race_calls.openf1.sessions import find_session, weather_summary
 from race_calls.predict import (
     GIVE_UP_BEFORE_START,
     Action,
+    FactSources,
     RecordExists,
     due,
     existing_record,
@@ -44,13 +49,25 @@ def _weather_lookup(openf1: OpenF1Client) -> Callable[[Weekend], SessionWeather 
     return lookup
 
 
+def _laps_lookup(openf1: OpenF1Client) -> Callable[[Weekend], list[dict[str, Any]]]:
+    def lookup(weekend: Weekend) -> list[dict[str, Any]]:
+        if weekend.qualifying_start is None:
+            return []
+        key = find_session(openf1, weekend.season, "Qualifying", weekend.qualifying_start)
+        return qualifying_laps(openf1, key) if key is not None else []
+
+    return lookup
+
+
 class Context:
     def __init__(self) -> None:
         settings = get_settings()
         cache = JsonCache(settings.data_dir / "cache")
         self.settings = settings
         self.jolpica = JolpicaClient(cache=cache)
-        self.weather = _weather_lookup(OpenF1Client(make_client(), cache=cache))
+        openf1 = OpenF1Client(make_client(), cache=cache)
+        self.weather = _weather_lookup(openf1)
+        self.facts = FactSources(load_engines(), load_traits(), laps=_laps_lookup(openf1))
         self.priors = load_priors()
 
     def done(self, weekend: Weekend) -> bool:
@@ -59,7 +76,9 @@ class Context:
 
     def predict(self, calendar: list[Weekend], weekend: Weekend, retry: RetryPolicy) -> bool:
         """Predict one race and save it. False if qualifying is not published yet."""
-        inputs = gather(self.jolpica, calendar, weekend, self.priors, utc_now(), self.weather)
+        inputs = gather(
+            self.jolpica, calendar, weekend, self.priors, utc_now(), self.weather, self.facts
+        )
         if inputs is None:
             typer.echo(f"Round {weekend.round}: qualifying results are not published yet.")
             return False
@@ -88,8 +107,15 @@ def _summary(record: PredictionRecord, where: str) -> None:
         typer.echo(
             f"  winner {w.choice} {w.probabilities.get(w.choice, 0):.0%}, chaos "
             f"{record.calls.chaos.score:.2f}, podium sum {podium_sum:.2f}; "
-            f"{record.jev.model_id}, ${record.jev.cost_usd or 0:.6f}, {record.jev.latency_ms} ms"
+            f"{record.jev.model_id}, {_cost(record.jev.cost_usd)}, "
+            f"{record.jev.input_tokens} in / {record.jev.output_tokens} out tokens, "
+            f"{record.jev.latency_ms} ms"
         )
+
+
+def _cost(cost_usd: float | None) -> str:
+    # TypeSafe's own API reports tokens but no cost; OpenRouter reports both.
+    return "cost not reported" if cost_usd is None else f"${cost_usd:.6f}"
 
 
 def _parse_now(now: str | None) -> datetime:

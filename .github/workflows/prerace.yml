@@ -36,7 +36,8 @@ jobs:
       - name: Predict if due
         working-directory: pipeline
         env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          JEV_TRANSPORT: typesafe
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
         run: uv run --frozen rc prerace
 
       - name: Commit the prediction

@@ -2,54 +2,101 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
-import { findSecrets, readKeyFromEnvFile } from './check-no-secrets.mjs'
+import { collectKeys, findSecrets, readKeysFromEnvFile, run } from './check-no-secrets.mjs'
 
-// Fake values only: neither is a real key.
-const FAKE_KEY = 'fake-openrouter-key-for-tests-0123456789'
+// Fake values only: none is a real key.
+const FAKE_TYPESAFE = 'fake-typesafe-key-for-tests-0123456789'
+const FAKE_OPENROUTER = 'fake-openrouter-key-for-tests-9876543210'
 const FAKE_PATTERN = 'sk-or-v1-' + 'deadbeef'.repeat(4)
+const FAKES = [FAKE_TYPESAFE, FAKE_OPENROUTER, FAKE_PATTERN]
 
-let dir
+let root, dist, envFile
 beforeEach(() => {
-  dir = mkdtempSync(join(tmpdir(), 'race-calls-secrets-'))
-  mkdirSync(join(dir, 'assets'))
-  writeFileSync(join(dir, 'index.html'), '<!doctype html><title>Race Calls</title>')
-  writeFileSync(join(dir, 'assets', 'app.js'), 'console.log("clean")')
+  root = mkdtempSync(join(tmpdir(), 'race-calls-secrets-'))
+  dist = join(root, 'dist')
+  envFile = join(root, '.env')
+  mkdirSync(join(dist, 'assets'), { recursive: true })
+  writeFileSync(join(dist, 'index.html'), '<!doctype html><title>Race Calls</title>')
+  writeFileSync(join(dist, 'assets', 'app.js'), 'console.log("clean")')
+  writeFileSync(envFile, `# comment\nOTHER=1\nTYPESAFE_API_KEY="${FAKE_TYPESAFE}"\n`)
 })
-afterEach(() => rmSync(dir, { recursive: true, force: true }))
+afterEach(() => rmSync(root, { recursive: true, force: true }))
 
-describe('findSecrets', () => {
-  it('passes on a clean directory', () => {
-    expect(findSecrets(dir, FAKE_KEY)).toEqual([])
-    expect(findSecrets(dir, null)).toEqual([])
+/** Runs the check and returns its exit code and everything it printed. */
+function check(env = {}) {
+  const lines = []
+  const code = run({ dist, env, envFile, log: (l) => lines.push(l), error: (l) => lines.push(l) })
+  return { code, output: lines.join('\n') }
+}
+
+function expectNoValues(output) {
+  for (const fake of FAKES) {
+    expect(output).not.toContain(fake)
+    expect(output).not.toContain(fake.slice(0, 12))
+  }
+}
+
+describe('check-no-secrets', () => {
+  it('passes on a clean build', () => {
+    const { code, output } = check({ OPENROUTER_API_KEY: FAKE_OPENROUTER })
+    expect(code).toBe(0)
+    expect(output).toContain('TYPESAFE_API_KEY')
+    expectNoValues(output)
   })
 
-  it('catches the key value and reports only the file', () => {
-    writeFileSync(join(dir, 'assets', 'leak.js'), `const k = "${FAKE_KEY}"`)
-    expect(findSecrets(dir, FAKE_KEY)).toEqual([join('assets', 'leak.js')])
+  it('catches a TypeSafe key from the .env and names only the file and variable', () => {
+    writeFileSync(join(dist, 'assets', 'leak.js'), `const k = "${FAKE_TYPESAFE}"`)
+    const { code, output } = check()
+    expect(code).toBe(1)
+    expect(output).toContain(`${join('assets', 'leak.js')} (TYPESAFE_API_KEY)`)
+    expectNoValues(output)
   })
 
-  it('catches the key pattern without knowing the key', () => {
-    writeFileSync(join(dir, 'assets', 'leak.js'), `fetch(u, { headers: { a: "Bearer ${FAKE_PATTERN}" } })`)
-    expect(findSecrets(dir, null)).toEqual([join('assets', 'leak.js')])
+  it('still catches an OpenRouter key from the environment', () => {
+    writeFileSync(join(dist, 'index.html'), `<script>var k="${FAKE_OPENROUTER}"</script>`)
+    const { code, output } = check({ OPENROUTER_API_KEY: FAKE_OPENROUTER })
+    expect(code).toBe(1)
+    expect(output).toContain('index.html (OPENROUTER_API_KEY)')
+    expectNoValues(output)
   })
 
-  it('ignores a key too short to search for safely', () => {
-    expect(findSecrets(dir, 'a')).toEqual([])
+  it('catches the key pattern without knowing any key', () => {
+    writeFileSync(envFile, '')
+    writeFileSync(join(dist, 'assets', 'leak.js'), `headers: { a: "Bearer ${FAKE_PATTERN}" }`)
+    const { code, output } = check()
+    expect(code).toBe(1)
+    expect(output).toContain(`${join('assets', 'leak.js')} (sk-or-v1 key pattern)`)
+    expectNoValues(output)
+  })
+
+  it('fails when there is no dist/', () => {
+    rmSync(dist, { recursive: true })
+    expect(check().code).toBe(1)
   })
 })
 
-describe('readKeyFromEnvFile', () => {
-  it('reads plain, quoted, and exported values', () => {
-    const env = join(dir, '.env')
-    writeFileSync(env, `# comment\nOTHER=1\nexport OPENROUTER_API_KEY="${FAKE_KEY}"\n`)
-    expect(readKeyFromEnvFile(env)).toBe(FAKE_KEY)
-    writeFileSync(env, `OPENROUTER_API_KEY=${FAKE_KEY} # note\n`)
-    expect(readKeyFromEnvFile(env)).toBe(FAKE_KEY)
+describe('collecting keys', () => {
+  it('reads every *_API_KEY from the file, plain, quoted, or exported', () => {
+    writeFileSync(
+      envFile,
+      `export OPENROUTER_API_KEY='${FAKE_OPENROUTER}'\nTYPESAFE_API_KEY=${FAKE_TYPESAFE} # note\nAPI_KEY_HINT=nope\n`,
+    )
+    expect(readKeysFromEnvFile(envFile)).toEqual([
+      { name: 'OPENROUTER_API_KEY', value: FAKE_OPENROUTER },
+      { name: 'TYPESAFE_API_KEY', value: FAKE_TYPESAFE },
+    ])
   })
 
-  it('returns null for a missing file or key', () => {
-    expect(readKeyFromEnvFile(join(dir, 'nope'))).toBeNull()
-    writeFileSync(join(dir, '.env'), 'OTHER=1\n')
-    expect(readKeyFromEnvFile(join(dir, '.env'))).toBeNull()
+  it('merges the environment and the file, ignoring short values, other names, and repeats', () => {
+    const keys = collectKeys(
+      { TYPESAFE_API_KEY: FAKE_TYPESAFE, SHORT_API_KEY: 'abc', PATH: '/usr/bin:/bin:/usr/local/bin' },
+      envFile,
+    )
+    expect(keys).toEqual([{ name: 'TYPESAFE_API_KEY', value: FAKE_TYPESAFE }])
+  })
+
+  it('returns nothing for a missing file', () => {
+    expect(readKeysFromEnvFile(join(root, 'nope'))).toEqual([])
+    expect(findSecrets(dist, [])).toEqual([])
   })
 })
