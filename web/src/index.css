@@ -1,30 +1,73 @@
 @import 'tailwindcss';
 @import '@fontsource/instrument-serif/400.css';
 @import '@fontsource/instrument-serif/400-italic.css';
+@import '@fontsource-variable/jetbrains-mono/wght.css';
+@import 'lenis/dist/lenis.css';
 
 /*
- * Design tokens, shared with the project's earlier site. A timing screen, not a SaaS
- * dashboard: near-black, white text, and colour only where it carries meaning.
- * Every state colour is paired with a text label, never colour alone.
+ * Design tokens. A starry night over the circuit, with a printed timing sheet on the
+ * desk: deep night-blue surfaces, chrome-yellow light, cobalt and cerulean for the
+ * painted art, warm canvas paper for the record of what happened, and colour only where
+ * it carries meaning. Sector colours follow timing-screen language (purple
+ * best, green on time, amber caution), and every state colour is paired with a text
+ * label, never colour alone. Team colours are fills only, never text.
  */
 @theme {
   --font-sans: 'Satoshi', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Instrument Serif', ui-serif, Georgia, serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
-  --color-ink: #0a0a0b;        /* page background */
-  --color-panel: #121214;      /* cards, table rows */
-  --color-raised: #1a1a1d;     /* hover, bar tracks */
-  --color-line: #2a2a2f;       /* 1px rules */
-  --color-text: #f5f5f4;       /* primary text */
-  --color-muted: #a3a3a8;      /* secondary text, 7:1 on ink */
-  --color-faint: #76767d;      /* tertiary, large text only */
+  --color-ink: #070d1c;        /* page background: the night sky's deepest blue */
+  --color-panel: #0e1830;      /* cards, table rows: midnight */
+  --color-raised: #16233f;     /* hover, bar tracks */
+  --color-line: #26355a;       /* 1px rules */
+  --color-text: #f2ecdc;       /* primary text, 16.4:1 on ink, 13.2:1 on raised */
+  --color-muted: #a9b4c8;      /* secondary text, 9.3:1 on ink, 7.5:1 on raised */
+  --color-faint: #6d7a96;      /* decorative and large text only */
 
-  /* State colours borrow flag language. */
-  --color-flag-white: #f5f5f4;
-  --color-flag-yellow: #ffd60a; /* late, provisional, backtest */
-  --color-flag-green: #30d158;  /* published on time */
-  --color-flag-red: #ff453a;    /* failed, inconsistent */
-  --color-flag-blue: #64d2ff;   /* links */
+  --color-paper: #efe6cf;      /* the printed sheet: warm canvas */
+  --color-paper-deep: #e0d4b6; /* rules and wells on paper */
+  --color-print: #141a2b;      /* text on paper, 13.9:1 */
+  --color-print-muted: #4c5568;/* secondary text on paper, 6.0:1 */
+
+  --color-star: #f5c542;       /* the one hot accent: chrome yellow, 12:1 on ink */
+  --color-cobalt: #1f4fa3;     /* art, fills, stamps on paper (6.2:1); text on cobalt 7:1 */
+  --color-cerulean: #6fb6ee;   /* art, fills; 7.1:1 as text on raised */
+
+  --color-sector-purple: #c3a6ff; /* best of the three */
+  --color-sector-green: #4fd98f;  /* on time, a hit */
+  --color-sector-amber: #ff9f43;  /* late, provisional, a miss: warmer than the star */
+  --color-flag-red: #ff6b5e;      /* failed, inconsistent, 5.6:1 on raised */
+  --color-link: #8fd3ff;          /* links, 11.9:1 on ink */
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --animate-rise: rise 0.7s var(--ease-out-quint) both;
+  --animate-stamp: stamp 0.45s var(--ease-spring) both;
+  --animate-ticker: ticker 38s linear infinite;
+  --animate-pulse-dot: pulse-dot 2.2s ease-in-out infinite;
+  --animate-page: page 0.5s var(--ease-out-quint) both;
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes stamp {
+    from { opacity: 0; transform: scale(1.35) rotate(var(--tilt, -6deg)); }
+    to { opacity: 1; transform: scale(1) rotate(var(--tilt, -6deg)); }
+  }
+  @keyframes ticker {
+    to { transform: translateX(-50%); }
+  }
+  @keyframes page {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, currentColor 55%, transparent); }
+    50% { box-shadow: 0 0 0 5px transparent; }
+  }
 }
 
 @layer base {
@@ -32,16 +75,40 @@
     background: var(--color-ink);
     color: var(--color-text);
     font-family: var(--font-sans);
-    font-feature-settings: 'ss01' 0;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
-  /* Probabilities and times never shift as digits change. */
-  .figures {
-    font-variant-numeric: tabular-nums;
+  body {
+    overflow-x: clip;
+  }
+  /* Film grain over everything: texture, never content. */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.07;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  ::selection {
+    background: var(--color-star);
+    color: var(--color-ink);
   }
   :focus-visible {
-    outline: 2px solid var(--color-flag-blue);
-    outline-offset: 2px;
+    outline: 2px solid var(--color-link);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  .on-paper :focus-visible {
+    outline-color: var(--color-print);
+  }
+  summary {
+    cursor: pointer;
+  }
+  summary::-webkit-details-marker {
+    display: none;
   }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
@@ -50,4 +117,415 @@
       transition-duration: 0.01ms !important;
     }
   }
+}
+
+/* Probabilities and times never shift as digits change. */
+@utility figures {
+  font-variant-numeric: tabular-nums slashed-zero;
+}
+
+/* Telemetry numerals and labels. */
+@utility telemetry {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums slashed-zero;
+  letter-spacing: -0.01em;
+}
+
+/* Small mono label: "ROUND 16 // 2026". */
+@utility tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Halftone dots, fading out: the poster print behind a hero. */
+@utility halftone {
+  background-image: radial-gradient(circle at center, currentColor 0.9px, transparent 1.3px);
+  background-size: 7px 7px;
+  mask-image: radial-gradient(ellipse at 70% 30%, black 0%, transparent 70%);
+}
+
+/* Faint vertical column rules. */
+@utility columns-rule {
+  background-image: repeating-linear-gradient(
+    to right,
+    color-mix(in oklab, currentColor 9%, transparent) 0 1px,
+    transparent 1px calc(100% / 12)
+  );
+}
+
+/* A chequered strip. */
+@utility chequer {
+  background-image: conic-gradient(currentColor 25%, transparent 0 50%, currentColor 0 75%, transparent 0);
+  background-size: 12px 12px;
+}
+
+/* Paper, with its own fibre. */
+@utility paper {
+  background-color: var(--color-paper);
+  color: var(--color-print);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.3 0 0 0 0 0.24 0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+}
+
+/* Diagonal hatching: missing or low-sample data. */
+@utility hatch {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    color-mix(in oklab, currentColor 28%, transparent) 0 1px,
+    transparent 1px 6px
+  );
+}
+
+/* Frosted glass, for the floating navigation. */
+@utility glass {
+  background: color-mix(in oklab, var(--color-panel) 62%, transparent);
+  backdrop-filter: blur(14px) saturate(1.3);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.07),
+    0 10px 30px -12px rgb(0 0 0 / 0.7);
+}
+
+/* Staggered entrance: set --i on each child. */
+@utility stagger {
+  animation: var(--animate-rise);
+  animation-delay: calc(var(--i, 0) * 45ms);
+}
+
+/* A circuit outline drawing itself in (paths use pathLength="1"). */
+.track-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: track-draw 2.4s var(--ease-out-quint) 0.2s forwards;
+}
+@keyframes track-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+/*
+ * Scroll-linked entrances. A tile with .view-tile names a view timeline; circuit
+ * outlines inside it draw in, and anything with .rise-on-view rises into place, as they
+ * enter the screen. Without timelines, or with reduced motion, they are simply shown.
+ */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .view-tile {
+      view-timeline: --tile block;
+    }
+    .track-draw-view {
+      stroke-dasharray: 1;
+      animation: track-draw-in linear both;
+      animation-timeline: --tile;
+      animation-range: entry 10% cover 45%;
+    }
+    .rise-on-view {
+      animation: rise-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 30%;
+    }
+  }
+}
+@keyframes track-draw-in {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(72px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+
+/* A dot lapping a circuit along its own outline. */
+.track-lap {
+  offset-rotate: 0deg;
+  animation: track-lap 9s linear 2.4s infinite both;
+}
+@keyframes track-lap {
+  from { offset-distance: 0%; }
+  to { offset-distance: 100%; }
+}
+
+/* A painted layer drifting slowly, as one composited transform: never a repaint. The
+   layer is over-scaled so its edges never show. Under reduced motion it holds still. */
+.painting-drift {
+  transform: scale(1.08);
+  animation: painting-drift 60s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes painting-drift {
+  from { transform: scale(1.08) rotate(-1.2deg) translate3d(-1%, 0, 0); }
+  to { transform: scale(1.1) rotate(1.2deg) translate3d(1%, -1%, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .painting-drift {
+    animation: none;
+  }
+}
+
+/*
+ * The front page hero. By default: a full-bleed section at least one screen tall.
+ * With scroll timelines and motion allowed, on wide and tall enough screens, the stage
+ * sticks for a while and the frame closes into a rounded card as the reader scrolls,
+ * the copy lifts, and the next-race card moves ahead of it. Narrow or short screens
+ * are not sticky: the frame only rounds off as the hero leaves. The scroll itself is
+ * never touched; these follow it.
+ */
+.hero-frame {
+  min-height: 100svh;
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-scroll {
+      view-timeline: --hero block;
+    }
+    .hero-frame {
+      animation: hero-round linear both;
+      animation-timeline: --hero;
+      animation-range: exit 0% exit 90%;
+    }
+
+    @media (min-width: 1024px) and (min-height: 700px) {
+      .hero-scroll {
+        height: 170svh;
+      }
+      .hero-stage {
+        position: sticky;
+        top: 0;
+        height: 100svh;
+      }
+      .hero-frame {
+        height: 100%;
+        animation: hero-close linear both;
+        animation-timeline: --hero;
+        animation-range: contain 0% contain 100%;
+      }
+      .hero-inner {
+        animation: hero-inner linear both;
+        animation-timeline: --hero;
+        animation-range: contain 0% contain 100%;
+      }
+      .hero-copy {
+        animation: hero-copy linear both;
+        animation-timeline: --hero;
+        animation-range: contain 0% contain 100%;
+      }
+      .hero-card {
+        animation: hero-card linear both;
+        animation-timeline: --hero;
+        animation-range: contain 0% contain 100%;
+      }
+    }
+  }
+}
+
+/*
+ * The storm band. By default one screen, with the car resting on the spiral's outer arm.
+ * With scroll timelines and motion allowed, it sticks for a while: the vortex turns and
+ * the car drives the spiral to the eye, both in step with the scroll.
+ */
+.storm-car {
+  offset-rotate: auto;
+  offset-distance: 6%;
+}
+/* Scaled about the car's own centre, never the drawing's origin. */
+.storm-car-body {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+/* Over-scaled so the turning painting never shows a corner. */
+.storm-paint {
+  transform: scale(1.6);
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .storm-scroll {
+      view-timeline: --storm block;
+    }
+    .storm-paint {
+      animation: storm-turn linear both;
+      animation-timeline: --storm;
+      animation-range: cover 0% cover 100%;
+    }
+    /* Sticky and scrubbed only where a screen can hold the whole stage. */
+    @media (min-height: 600px) {
+      .storm-scroll {
+        height: 220svh;
+      }
+      .storm-stage {
+        position: sticky;
+        top: 0;
+        height: 100svh;
+        min-height: 0;
+      }
+      .storm-car {
+        animation: storm-drive linear both;
+        animation-timeline: --storm;
+        animation-range: contain 0% contain 100%;
+      }
+      .storm-car-body {
+        animation: storm-shrink linear both;
+        animation-timeline: --storm;
+        animation-range: contain 0% contain 100%;
+      }
+    }
+  }
+}
+
+@keyframes storm-drive {
+  from { offset-distance: 0%; }
+  to { offset-distance: 100%; }
+}
+@keyframes storm-shrink {
+  0% { scale: 1; opacity: 1; }
+  82% { scale: 0.42; opacity: 1; }
+  /* Swallowed by the eye. */
+  100% { scale: 0.08; opacity: 0; }
+}
+@keyframes storm-turn {
+  from { transform: scale(1.6) rotate(-14deg); }
+  to { transform: scale(1.6) rotate(22deg); }
+}
+
+@keyframes hero-close {
+  from { clip-path: inset(0 0 0 0 round 0px); }
+  to { clip-path: inset(3svh 3vw 3svh 3vw round 28px); }
+}
+@keyframes hero-round {
+  from { clip-path: inset(0 0 0 0 round 0px); }
+  to { clip-path: inset(0 3vw 4svh 3vw round 24px); }
+}
+@keyframes hero-inner {
+  from { transform: none; }
+  to { transform: scale(0.94) translateY(-2svh); }
+}
+@keyframes hero-copy {
+  from { opacity: 1; transform: none; }
+  to { opacity: 0.55; transform: translateY(-4svh); }
+}
+@keyframes hero-card {
+  from { transform: none; }
+  to { transform: translateY(-9svh); }
+}
+
+/* The backdrop flag drifts as if in the wind, as one composited layer. */
+.backdrop-flag {
+  animation: flag-drift 50s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes flag-drift {
+  from { transform: translate3d(-1.5%, -1%, 0); }
+  to { transform: translate3d(1.5%, 1%, 0); }
+}
+
+/* A metallic highlight sweeping slowly across the backdrop; --sheen caps its opacity. */
+.backdrop-sheen {
+  background: linear-gradient(
+    112deg,
+    transparent 38%,
+    rgb(255 255 255 / calc(var(--sheen) * 0.5)) 46%,
+    rgb(255 255 255 / var(--sheen)) 50%,
+    rgb(255 255 255 / calc(var(--sheen) * 0.5)) 54%,
+    transparent 62%
+  );
+  background-size: 250% 100%;
+  animation: sheen 26s linear infinite;
+}
+@keyframes sheen {
+  from { background-position: 120% 0; }
+  to { background-position: -120% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .backdrop-flag,
+  .backdrop-sheen {
+    animation: none;
+  }
+}
+
+/* Paddock secrets: the scenes' motion. Under reduced motion they appear still. */
+.egg-in {
+  animation: rise 0.45s var(--ease-out-quint) both;
+}
+.egg-line {
+  animation: rise 0.4s var(--ease-out-quint) both;
+}
+.radio-wave span {
+  width: 3px;
+  flex: none;
+  border-radius: 2px;
+  background: var(--color-star);
+  transform-origin: center;
+  animation: radio-bar 0.9s ease-in-out infinite alternate;
+}
+@keyframes radio-bar {
+  from { transform: scaleY(0.25); opacity: 0.55; }
+  to { transform: scaleY(1); opacity: 1; }
+}
+.pit-car {
+  animation: pit-in 0.7s var(--ease-out-quint) both;
+}
+@keyframes pit-in {
+  from { transform: translateY(-70%); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+.wheel-gun {
+  opacity: 0;
+  box-shadow: 0 0 16px 4px rgb(245 197 66 / 0.7);
+  /* Five quick flashes that end dark; dark before they start, too. */
+  animation: wheel-gun 0.14s steps(1, end) 5 alternate forwards;
+}
+@keyframes wheel-gun {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.sc-lamp {
+  animation: sc-blink 0.6s steps(1, end) infinite;
+}
+.sc-lamp-b {
+  animation-delay: 0.3s;
+}
+@keyframes sc-blink {
+  50% { opacity: 0.15; }
+}
+.sc-drive {
+  left: -8rem;
+  animation: sc-drive 5.2s cubic-bezier(0.45, 0, 0.55, 1) both;
+}
+@keyframes sc-drive {
+  to { left: calc(100% + 8rem); }
+}
+.drs-streaks span {
+  position: absolute;
+  right: -30%;
+  height: 1px;
+  width: 30%;
+  background: linear-gradient(90deg, transparent, rgb(79 217 143 / 0.55), transparent);
+  animation: drs-streak 0.9s linear infinite;
+}
+@keyframes drs-streak {
+  to { transform: translateX(-450%); }
+}
+/* DRS open: the flap on the logo mark opens a little. */
+html.drs-open .mark-flap {
+  transform: translateY(-3px) rotate(-18deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .sc-drive {
+    animation: none;
+    left: calc(50% - 1.25rem);
+  }
+  .drs-streaks {
+    display: none;
+  }
+}
+
+/* The chequered flag at the foot of every page: columns ripple as it waves. */
+.flag-col {
+  animation: flag-wave 1.4s ease-in-out infinite alternate;
+}
+@keyframes flag-wave {
+  from { transform: translateY(-4px) skewY(-4deg); }
+  to { transform: translateY(4px) skewY(4deg); }
 }

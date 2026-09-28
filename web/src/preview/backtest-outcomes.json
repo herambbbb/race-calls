@@ -1,0 +1,618 @@
+{
+ "1": {
+  "winner": "RUS",
+  "podium": [
+   "RUS",
+   "ANT",
+   "LEC"
+  ],
+  "finish": {
+   "RUS": "1",
+   "ANT": "2",
+   "LEC": "3",
+   "HAM": "4",
+   "NOR": "5",
+   "VER": "6",
+   "BEA": "7",
+   "LIN": "8",
+   "BOR": "9",
+   "GAS": "10",
+   "OCO": "11",
+   "ALB": "12",
+   "LAW": "13",
+   "COL": "14",
+   "SAI": "15",
+   "PER": "16",
+   "STR": "R",
+   "ALO": "R",
+   "BOT": "R",
+   "HAD": "R",
+   "PIA": "W",
+   "HUL": "W"
+  },
+  "jev": {
+   "brier": 0.0544,
+   "log_loss": 0.0101,
+   "winner_hit": true,
+   "podium_hits": 2
+  },
+  "grid": {
+   "brier": 0.0477,
+   "log_loss": 0.6249,
+   "winner_hit": true,
+   "podium_hits": 2
+  }
+ },
+ "2": {
+  "winner": "ANT",
+  "podium": [
+   "ANT",
+   "RUS",
+   "HAM"
+  ],
+  "finish": {
+   "ANT": "1",
+   "RUS": "2",
+   "HAM": "3",
+   "LEC": "4",
+   "BEA": "5",
+   "GAS": "6",
+   "LAW": "7",
+   "HAD": "8",
+   "SAI": "9",
+   "COL": "10",
+   "HUL": "11",
+   "LIN": "12",
+   "BOT": "13",
+   "OCO": "14",
+   "PER": "15",
+   "VER": "R",
+   "ALO": "R",
+   "STR": "R",
+   "PIA": "W",
+   "NOR": "W",
+   "BOR": "W",
+   "ALB": "W"
+  },
+  "jev": {
+   "brier": 0.0272,
+   "log_loss": 0.1054,
+   "winner_hit": true,
+   "podium_hits": 3
+  },
+  "grid": {
+   "brier": 0.0219,
+   "log_loss": 0.6249,
+   "winner_hit": true,
+   "podium_hits": 3
+  }
+ },
+ "3": {
+  "winner": "ANT",
+  "podium": [
+   "ANT",
+   "PIA",
+   "LEC"
+  ],
+  "finish": {
+   "ANT": "1",
+   "PIA": "2",
+   "LEC": "3",
+   "RUS": "4",
+   "NOR": "5",
+   "HAM": "6",
+   "GAS": "7",
+   "VER": "8",
+   "LAW": "9",
+   "OCO": "10",
+   "HUL": "11",
+   "HAD": "12",
+   "BOR": "13",
+   "LIN": "14",
+   "SAI": "15",
+   "COL": "16",
+   "PER": "17",
+   "ALO": "18",
+   "BOT": "19",
+   "ALB": "20",
+   "STR": "R",
+   "BEA": "R"
+  },
+  "jev": {
+   "brier": 0.0686,
+   "log_loss": 0.0305,
+   "winner_hit": true,
+   "podium_hits": 2
+  },
+  "grid": {
+   "brier": 0.0567,
+   "log_loss": 0.6249,
+   "winner_hit": true,
+   "podium_hits": 2
+  }
+ },
+ "4": {
+  "winner": "ANT",
+  "podium": [
+   "ANT",
+   "NOR",
+   "PIA"
+  ],
+  "finish": {
+   "ANT": "1",
+   "NOR": "2",
+   "PIA": "3",
+   "RUS": "4",
+   "VER": "5",
+   "HAM": "6",
+   "COL": "7",
+   "LEC": "8",
+   "SAI": "9",
+   "ALB": "10",
+   "BEA": "11",
+   "BOR": "12",
+   "OCO": "13",
+   "LIN": "14",
+   "ALO": "15",
+   "PER": "16",
+   "STR": "17",
+   "BOT": "18",
+   "HUL": "R",
+   "LAW": "R",
+   "GAS": "R",
+   "HAD": "R"
+  },
+  "jev": {
+   "brier": 0.0837,
+   "log_loss": 0.0101,
+   "winner_hit": true,
+   "podium_hits": 1
+  },
+  "grid": {
+   "brier": 0.1009,
+   "log_loss": 0.6249,
+   "winner_hit": true,
+   "podium_hits": 1
+  }
+ },
+ "5": {
+  "winner": "ANT",
+  "podium": [
+   "ANT",
+   "HAM",
+   "VER"
+  ],
+  "finish": {
+   "ANT": "1",
+   "HAM": "2",
+   "VER": "3",
+   "LEC": "4",
+   "HAD": "5",
+   "COL": "6",
+   "LAW": "7",
+   "GAS": "8",
+   "SAI": "9",
+   "BEA": "10",
+   "PIA": "11",
+   "HUL": "12",
+   "BOR": "13",
+   "OCO": "14",
+   "STR": "15",
+   "BOT": "16",
+   "PER": "R",
+   "NOR": "R",
+   "RUS": "R",
+   "ALO": "R",
+   "ALB": "R",
+   "LIN": "W"
+  },
+  "jev": {
+   "brier": 0.1162,
+   "log_loss": 0.9163,
+   "winner_hit": false,
+   "podium_hits": 1
+  },
+  "grid": {
+   "brier": 0.1188,
+   "log_loss": 1.4486,
+   "winner_hit": false,
+   "podium_hits": 1
+  }
+ },
+ "6": {
+  "winner": "ANT",
+  "podium": [
+   "ANT",
+   "HAM",
+   "HAD"
+  ],
+  "finish": {
+   "ANT": "1",
+   "HAM": "2",
+   "HAD": "3",
+   "PIA": "4",
+   "LAW": "5",
+   "LIN": "6",
+   "GAS": "7",
+   "ALB": "8",
+   "OCO": "9",
+   "ALO": "10",
+   "BOR": "11",
+   "RUS": "12",
+   "HUL": "13",
+   "COL": "14",
+   "PER": "15",
+   "SAI": "16",
+   "LEC": "R",
+   "STR": "R",
+   "NOR": "R",
+   "BEA": "R",
+   "BOT": "R",
+   "VER": "R"
+  },
+  "jev": {
+   "brier": 0.0749,
+   "log_loss": -0.0,
+   "winner_hit": true,
+   "podium_hits": 2
+  },
+  "grid": {
+   "brier": 0.0726,
+   "log_loss": 0.6249,
+   "winner_hit": true,
+   "podium_hits": 2
+  }
+ },
+ "7": {
+  "winner": "HAM",
+  "podium": [
+   "HAM",
+   "RUS",
+   "NOR"
+  ],
+  "finish": {
+   "HAM": "1",
+   "RUS": "2",
+   "NOR": "3",
+   "VER": "4",
+   "PIA": "5",
+   "HAD": "6",
+   "GAS": "7",
+   "LAW": "8",
+   "LIN": "9",
+   "COL": "10",
+   "BOR": "11",
+   "SAI": "12",
+   "OCO": "13",
+   "PER": "14",
+   "LEC": "15",
+   "ANT": "16",
+   "BEA": "17",
+   "ALB": "R",
+   "ALO": "R",
+   "HUL": "R",
+   "BOT": "R",
+   "STR": "R"
+  },
+  "jev": {
+   "brier": 0.0638,
+   "log_loss": 13.8155,
+   "winner_hit": false,
+   "podium_hits": 2
+  },
+  "grid": {
+   "brier": 0.0413,
+   "log_loss": 1.4486,
+   "winner_hit": false,
+   "podium_hits": 2
+  }
+ },
+ "8": {
+  "winner": "RUS",
+  "podium": [
+   "RUS",
+   "VER",
+   "ANT"
+  ],
+  "finish": {
+   "RUS": "1",
+   "VER": "2",
+   "ANT": "3",
+   "PIA": "4",
+   "HAM": "5",
+   "HAD": "6",
+   "NOR": "7",
+   "LEC": "8",
+   "LAW": "9",
+   "LIN": "10",
+   "BOR": "11",
+   "HUL": "12",
+   "GAS": "13",
+   "BEA": "14",
+   "COL": "15",
+   "OCO": "16",
+   "ALB": "17",
+   "ALO": "18",
+   "STR": "R",
+   "SAI": "R",
+   "PER": "R",
+   "BOT": "R"
+  },
+  "jev": {
+   "brier": 0.0915,
+   "log_loss": 0.0943,
+   "winner_hit": true,
+   "podium_hits": 1
+  },
+  "grid": {
+   "brier": 0.0919,
+   "log_loss": 0.6249,
+   "winner_hit": true,
+   "podium_hits": 1
+  }
+ },
+ "9": {
+  "winner": "LEC",
+  "podium": [
+   "LEC",
+   "RUS",
+   "HAM"
+  ],
+  "finish": {
+   "LEC": "1",
+   "RUS": "2",
+   "HAM": "3",
+   "NOR": "4",
+   "HAD": "5",
+   "LAW": "6",
+   "LIN": "7",
+   "BOR": "8",
+   "COL": "9",
+   "GAS": "10",
+   "PIA": "11",
+   "BEA": "12",
+   "OCO": "13",
+   "PER": "14",
+   "ANT": "15",
+   "BOT": "16",
+   "SAI": "17",
+   "ALO": "18",
+   "STR": "19",
+   "VER": "20",
+   "ALB": "R",
+   "HUL": "R"
+  },
+  "jev": {
+   "brier": 0.0711,
+   "log_loss": 13.8155,
+   "winner_hit": false,
+   "podium_hits": 2
+  },
+  "grid": {
+   "brier": 0.0648,
+   "log_loss": 1.4486,
+   "winner_hit": false,
+   "podium_hits": 2
+  }
+ },
+ "10": {
+  "winner": "ANT",
+  "podium": [
+   "ANT",
+   "LEC",
+   "VER"
+  ],
+  "finish": {
+   "ANT": "1",
+   "LEC": "2",
+   "VER": "3",
+   "HAM": "4",
+   "PIA": "5",
+   "HAD": "6",
+   "NOR": "7",
+   "BOR": "8",
+   "LIN": "9",
+   "COL": "10",
+   "GAS": "11",
+   "LAW": "12",
+   "HUL": "13",
+   "BEA": "14",
+   "ALB": "15",
+   "SAI": "16",
+   "OCO": "17",
+   "BOT": "18",
+   "ALO": "19",
+   "STR": "R",
+   "PER": "R",
+   "RUS": "R"
+  },
+  "jev": {
+   "brier": 0.0596,
+   "log_loss": 0.0202,
+   "winner_hit": true,
+   "podium_hits": 2
+  },
+  "grid": {
+   "brier": 0.0571,
+   "log_loss": 0.6249,
+   "winner_hit": true,
+   "podium_hits": 2
+  }
+ },
+ "11": {
+  "winner": "NOR",
+  "podium": [
+   "NOR",
+   "VER",
+   "ANT"
+  ],
+  "finish": {
+   "NOR": "1",
+   "VER": "2",
+   "ANT": "3",
+   "LEC": "4",
+   "HAM": "5",
+   "HAD": "6",
+   "RUS": "7",
+   "LAW": "8",
+   "HUL": "9",
+   "LIN": "10",
+   "BOR": "11",
+   "GAS": "12",
+   "STR": "13",
+   "ALO": "14",
+   "COL": "15",
+   "OCO": "16",
+   "ALB": "17",
+   "SAI": "18",
+   "BEA": "19",
+   "PIA": "R",
+   "PER": "R",
+   "BOT": "R"
+  },
+  "jev": {
+   "brier": 0.0829,
+   "log_loss": 0.0513,
+   "winner_hit": true,
+   "podium_hits": 1
+  },
+  "grid": {
+   "brier": 0.0948,
+   "log_loss": 0.6249,
+   "winner_hit": true,
+   "podium_hits": 1
+  }
+ },
+ "12": {
+  "winner": "NOR",
+  "podium": [
+   "NOR",
+   "ANT",
+   "RUS"
+  ],
+  "finish": {
+   "NOR": "1",
+   "ANT": "2",
+   "RUS": "3",
+   "HAM": "4",
+   "LEC": "5",
+   "PIA": "6",
+   "LAW": "7",
+   "HUL": "8",
+   "ALO": "9",
+   "GAS": "10",
+   "TSU": "11",
+   "LIN": "12",
+   "BOR": "13",
+   "COL": "14",
+   "PER": "15",
+   "SAI": "16",
+   "ALB": "17",
+   "BOT": "R",
+   "OCO": "R",
+   "STR": "R",
+   "BEA": "R",
+   "VER": "R"
+  },
+  "jev": {
+   "brier": 0.0221,
+   "log_loss": 0.0726,
+   "winner_hit": true,
+   "podium_hits": 3
+  },
+  "grid": {
+   "brier": 0.0219,
+   "log_loss": 0.6249,
+   "winner_hit": true,
+   "podium_hits": 3
+  }
+ },
+ "13": {
+  "winner": "ANT",
+  "podium": [
+   "ANT",
+   "RUS",
+   "VER"
+  ],
+  "finish": {
+   "ANT": "1",
+   "RUS": "2",
+   "VER": "3",
+   "NOR": "4",
+   "PIA": "5",
+   "HAM": "6",
+   "GAS": "7",
+   "LIN": "8",
+   "COL": "9",
+   "TSU": "10",
+   "BOR": "11",
+   "HUL": "12",
+   "SAI": "13",
+   "LAW": "14",
+   "BEA": "15",
+   "OCO": "16",
+   "ALB": "17",
+   "PER": "18",
+   "BOT": "19",
+   "STR": "R",
+   "ALO": "R",
+   "LEC": "R"
+  },
+  "jev": {
+   "brier": 0.0917,
+   "log_loss": 2.4079,
+   "winner_hit": false,
+   "podium_hits": 1
+  },
+  "grid": {
+   "brier": 0.1277,
+   "log_loss": 5.5222,
+   "winner_hit": false,
+   "podium_hits": 1
+  }
+ },
+ "14": {
+  "winner": "ANT",
+  "podium": [
+   "ANT",
+   "VER",
+   "NOR"
+  ],
+  "finish": {
+   "ANT": "1",
+   "VER": "2",
+   "NOR": "3",
+   "LEC": "4",
+   "RUS": "5",
+   "LAW": "6",
+   "COL": "7",
+   "PIA": "8",
+   "LIN": "9",
+   "HUL": "10",
+   "OCO": "11",
+   "GAS": "12",
+   "BOR": "13",
+   "TSU": "14",
+   "ALB": "15",
+   "BEA": "16",
+   "ALO": "17",
+   "BOT": "18",
+   "SAI": "R",
+   "PER": "R",
+   "STR": "R",
+   "HAM": "R"
+  },
+  "jev": {
+   "brier": 0.0233,
+   "log_loss": 2.8134,
+   "winner_hit": false,
+   "podium_hits": 3
+  },
+  "grid": {
+   "brier": 0.0241,
+   "log_loss": 1.4486,
+   "winner_hit": false,
+   "podium_hits": 3
+  }
+ }
+}
