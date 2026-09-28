@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 99,
+  "slug": "example-grand-prix",
+  "race_name": "Example Grand Prix",
+  "circuit_name": "Example Circuit",
+  "race_start": "2026-10-04T07:00:00Z",
+  "kind": "live",
+  "status": "ok",
+  "made_at": "2026-10-03T10:12:00Z",
+  "late": false,
+  "note": "EXAMPLE ONLY: an illustrative record for contract tests, not a real prediction.",
+  "grid_provisional": true,
+  "drivers": [
+    {
+      "code": "NOR",
+      "name": "Lando Norris",
+      "number": 4,
+      "constructor": "McLaren",
+      "constructor_id": "mclaren",
+      "grid": 1
+    },
+    {
+      "code": "VER",
+      "name": "Max Verstappen",
+      "number": 1,
+      "constructor": "Red Bull",
+      "constructor_id": "red_bull",
+      "grid": 2
+    },
+    {
+      "code": "LEC",
+      "name": "Charles Leclerc",
+      "number": 16,
+      "constructor": "Ferrari",
+      "constructor_id": "ferrari",
+      "grid": 3
+    }
+  ],
+  "snapshot_text": "Race: Example Grand Prix.\n\nDrivers, in grid order:\nLando Norris starts 1st.",
+  "request": {
+    "model": "typesafe/jev-1.13",
+    "state": "Race: Example Grand Prix.",
+    "questions": {
+      "podium_NOR": {
+        "type": "noul",
+        "instructions": "Will Lando Norris (McLaren) finish the race in the top three?"
+      },
+      "podium_VER": {
+        "type": "noul",
+        "instructions": "Will Max Verstappen (Red Bull) finish the race in the top three?"
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "instructions": "Will Charles Leclerc (Ferrari) finish the race in the top three?"
+      },
+      "winner": {
+        "type": "choice",
+        "instructions": "Who will win the race?",
+        "criteria": {
+          "NOR": "Lando Norris (McLaren) wins.",
+          "VER": "Max Verstappen (Red Bull) wins.",
+          "LEC": "Charles Leclerc (Ferrari) wins."
+        }
+      },
+      "chaos": {
+        "type": "score",
+        "instructions": "How chaotic will this race be?",
+        "criteria": [
+          "0: calm",
+          "1: lively",
+          "2: eventful",
+          "3: chaotic",
+          "4: bedlam"
+        ]
+      }
+    }
+  },
+  "request_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "provider": "TypeSafe",
+    "id": "gen-dec-example",
+    "usage": {
+      "input_tokens": 900,
+      "output_tokens": 200,
+      "cost": 3.5e-05
+    },
+    "answers": {
+      "podium_NOR": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "podium_VER": {
+        "type": "noul",
+        "noul": 0.55
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "noul": 0.38
+      },
+      "winner": {
+        "type": "choice",
+        "choice": "NOR",
+        "confidence": 0.12,
+        "probabilities": {
+          "NOR": 0.41,
+          "VER": 0.37,
+          "LEC": 0.22
+        }
+      },
+      "chaos": {
+        "type": "score",
+        "score": 1.28,
+        "confidence": 0.7,
+        "legend": {
+          "0": "calm",
+          "4": "bedlam"
+        }
+      }
+    }
+  },
+  "jev": {
+    "url": "https://openrouter.ai/api/alpha/decisions",
+    "model_requested": "typesafe/jev-1.13",
+    "model_id": "typesafe/jev-1.13-20260917",
+    "provider": "TypeSafe",
+    "generation_id": "gen-dec-example",
+    "cost_usd": 3.5e-05,
+    "input_tokens": 900,
+    "output_tokens": 200,
+    "latency_ms": 4100,
+    "requested_at": "2026-10-03T10:11:56Z"
+  },
+  "calls": {
+    "podium": {
+      "NOR": 0.61,
+      "VER": 0.55,
+      "LEC": 0.38
+    },
+    "winner": {
+      "choice": "NOR",
+      "confidence": 0.12,
+      "probabilities": {
+        "NOR": 0.41,
+        "VER": 0.37,
+        "LEC": 0.22
+      }
+    },
+    "chaos": {
+      "score": 1.28,
+      "confidence": 0.7
+    }
+  },
+  "error": null,
+  "extra": {}
+}

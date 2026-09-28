@@ -1,0 +1,53 @@
+[project]
+name = "race-calls"
+version = "0.1.0"
+description = "Timestamped race predictions from Jev, scored after every race."
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "truststore>=0.10.4",
+    "typer>=0.12",
+]
+
+[project.scripts]
+rc = "race_calls.cli:app"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.2",
+    "respx>=0.21",
+    "ruff>=0.5",
+    "mypy>=1.11",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/race_calls"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["E501"]
+# Typer declares CLI options as typer.Option(...) defaults; that is its documented pattern.
+"src/race_calls/cli.py" = ["B008"]
+
+[tool.mypy]
+python_version = "3.12"
+packages = ["race_calls"]
+mypy_path = "src"
+strict = true
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

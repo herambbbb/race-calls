@@ -1,0 +1,19 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+
+# Local caches and tool state
+data/
+.omc/
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Web
+node_modules/
+web/dist/
+.vercel/
