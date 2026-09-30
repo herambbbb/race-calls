@@ -43,6 +43,10 @@ def ordinal(n: int) -> str:
     return f"{n}{suffix}"
 
 
+def _points(points: float) -> str:
+    return f"{points:g} point{'' if points == 1 else 's'}"
+
+
 def percent(x: float) -> str:
     return f"{round(x * 100)}%"
 
@@ -122,7 +126,7 @@ def _driver_line(
             else ""
         )
         parts.append(
-            f"{surname} is {where} the championship with {standing.points:g} points{wins}."
+            f"{surname} is {where} the championship with {_points(standing.points)}{wins}."
         )
 
     finishes = []
@@ -277,7 +281,7 @@ def _race_lines(
         lines.append(
             f"Constructors' championship after round {standings.after_round}: "
             + "; ".join(
-                f"{ordinal(c.position or 0)} {c.constructor.name} {c.points:g} points" for c in top
+                f"{ordinal(c.position or 0)} {c.constructor.name} {_points(c.points)}" for c in top
             )
             + "."
         )

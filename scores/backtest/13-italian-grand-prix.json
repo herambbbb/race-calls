@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 13,
+  "kind": "backtest",
+  "scored_at": "2026-09-30T15:33:34.774893Z",
+  "prediction": "predictions/backtest/13-italian-grand-prix.json",
+  "result": {
+    "winner": "ANT",
+    "podium": [
+      "ANT",
+      "RUS",
+      "VER"
+    ],
+    "finish": {
+      "ANT": "1",
+      "RUS": "2",
+      "VER": "3",
+      "NOR": "4",
+      "PIA": "5",
+      "HAM": "6",
+      "GAS": "7",
+      "LIN": "8",
+      "COL": "9",
+      "TSU": "10",
+      "BOR": "11",
+      "HUL": "12",
+      "SAI": "13",
+      "LAW": "14",
+      "BEA": "15",
+      "OCO": "16",
+      "ALB": "17",
+      "PER": "18",
+      "BOT": "19",
+      "STR": "R",
+      "ALO": "R",
+      "LEC": "R"
+    }
+  },
+  "chaos": {
+    "actual": 2,
+    "reason": "a full safety car"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.09165454545454545,
+      "winner_log_loss": 2.4079456086518722,
+      "winner_hit": false,
+      "podium_pick": [
+        "RUS",
+        "GAS",
+        "PIA"
+      ],
+      "podium_hits": 1,
+      "chaos_error": 0.42999999999999994
+    },
+    "grid": {
+      "podium_brier": 0.12770408696749158,
+      "winner_log_loss": 5.522162217735207,
+      "winner_hit": false,
+      "podium_pick": [
+        "GAS",
+        "RUS",
+        "PIA"
+      ],
+      "podium_hits": 1,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.05297356311044328,
+      "winner_log_loss": 1.35314215380299,
+      "winner_hit": false,
+      "podium_pick": [
+        "ANT",
+        "VER",
+        "NOR"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 1,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 3,
+      "lead_changes": 10,
+      "wet": false,
+      "podium_from_top_six": true
+    },
+    "lights_out": "2026-09-06T13:03:30.936000+00:00",
+    "podium_sum": 2.88,
+    "win_above_podium": [
+      "GAS"
+    ],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": []
+  }
+}

@@ -145,3 +145,18 @@ def test_predicts_once_qualifying_is_in_and_then_stops(key):
     # The next hourly run finds a final record and does nothing.
     again = runner.invoke(app, now)
     assert "Nothing due." in again.output and jev.call_count == 1
+
+
+def test_an_unscorable_race_is_reported_not_raised(monkeypatch):
+    from race_calls import cli
+
+    def no_full_podium(*args, **kwargs):
+        raise ValueError("round 16: the classification has no full podium")
+
+    monkeypatch.setattr(cli, "score_weekend", no_full_podium)
+    monkeypatch.setattr(cli.Context, "__init__", lambda self: None)
+    ctx = cli.Context()
+    ctx.jolpica = ctx.openf1 = ctx.priors = None
+    ctx.settings = get_settings()
+    weekend = type("Weekend", (), {"round": 16})()
+    assert ctx.score(weekend, None) is False  # the next race in the same run still runs

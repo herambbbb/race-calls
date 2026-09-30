@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 99,
+  "kind": "live",
+  "scored_at": "2026-10-05T03:00:00Z",
+  "prediction": "predictions/2026/99-example-grand-prix.json",
+  "result": {
+    "winner": "VER",
+    "podium": [
+      "VER",
+      "HAM",
+      "NOR"
+    ],
+    "finish": {
+      "VER": "1",
+      "HAM": "2",
+      "NOR": "3",
+      "LEC": "R"
+    }
+  },
+  "chaos": {
+    "actual": 2,
+    "reason": "a full safety car"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.16633333333333333,
+      "winner_log_loss": 0.9942522733438669,
+      "winner_hit": false,
+      "podium_pick": [
+        "NOR",
+        "VER",
+        "LEC"
+      ],
+      "podium_hits": 2,
+      "chaos_error": 0.72
+    },
+    "grid": {
+      "podium_brier": 0.15,
+      "winner_log_loss": 1.2039728043259361,
+      "winner_hit": false,
+      "podium_pick": [
+        "NOR",
+        "VER",
+        "LEC"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.3333333333333333,
+      "winner_log_loss": 1.0986122886681098,
+      "winner_hit": false,
+      "podium_pick": [
+        "NOR",
+        "VER",
+        "LEC"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 1,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 1,
+      "lead_changes": 1,
+      "wet": false,
+      "podium_from_top_six": true
+    },
+    "lights_out": null,
+    "podium_sum": 1.54,
+    "win_above_podium": [],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db test, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": [
+      "HAM"
+    ]
+  }
+}

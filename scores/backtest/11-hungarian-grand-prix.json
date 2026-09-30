@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 11,
+  "kind": "backtest",
+  "scored_at": "2026-09-30T15:33:34.758443Z",
+  "prediction": "predictions/backtest/11-hungarian-grand-prix.json",
+  "result": {
+    "winner": "NOR",
+    "podium": [
+      "NOR",
+      "VER",
+      "ANT"
+    ],
+    "finish": {
+      "NOR": "1",
+      "VER": "2",
+      "ANT": "3",
+      "LEC": "4",
+      "HAM": "5",
+      "HAD": "6",
+      "RUS": "7",
+      "LAW": "8",
+      "HUL": "9",
+      "LIN": "10",
+      "BOR": "11",
+      "GAS": "12",
+      "STR": "13",
+      "ALO": "14",
+      "COL": "15",
+      "OCO": "16",
+      "ALB": "17",
+      "SAI": "18",
+      "BEA": "19",
+      "PIA": "R",
+      "PER": "R",
+      "BOT": "R"
+    }
+  },
+  "chaos": {
+    "actual": 1,
+    "reason": "3 retirements and 7 lead changes"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.08292727272727272,
+      "winner_log_loss": 0.05129329438755058,
+      "winner_hit": true,
+      "podium_pick": [
+        "NOR",
+        "HAM",
+        "LEC"
+      ],
+      "podium_hits": 1,
+      "chaos_error": 0.13
+    },
+    "grid": {
+      "podium_brier": 0.09481810943254367,
+      "winner_log_loss": 0.6248874819638541,
+      "winner_hit": true,
+      "podium_pick": [
+        "NOR",
+        "HAM",
+        "LEC"
+      ],
+      "podium_hits": 1,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.09258780991735538,
+      "winner_log_loss": 4.477336814478207,
+      "winner_hit": false,
+      "podium_pick": [
+        "LEC",
+        "ANT",
+        "VER"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 0,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 3,
+      "lead_changes": 7,
+      "wet": false,
+      "podium_from_top_six": true
+    },
+    "lights_out": "2026-07-26T13:03:18.360000+00:00",
+    "podium_sum": 2.82,
+    "win_above_podium": [
+      "NOR"
+    ],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": []
+  }
+}

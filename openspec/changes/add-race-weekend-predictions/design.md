@@ -23,7 +23,7 @@ The first backtest put 56 to 100% of the winner `choice` on the pole-sitter in a
 - Teammate head-to-head this season, in qualifying and in the race (Jolpica).
 - Power unit supplier per car and that supplier's results this season (f1db entrant data, not typed by hand).
 - An aero proxy from qualifying: speed-trap ranking (drag and power) and rank in each sector (cornering), from OpenF1 qualifying laps. No public aero data exists; the snapshot says what the proxy is.
-- Similar-track form: each circuit is tagged with traits (high altitude, long straights, street, high downforce); each driver's results this season at circuits sharing a trait with this one. The tags are this project's judgement, stored in one reviewed file and labelled as such.
+- Similar-track form: each circuit is tagged with traits (high altitude, long straights, street, high downforce, high-speed corners, hot); each driver's results this season at circuits sharing a trait with this one. The tags are this project's judgement, stored in one reviewed file and labelled as such.
 The effect is measured, not assumed: the backtest is rerun and podium Brier compared before and after (contaminated races, so only as a plumbing check).
 
 ### 3. The chaos rubric (shared by the question and the scorer)

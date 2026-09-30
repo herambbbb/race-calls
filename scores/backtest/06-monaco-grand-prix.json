@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 6,
+  "kind": "backtest",
+  "scored_at": "2026-09-30T15:33:34.716985Z",
+  "prediction": "predictions/backtest/06-monaco-grand-prix.json",
+  "result": {
+    "winner": "ANT",
+    "podium": [
+      "ANT",
+      "HAM",
+      "HAD"
+    ],
+    "finish": {
+      "ANT": "1",
+      "HAM": "2",
+      "HAD": "3",
+      "PIA": "4",
+      "LAW": "5",
+      "LIN": "6",
+      "GAS": "7",
+      "ALB": "8",
+      "OCO": "9",
+      "ALO": "10",
+      "BOR": "11",
+      "RUS": "12",
+      "HUL": "13",
+      "COL": "14",
+      "PER": "15",
+      "SAI": "16",
+      "LEC": "R",
+      "STR": "R",
+      "NOR": "R",
+      "BEA": "R",
+      "BOT": "R",
+      "VER": "R"
+    }
+  },
+  "chaos": {
+    "actual": 3,
+    "reason": "two full safety cars and 6 retirements"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.07487727272727272,
+      "winner_log_loss": -0.0,
+      "winner_hit": true,
+      "podium_pick": [
+        "ANT",
+        "VER",
+        "HAM"
+      ],
+      "podium_hits": 2,
+      "chaos_error": 1.56
+    },
+    "grid": {
+      "podium_brier": 0.07261255933854736,
+      "winner_log_loss": 0.6248874819638541,
+      "winner_hit": true,
+      "podium_pick": [
+        "ANT",
+        "VER",
+        "HAM"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.09258780991735538,
+      "winner_log_loss": 0.2726441950872404,
+      "winner_hit": true,
+      "podium_pick": [
+        "ANT",
+        "PIA",
+        "VER"
+      ],
+      "podium_hits": 1,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 2,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 6,
+      "lead_changes": 0,
+      "wet": false,
+      "podium_from_top_six": true
+    },
+    "lights_out": "2026-06-07T13:03:11.903000+00:00",
+    "podium_sum": 2.83,
+    "win_above_podium": [
+      "ANT"
+    ],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": []
+  }
+}

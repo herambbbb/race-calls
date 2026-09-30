@@ -18,16 +18,16 @@
 
 ## 3. Scoring
 
-- [ ] 3.1 Chaos rubric scorer from OpenF1 race control, weather, and the classification, with tests on known races (a red flag race, a calm race)
-- [ ] 3.2 `ui score --season --round`: podium Brier, winner log loss and hit, chaos error, consistency checks, late-prediction exclusion
-- [ ] 3.3 Grid-slot and form baselines scored identically
-- [ ] 3.4 Season leaderboard and reliability table over live races only
+- [x] 3.1 Chaos rubric scorer from OpenF1 race control, weather, and the classification, with tests on known races (a red flag race, a calm race)
+- [x] 3.2 `ui score --season --round`: podium Brier, winner log loss and hit, chaos error, consistency checks, late-prediction exclusion
+- [x] 3.3 Grid-slot and form baselines scored identically
+- [x] 3.4 Season leaderboard and reliability table over live races only
 
 ## 4. Automation
 
 - [x] 4.1 Pre-race workflow (hourly, calendar-driven): predict when qualifying data is in, give up one hour before the start, commit
-- [ ] 4.2 Post-race workflow (hourly, calendar-driven): score when results are in, commit
-- [ ] 4.3 `OPENROUTER_API_KEY` as a repository secret; verify the built site contains no key
+- [x] 4.2 Post-race workflow (hourly, calendar-driven): score when results are in, commit
+- [x] 4.3 `TYPESAFE_API_KEY` as a repository secret (switched from `OPENROUTER_API_KEY` on 2026-09-28); verify the built site contains no key
 
 ## 5. Site
 
@@ -35,7 +35,7 @@
 - [ ] 5.2 Season page: leaderboard, calibration, race list with statuses
 - [ ] 5.3 Backtest page with the "may have seen these results" label
 - [ ] 5.4 360px, contrast, and branding pass
-- [ ] 5.5 Vercel project linked to the repository, deploying on push
+- [x] 5.5 ~~Vercel project linked to the repository, deploying on push~~ Out of scope (2026-09-30): the project stays a GitHub-only learning project; the site is built and viewed locally (`cd web && pnpm dev`). `web/vercel.json` is kept for a later deploy.
 
 ## 6. First live race
 

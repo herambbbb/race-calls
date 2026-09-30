@@ -62,3 +62,12 @@ def test_cache_round_trip_and_expiry(tmp_path):
     now[0] += timedelta(hours=7)
     assert cache.get("jolpica", "a", max_age=timedelta(hours=6)) is None
     assert cache.get("jolpica", "a") == {"x": 1}
+
+
+def test_the_score_schema_is_current():
+    from race_calls.models import ScoreRecord
+
+    schema = json.loads((CONTRACTS / "score-record.schema.json").read_text())
+    assert schema == ScoreRecord.model_json_schema(), (
+        "regenerate with: uv run python -m race_calls.contracts"
+    )

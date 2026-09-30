@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 10,
+  "kind": "backtest",
+  "scored_at": "2026-09-30T15:33:34.750391Z",
+  "prediction": "predictions/backtest/10-belgian-grand-prix.json",
+  "result": {
+    "winner": "ANT",
+    "podium": [
+      "ANT",
+      "LEC",
+      "VER"
+    ],
+    "finish": {
+      "ANT": "1",
+      "LEC": "2",
+      "VER": "3",
+      "HAM": "4",
+      "PIA": "5",
+      "HAD": "6",
+      "NOR": "7",
+      "BOR": "8",
+      "LIN": "9",
+      "COL": "10",
+      "GAS": "11",
+      "LAW": "12",
+      "HUL": "13",
+      "BEA": "14",
+      "ALB": "15",
+      "SAI": "16",
+      "OCO": "17",
+      "BOT": "18",
+      "ALO": "19",
+      "STR": "R",
+      "PER": "R",
+      "RUS": "R"
+    }
+  },
+  "chaos": {
+    "actual": 2,
+    "reason": "a full safety car and a first-lap yellow or virtual safety car"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.05959545454545454,
+      "winner_log_loss": 0.020202707317519466,
+      "winner_hit": true,
+      "podium_pick": [
+        "ANT",
+        "VER",
+        "NOR"
+      ],
+      "podium_hits": 2,
+      "chaos_error": 0.78
+    },
+    "grid": {
+      "podium_brier": 0.057138455752889984,
+      "winner_log_loss": 0.6248874819638541,
+      "winner_hit": true,
+      "podium_pick": [
+        "ANT",
+        "VER",
+        "NOR"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.1153150826446281,
+      "winner_log_loss": 4.477336814478207,
+      "winner_hit": false,
+      "podium_pick": [
+        "RUS",
+        "HAM",
+        "ANT"
+      ],
+      "podium_hits": 1,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 1,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": true,
+      "retirements": 3,
+      "lead_changes": 6,
+      "wet": false,
+      "podium_from_top_six": true
+    },
+    "lights_out": "2026-07-19T13:03:52.073000+00:00",
+    "podium_sum": 2.85,
+    "win_above_podium": [
+      "ANT"
+    ],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": []
+  }
+}

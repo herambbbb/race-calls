@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 14,
+  "kind": "backtest",
+  "scored_at": "2026-09-30T15:33:34.783979Z",
+  "prediction": "predictions/backtest/14-spanish-grand-prix.json",
+  "result": {
+    "winner": "ANT",
+    "podium": [
+      "ANT",
+      "VER",
+      "NOR"
+    ],
+    "finish": {
+      "ANT": "1",
+      "VER": "2",
+      "NOR": "3",
+      "LEC": "4",
+      "RUS": "5",
+      "LAW": "6",
+      "COL": "7",
+      "PIA": "8",
+      "LIN": "9",
+      "HUL": "10",
+      "OCO": "11",
+      "GAS": "12",
+      "BOR": "13",
+      "TSU": "14",
+      "ALB": "15",
+      "BEA": "16",
+      "ALO": "17",
+      "BOT": "18",
+      "SAI": "R",
+      "PER": "R",
+      "STR": "R",
+      "HAM": "R"
+    }
+  },
+  "chaos": {
+    "actual": 1,
+    "reason": "4 retirements"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.023289999999999998,
+      "winner_log_loss": 2.8134107167600364,
+      "winner_hit": false,
+      "podium_pick": [
+        "NOR",
+        "ANT",
+        "VER"
+      ],
+      "podium_hits": 3,
+      "chaos_error": 0.07999999999999996
+    },
+    "grid": {
+      "podium_brier": 0.02409966561253815,
+      "winner_log_loss": 1.4486327952270268,
+      "winner_hit": false,
+      "podium_pick": [
+        "NOR",
+        "ANT",
+        "VER"
+      ],
+      "podium_hits": 3,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.0392734375,
+      "winner_log_loss": 1.3416622070991222,
+      "winner_hit": false,
+      "podium_pick": [
+        "ANT",
+        "NOR",
+        "VER"
+      ],
+      "podium_hits": 3,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 0,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 4,
+      "lead_changes": 2,
+      "wet": false,
+      "podium_from_top_six": true
+    },
+    "lights_out": "2026-09-13T13:04:04.248000+00:00",
+    "podium_sum": 2.74,
+    "win_above_podium": [
+      "NOR"
+    ],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": [
+      "BEA",
+      "STR"
+    ]
+  }
+}

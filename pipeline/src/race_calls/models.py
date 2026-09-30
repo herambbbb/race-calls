@@ -306,3 +306,64 @@ def model_date(model_id: str | None) -> date | None:
         return datetime.strptime(tail, "%Y%m%d").date() if len(tail) == 8 else None
     except ValueError:
         return None
+
+
+# --- Score record (committed under scores/, read by the site) ---------------------------
+
+
+class RaceOutcome(Frozen):
+    winner: str  # driver code
+    podium: tuple[str, ...]  # codes in finishing order, P1 to P3
+    finish: dict[str, str]  # code -> Jolpica positionText: "1".."22", "R", "D", "W", "N", "F", "E"
+
+
+class ChaosInputs(Frozen):
+    """What the actual chaos level was computed from, kept for auditing."""
+
+    safety_cars: int
+    virtual_safety_cars: int
+    red_flags: int
+    first_lap_yellow_or_vsc: bool
+    retirements: int  # started but not classified (excludes did-not-start)
+    lead_changes: int | None  # None when OpenF1 position data was unavailable
+    wet: bool
+    podium_from_top_six: bool  # at least one podium finisher started in the top six
+
+
+class ChaosActual(Frozen):
+    actual: int  # 0..4, the highest rubric row that holds
+    reason: str  # plain words, e.g. "a red flag"
+    inputs: ChaosInputs
+    # When the race really started (race control's first SESSION STARTED). Races can be
+    # moved without the calendar catching up (2026 Miami ran at 17:00Z, Jolpica said 20:00Z),
+    # so a live call is checked against this too before it is scored.
+    lights_out: AwareDatetime | None = None
+
+
+class ContenderScore(Frozen):
+    podium_brier: float
+    winner_log_loss: float
+    winner_hit: bool
+    podium_pick: tuple[str, ...]  # three codes, most likely first
+    podium_hits: int  # 0..3
+    chaos_error: float | None  # None when this side makes no chaos call
+
+
+class ScoreChaos(Frozen):
+    actual: int
+    reason: str
+
+
+class ScoreRecord(Frozen):
+    """The shape web/src/data/scores.ts reads; extra fields are ignored by the site."""
+
+    schema_version: int = SCHEMA_VERSION
+    season: int
+    round: int
+    kind: Kind
+    scored_at: AwareDatetime
+    prediction: str  # repository path of the scored prediction record
+    result: RaceOutcome
+    chaos: ScoreChaos
+    scores: dict[str, ContenderScore]  # "jev", "grid", "form"
+    details: dict[str, Any] = Field(default_factory=dict)  # chaos inputs, baseline notes

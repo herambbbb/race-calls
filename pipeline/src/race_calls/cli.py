@@ -5,6 +5,7 @@ from typing import Any
 import typer
 
 from race_calls.cache import JsonCache
+from race_calls.chaos import ChaosUnavailable, actual_chaos
 from race_calls.facts.engines import load_engines
 from race_calls.facts.pace import qualifying_laps
 from race_calls.facts.tracks import load_traits
@@ -12,8 +13,9 @@ from race_calls.http import make_client
 from race_calls.jev import PATIENT, JevClient, RetryPolicy
 from race_calls.jolpica import JolpicaClient
 from race_calls.models import Kind, PredictionRecord, SessionWeather, Status, Weekend
-from race_calls.openf1.client import OpenF1Client
+from race_calls.openf1.client import LiveSessionLockout, OpenF1Client
 from race_calls.openf1.sessions import find_session, weather_summary
+from race_calls.postrace import score_weekend, scoring_due
 from race_calls.predict import (
     GIVE_UP_BEFORE_START,
     Action,
@@ -30,6 +32,7 @@ from race_calls.predict import (
     write_record,
 )
 from race_calls.priors import load_priors
+from race_calls.score import NotScorable, ScoreExists
 from race_calls.settings import get_settings
 
 app = typer.Typer(help="race-calls: timestamped race predictions from Jev.", no_args_is_help=True)
@@ -66,6 +69,7 @@ class Context:
         self.settings = settings
         self.jolpica = JolpicaClient(cache=cache)
         openf1 = OpenF1Client(make_client(), cache=cache)
+        self.openf1 = openf1
         self.weather = _weather_lookup(openf1)
         self.facts = FactSources(load_engines(), load_traits(), laps=_laps_lookup(openf1))
         self.priors = load_priors()
@@ -73,6 +77,37 @@ class Context:
     def done(self, weekend: Weekend) -> bool:
         record = existing_record(self.settings.predictions_dir, weekend)
         return record is not None and record.status is not Status.FAILED
+
+    def score(self, weekend: Weekend, record: PredictionRecord, force: bool = False) -> bool:
+        """Score one race. False (and a reason) if the data is not in yet."""
+        try:
+            path = score_weekend(
+                self.jolpica,
+                lambda w, result: actual_chaos(self.openf1, w, result),
+                weekend,
+                record,
+                self.priors,
+                self.settings.predictions_dir,
+                self.settings.scores_dir,
+                utc_now(),
+                force=force,
+            )
+        except (ChaosUnavailable, LiveSessionLockout) as error:
+            typer.echo(f"Round {weekend.round}: race-control data not available yet ({error}).")
+            return False
+        except (NotScorable, ScoreExists) as error:
+            typer.echo(f"Round {weekend.round}: {error}")
+            return False
+        except ValueError as error:
+            # An unusual classification (no full podium) needs a person, but must not stop
+            # the other races due in the same run from being scored.
+            typer.echo(f"Round {weekend.round}: cannot score yet, needs a look: {error}")
+            return False
+        if path is None:
+            typer.echo(f"Round {weekend.round}: the official result is not published yet.")
+            return False
+        typer.echo(f"Round {weekend.round}: scored -> {path.name}")
+        return True
 
     def predict(self, calendar: list[Weekend], weekend: Weekend, retry: RetryPolicy) -> bool:
         """Predict one race and save it. False if qualifying is not published yet."""
@@ -178,7 +213,7 @@ def prerace(
 def backtest(
     season: int = typer.Option(2026, help="Season"),
     first: int = typer.Option(1, help="First round"),
-    last: int = typer.Option(15, help="Last round"),
+    last: int = typer.Option(14, help="Last round"),
 ) -> None:
     """Dry-run past rounds (the model may have seen them). One Jev request per round."""
     ctx = Context()
@@ -193,6 +228,57 @@ def backtest(
             typer.echo(f"Round {w.round}: already done.")
             continue
         ctx.predict(calendar, w, PATIENT)
+
+
+@app.command()
+def score(
+    season: int = typer.Option(..., help="Season, e.g. 2026"),
+    round: int = typer.Option(..., "--round", help="Round number"),
+    force: bool = typer.Option(False, help="Rescore, replacing an existing score"),
+) -> None:
+    """Score one race's saved prediction against the official result."""
+    ctx = Context()
+    weekend = ctx.jolpica.weekend(season, round)
+    record = existing_record(ctx.settings.predictions_dir, weekend)
+    if record is None:
+        raise typer.BadParameter(f"no prediction saved for {season} round {round}")
+    if not ctx.score(weekend, record, force=force):
+        raise typer.Exit(1)
+
+
+@app.command()
+def postrace(
+    season: int | None = typer.Option(None, help="Season (default: the current year)"),
+    now: str | None = typer.Option(None, help="Pretend it is this UTC time (testing)"),
+) -> None:
+    """The hourly job: score every live race whose result is official."""
+    ctx = Context()
+    moment = _parse_now(now)
+    calendar = ctx.jolpica.calendar(season or moment.year)
+    todo = scoring_due(calendar, moment, ctx.settings.predictions_dir, ctx.settings.scores_dir)
+    if not todo:
+        typer.echo("Nothing due.")
+    for item in todo:
+        ctx.score(item.weekend, item.record)
+
+
+@app.command("score-backtests")
+def score_backtests(
+    season: int = typer.Option(2026, help="Season"),
+    first: int = typer.Option(1, help="First round"),
+    last: int = typer.Option(14, help="Last round"),
+    force: bool = typer.Option(False, help="Rescore, replacing existing scores"),
+) -> None:
+    """Score the backtests (never on the leaderboard; the model may have seen them)."""
+    ctx = Context()
+    for w in ctx.jolpica.calendar(season):
+        if not first <= w.round <= last:
+            continue
+        record = existing_record(ctx.settings.predictions_dir, w)
+        if record is None or record.kind is not Kind.BACKTEST:
+            typer.echo(f"Round {w.round}: no backtest saved.")
+            continue
+        ctx.score(w, record, force=force)
 
 
 @app.command()

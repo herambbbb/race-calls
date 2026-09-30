@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 12,
+  "kind": "backtest",
+  "scored_at": "2026-09-30T15:33:34.766567Z",
+  "prediction": "predictions/backtest/12-dutch-grand-prix.json",
+  "result": {
+    "winner": "NOR",
+    "podium": [
+      "NOR",
+      "ANT",
+      "RUS"
+    ],
+    "finish": {
+      "NOR": "1",
+      "ANT": "2",
+      "RUS": "3",
+      "HAM": "4",
+      "LEC": "5",
+      "PIA": "6",
+      "LAW": "7",
+      "HUL": "8",
+      "ALO": "9",
+      "GAS": "10",
+      "TSU": "11",
+      "LIN": "12",
+      "BOR": "13",
+      "COL": "14",
+      "PER": "15",
+      "SAI": "16",
+      "ALB": "17",
+      "BOT": "R",
+      "OCO": "R",
+      "STR": "R",
+      "BEA": "R",
+      "VER": "R"
+    }
+  },
+  "chaos": {
+    "actual": 4,
+    "reason": "wet running"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.0221,
+      "winner_log_loss": 0.07257069283483537,
+      "winner_hit": true,
+      "podium_pick": [
+        "NOR",
+        "RUS",
+        "ANT"
+      ],
+      "podium_hits": 3,
+      "chaos_error": 0.8500000000000001
+    },
+    "grid": {
+      "podium_brier": 0.021945892671880695,
+      "winner_log_loss": 0.6248874819638541,
+      "winner_hit": true,
+      "podium_pick": [
+        "NOR",
+        "RUS",
+        "ANT"
+      ],
+      "podium_hits": 3,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.08769839406461308,
+      "winner_log_loss": 1.3753652905877003,
+      "winner_hit": false,
+      "podium_pick": [
+        "ANT",
+        "LEC",
+        "VER"
+      ],
+      "podium_hits": 1,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 0,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 5,
+      "lead_changes": 6,
+      "wet": true,
+      "podium_from_top_six": true
+    },
+    "lights_out": "2026-08-23T13:03:28.567000+00:00",
+    "podium_sum": 2.94,
+    "win_above_podium": [
+      "NOR"
+    ],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": []
+  }
+}

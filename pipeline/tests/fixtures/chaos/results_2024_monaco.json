@@ -1,0 +1,428 @@
+{
+ "MRData": {
+  "series": "f1",
+  "url": "https://api.jolpi.ca/ergast/f1/2024/8/results/",
+  "limit": "100",
+  "offset": "0",
+  "total": "20",
+  "RaceTable": {
+   "season": "2024",
+   "round": "8",
+   "Races": [
+    {
+     "season": "2024",
+     "round": "8",
+     "raceName": "Monaco Grand Prix",
+     "Circuit": {
+      "circuitId": "monaco",
+      "circuitName": "Circuit de Monaco"
+     },
+     "date": "2024-05-26",
+     "time": "13:00:00Z",
+     "Results": [
+      {
+       "number": "16",
+       "position": "1",
+       "positionText": "1",
+       "points": "25",
+       "Driver": {
+        "driverId": "leclerc",
+        "permanentNumber": "16",
+        "code": "LEC",
+        "givenName": "Charles",
+        "familyName": "Leclerc"
+       },
+       "Constructor": {
+        "constructorId": "ferrari",
+        "name": "Ferrari"
+       },
+       "grid": "1",
+       "laps": "78",
+       "status": "Finished"
+      },
+      {
+       "number": "81",
+       "position": "2",
+       "positionText": "2",
+       "points": "18",
+       "Driver": {
+        "driverId": "piastri",
+        "permanentNumber": "81",
+        "code": "PIA",
+        "givenName": "Oscar",
+        "familyName": "Piastri"
+       },
+       "Constructor": {
+        "constructorId": "mclaren",
+        "name": "McLaren"
+       },
+       "grid": "2",
+       "laps": "78",
+       "status": "Finished"
+      },
+      {
+       "number": "55",
+       "position": "3",
+       "positionText": "3",
+       "points": "15",
+       "Driver": {
+        "driverId": "sainz",
+        "permanentNumber": "55",
+        "code": "SAI",
+        "givenName": "Carlos",
+        "familyName": "Sainz"
+       },
+       "Constructor": {
+        "constructorId": "ferrari",
+        "name": "Ferrari"
+       },
+       "grid": "3",
+       "laps": "78",
+       "status": "Finished"
+      },
+      {
+       "number": "4",
+       "position": "4",
+       "positionText": "4",
+       "points": "12",
+       "Driver": {
+        "driverId": "norris",
+        "permanentNumber": "1",
+        "code": "NOR",
+        "givenName": "Lando",
+        "familyName": "Norris"
+       },
+       "Constructor": {
+        "constructorId": "mclaren",
+        "name": "McLaren"
+       },
+       "grid": "4",
+       "laps": "78",
+       "status": "Finished"
+      },
+      {
+       "number": "63",
+       "position": "5",
+       "positionText": "5",
+       "points": "10",
+       "Driver": {
+        "driverId": "russell",
+        "permanentNumber": "63",
+        "code": "RUS",
+        "givenName": "George",
+        "familyName": "Russell"
+       },
+       "Constructor": {
+        "constructorId": "mercedes",
+        "name": "Mercedes"
+       },
+       "grid": "5",
+       "laps": "78",
+       "status": "Finished"
+      },
+      {
+       "number": "1",
+       "position": "6",
+       "positionText": "6",
+       "points": "8",
+       "Driver": {
+        "driverId": "max_verstappen",
+        "permanentNumber": "3",
+        "code": "VER",
+        "givenName": "Max",
+        "familyName": "Verstappen"
+       },
+       "Constructor": {
+        "constructorId": "red_bull",
+        "name": "Red Bull"
+       },
+       "grid": "6",
+       "laps": "78",
+       "status": "Finished"
+      },
+      {
+       "number": "44",
+       "position": "7",
+       "positionText": "7",
+       "points": "7",
+       "Driver": {
+        "driverId": "hamilton",
+        "permanentNumber": "44",
+        "code": "HAM",
+        "givenName": "Lewis",
+        "familyName": "Hamilton"
+       },
+       "Constructor": {
+        "constructorId": "mercedes",
+        "name": "Mercedes"
+       },
+       "grid": "7",
+       "laps": "78",
+       "status": "Finished"
+      },
+      {
+       "number": "22",
+       "position": "8",
+       "positionText": "8",
+       "points": "4",
+       "Driver": {
+        "driverId": "tsunoda",
+        "permanentNumber": "22",
+        "code": "TSU",
+        "givenName": "Yuki",
+        "familyName": "Tsunoda"
+       },
+       "Constructor": {
+        "constructorId": "rb",
+        "name": "RB F1 Team"
+       },
+       "grid": "8",
+       "laps": "77",
+       "status": "Lapped"
+      },
+      {
+       "number": "23",
+       "position": "9",
+       "positionText": "9",
+       "points": "2",
+       "Driver": {
+        "driverId": "albon",
+        "permanentNumber": "23",
+        "code": "ALB",
+        "givenName": "Alexander",
+        "familyName": "Albon"
+       },
+       "Constructor": {
+        "constructorId": "williams",
+        "name": "Williams"
+       },
+       "grid": "9",
+       "laps": "77",
+       "status": "Lapped"
+      },
+      {
+       "number": "10",
+       "position": "10",
+       "positionText": "10",
+       "points": "1",
+       "Driver": {
+        "driverId": "gasly",
+        "permanentNumber": "10",
+        "code": "GAS",
+        "givenName": "Pierre",
+        "familyName": "Gasly"
+       },
+       "Constructor": {
+        "constructorId": "alpine",
+        "name": "Alpine F1 Team"
+       },
+       "grid": "10",
+       "laps": "77",
+       "status": "Lapped"
+      },
+      {
+       "number": "14",
+       "position": "11",
+       "positionText": "11",
+       "points": "0",
+       "Driver": {
+        "driverId": "alonso",
+        "permanentNumber": "14",
+        "code": "ALO",
+        "givenName": "Fernando",
+        "familyName": "Alonso"
+       },
+       "Constructor": {
+        "constructorId": "aston_martin",
+        "name": "Aston Martin"
+       },
+       "grid": "14",
+       "laps": "76",
+       "status": "Lapped"
+      },
+      {
+       "number": "3",
+       "position": "12",
+       "positionText": "12",
+       "points": "0",
+       "Driver": {
+        "driverId": "ricciardo",
+        "permanentNumber": "3",
+        "code": "RIC",
+        "givenName": "Daniel",
+        "familyName": "Ricciardo"
+       },
+       "Constructor": {
+        "constructorId": "rb",
+        "name": "RB F1 Team"
+       },
+       "grid": "12",
+       "laps": "76",
+       "status": "Lapped"
+      },
+      {
+       "number": "77",
+       "position": "13",
+       "positionText": "13",
+       "points": "0",
+       "Driver": {
+        "driverId": "bottas",
+        "permanentNumber": "77",
+        "code": "BOT",
+        "givenName": "Valtteri",
+        "familyName": "Bottas"
+       },
+       "Constructor": {
+        "constructorId": "sauber",
+        "name": "Sauber"
+       },
+       "grid": "17",
+       "laps": "76",
+       "status": "Lapped"
+      },
+      {
+       "number": "18",
+       "position": "14",
+       "positionText": "14",
+       "points": "0",
+       "Driver": {
+        "driverId": "stroll",
+        "permanentNumber": "18",
+        "code": "STR",
+        "givenName": "Lance",
+        "familyName": "Stroll"
+       },
+       "Constructor": {
+        "constructorId": "aston_martin",
+        "name": "Aston Martin"
+       },
+       "grid": "13",
+       "laps": "76",
+       "status": "Lapped"
+      },
+      {
+       "number": "2",
+       "position": "15",
+       "positionText": "15",
+       "points": "0",
+       "Driver": {
+        "driverId": "sargeant",
+        "permanentNumber": "2",
+        "code": "SAR",
+        "givenName": "Logan",
+        "familyName": "Sargeant"
+       },
+       "Constructor": {
+        "constructorId": "williams",
+        "name": "Williams"
+       },
+       "grid": "15",
+       "laps": "76",
+       "status": "Lapped"
+      },
+      {
+       "number": "24",
+       "position": "16",
+       "positionText": "16",
+       "points": "0",
+       "Driver": {
+        "driverId": "zhou",
+        "permanentNumber": "24",
+        "code": "ZHO",
+        "givenName": "Guanyu",
+        "familyName": "Zhou"
+       },
+       "Constructor": {
+        "constructorId": "sauber",
+        "name": "Sauber"
+       },
+       "grid": "18",
+       "laps": "76",
+       "status": "Lapped"
+      },
+      {
+       "number": "31",
+       "position": "17",
+       "positionText": "R",
+       "points": "0",
+       "Driver": {
+        "driverId": "ocon",
+        "permanentNumber": "31",
+        "code": "OCO",
+        "givenName": "Esteban",
+        "familyName": "Ocon"
+       },
+       "Constructor": {
+        "constructorId": "alpine",
+        "name": "Alpine F1 Team"
+       },
+       "grid": "11",
+       "laps": "0",
+       "status": "Retired"
+      },
+      {
+       "number": "11",
+       "position": "18",
+       "positionText": "R",
+       "points": "0",
+       "Driver": {
+        "driverId": "perez",
+        "permanentNumber": "11",
+        "code": "PER",
+        "givenName": "Sergio",
+        "familyName": "Pérez"
+       },
+       "Constructor": {
+        "constructorId": "red_bull",
+        "name": "Red Bull"
+       },
+       "grid": "16",
+       "laps": "0",
+       "status": "Retired"
+      },
+      {
+       "number": "27",
+       "position": "19",
+       "positionText": "R",
+       "points": "0",
+       "Driver": {
+        "driverId": "hulkenberg",
+        "permanentNumber": "27",
+        "code": "HUL",
+        "givenName": "Nico",
+        "familyName": "Hülkenberg"
+       },
+       "Constructor": {
+        "constructorId": "haas",
+        "name": "Haas F1 Team"
+       },
+       "grid": "19",
+       "laps": "0",
+       "status": "Retired"
+      },
+      {
+       "number": "20",
+       "position": "20",
+       "positionText": "R",
+       "points": "0",
+       "Driver": {
+        "driverId": "kevin_magnussen",
+        "permanentNumber": "20",
+        "code": "MAG",
+        "givenName": "Kevin",
+        "familyName": "Magnussen"
+       },
+       "Constructor": {
+        "constructorId": "haas",
+        "name": "Haas F1 Team"
+       },
+       "grid": "20",
+       "laps": "0",
+       "status": "Retired"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

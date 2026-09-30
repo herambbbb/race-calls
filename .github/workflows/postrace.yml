@@ -1,0 +1,49 @@
+# Hourly, every day: score any live race whose result is official (design Decision 6).
+# A race is due three hours after its start; until Jolpica and OpenF1 have the data the
+# run just reports "waiting". Each run exits in seconds when nothing is due.
+name: post-race
+
+on:
+  schedule:
+    - cron: "37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  # The same group as pre-race, so the two jobs never push at the same time.
+  group: predictions
+  cancel-in-progress: false
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        working-directory: pipeline
+        run: uv sync --frozen
+
+      - name: Score if due
+        working-directory: pipeline
+        run: uv run --frozen rc postrace
+
+      - name: Commit the score
+        run: |
+          git add scores/
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Score: $(git diff --cached --name-only | xargs -n1 basename | tr '\n' ' ')"
+          git pull --rebase --quiet
+          git push

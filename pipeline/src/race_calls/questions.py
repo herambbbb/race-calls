@@ -1,8 +1,8 @@
 """The three typed questions, all in one request (design Decision 1), and their answers.
 
 Question ids: "podium_<CODE>" per driver (noul), "winner" (choice over driver codes), and
-"chaos" (score on the rubric). The instructions never contain numbers; every fact lives
-in the snapshot.
+"chaos" (score on the rubric). Beyond each driver's name and team, and the rubric's fixed
+thresholds, the questions carry no facts; every fact lives in the snapshot.
 """
 
 from collections.abc import Mapping, Sequence

@@ -1,0 +1,169 @@
+{
+  "$defs": {
+    "ContenderScore": {
+      "additionalProperties": false,
+      "properties": {
+        "podium_brier": {
+          "title": "Podium Brier",
+          "type": "number"
+        },
+        "winner_log_loss": {
+          "title": "Winner Log Loss",
+          "type": "number"
+        },
+        "winner_hit": {
+          "title": "Winner Hit",
+          "type": "boolean"
+        },
+        "podium_pick": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Podium Pick",
+          "type": "array"
+        },
+        "podium_hits": {
+          "title": "Podium Hits",
+          "type": "integer"
+        },
+        "chaos_error": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Chaos Error"
+        }
+      },
+      "required": [
+        "podium_brier",
+        "winner_log_loss",
+        "winner_hit",
+        "podium_pick",
+        "podium_hits",
+        "chaos_error"
+      ],
+      "title": "ContenderScore",
+      "type": "object"
+    },
+    "Kind": {
+      "enum": [
+        "live",
+        "backtest"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "RaceOutcome": {
+      "additionalProperties": false,
+      "properties": {
+        "winner": {
+          "title": "Winner",
+          "type": "string"
+        },
+        "podium": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Podium",
+          "type": "array"
+        },
+        "finish": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Finish",
+          "type": "object"
+        }
+      },
+      "required": [
+        "winner",
+        "podium",
+        "finish"
+      ],
+      "title": "RaceOutcome",
+      "type": "object"
+    },
+    "ScoreChaos": {
+      "additionalProperties": false,
+      "properties": {
+        "actual": {
+          "title": "Actual",
+          "type": "integer"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "actual",
+        "reason"
+      ],
+      "title": "ScoreChaos",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "The shape web/src/data/scores.ts reads; extra fields are ignored by the site.",
+  "properties": {
+    "schema_version": {
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "season": {
+      "title": "Season",
+      "type": "integer"
+    },
+    "round": {
+      "title": "Round",
+      "type": "integer"
+    },
+    "kind": {
+      "$ref": "#/$defs/Kind"
+    },
+    "scored_at": {
+      "format": "date-time",
+      "title": "Scored At",
+      "type": "string"
+    },
+    "prediction": {
+      "title": "Prediction",
+      "type": "string"
+    },
+    "result": {
+      "$ref": "#/$defs/RaceOutcome"
+    },
+    "chaos": {
+      "$ref": "#/$defs/ScoreChaos"
+    },
+    "scores": {
+      "additionalProperties": {
+        "$ref": "#/$defs/ContenderScore"
+      },
+      "title": "Scores",
+      "type": "object"
+    },
+    "details": {
+      "additionalProperties": true,
+      "title": "Details",
+      "type": "object"
+    }
+  },
+  "required": [
+    "season",
+    "round",
+    "kind",
+    "scored_at",
+    "prediction",
+    "result",
+    "chaos",
+    "scores"
+  ],
+  "title": "ScoreRecord",
+  "type": "object"
+}

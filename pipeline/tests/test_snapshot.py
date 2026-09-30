@@ -241,3 +241,12 @@ def test_extra_facts_are_appended_per_driver_and_race():
     assert snap.drivers[0].line.endswith("Norris's McLaren uses a Mercedes power unit.")
     assert "Mercedes power unit" not in snap.drivers[1].line
     assert snap.race_lines[-1] == "Power units this season: Mercedes has 9 wins."
+
+
+def test_one_point_is_singular():
+    one = STANDINGS.model_copy(
+        update={
+            "drivers": (DriverStanding(position=20, points=1, wins=0, driver=VER, constructor=RBR),)
+        }
+    )
+    assert "with 1 point." in build(standings=one).drivers[1].line

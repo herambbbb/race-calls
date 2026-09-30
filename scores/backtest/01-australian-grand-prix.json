@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 1,
+  "kind": "backtest",
+  "scored_at": "2026-09-30T15:33:34.069282Z",
+  "prediction": "predictions/backtest/01-australian-grand-prix.json",
+  "result": {
+    "winner": "RUS",
+    "podium": [
+      "RUS",
+      "ANT",
+      "LEC"
+    ],
+    "finish": {
+      "RUS": "1",
+      "ANT": "2",
+      "LEC": "3",
+      "HAM": "4",
+      "NOR": "5",
+      "VER": "6",
+      "BEA": "7",
+      "LIN": "8",
+      "BOR": "9",
+      "GAS": "10",
+      "OCO": "11",
+      "ALB": "12",
+      "LAW": "13",
+      "COL": "14",
+      "SAI": "15",
+      "PER": "16",
+      "STR": "R",
+      "ALO": "R",
+      "BOT": "R",
+      "HAD": "R",
+      "PIA": "W",
+      "HUL": "W"
+    }
+  },
+  "chaos": {
+    "actual": 1,
+    "reason": "4 retirements and 7 lead changes"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.054400000000000004,
+      "winner_log_loss": 0.01005033585350145,
+      "winner_hit": true,
+      "podium_pick": [
+        "RUS",
+        "ANT",
+        "HAD"
+      ],
+      "podium_hits": 2,
+      "chaos_error": 0.7
+    },
+    "grid": {
+      "podium_brier": 0.04770893250571711,
+      "winner_log_loss": 0.6248874819638541,
+      "winner_hit": true,
+      "podium_pick": [
+        "RUS",
+        "ANT",
+        "HAD"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.13296398891966757,
+      "winner_log_loss": 2.9444389791664407,
+      "winner_hit": false,
+      "podium_pick": [
+        "RUS",
+        "ANT",
+        "HAD"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 0,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 4,
+      "lead_changes": 7,
+      "wet": false,
+      "podium_from_top_six": true
+    },
+    "lights_out": "2026-03-08T04:03:26.365000+00:00",
+    "podium_sum": 2.8,
+    "win_above_podium": [
+      "RUS"
+    ],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": [
+      "SAI",
+      "STR",
+      "VER"
+    ]
+  }
+}
