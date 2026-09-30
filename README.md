@@ -84,24 +84,83 @@ Both jobs run on GitHub Actions and decide from the calendar what to do, so odd 
 
 The site is a static React app built from the committed prediction and score files. There are no accounts, no live API calls, and no keys in the build. Run it locally with `cd web && pnpm dev`. Every page is described in [docs/site.md](docs/site.md).
 
-<table>
-<tr>
-<td width="50%"><img src="docs/images/race-hero.webp" alt="A race page: the race name, circuit outline, lights-out time in UTC and local time, and the time the call was made with a link to its commit history"><br><b>Race page.</b> When the call was made, with a link to its public commit history. Calls and the result stay hidden behind a button until you choose to see them.</td>
-<td width="50%"><img src="docs/images/race-winner.webp" alt="Every driver's win chance as a bar, with the real winner marked"><br><b>The winner question.</b> One pick and a full distribution over the grid, with the real winner marked.</td>
-</tr>
-<tr>
-<td><img src="docs/images/race-chaos.webp" alt="Jev's chaos call of 0.92 against the actual level 1, on the five-level rubric"><br><b>Chaos.</b> Jev's call against the actual level, with the rubric exactly as Jev saw it and the reason for the actual level.</td>
-<td><img src="docs/images/race-result.webp" alt="The real podium, the scorecard for Jev and both baselines, and every driver's podium chance against where they finished"><br><b>After the flag.</b> The real podium, the scorecard against both baselines, and every call against what happened.</td>
-</tr>
-<tr>
-<td><img src="docs/images/race-facts.webp" alt="The briefing Jev was given: race facts and one expandable row of facts per driver"><br><b>What Jev knew.</b> The exact facts Jev was given, race by race and driver by driver.</td>
-<td><img src="docs/images/backtest-leaderboard.webp" alt="The backtest leaderboard with the number of races counted and a note on why the numbers are uncertain"><br><b>Leaderboards.</b> Jev against both baselines, with the sample size as the loudest number and a note on uncertainty.</td>
-</tr>
-<tr>
-<td><img src="docs/images/backtest-technical.webp" alt="The technical leaderboard: every metric per race for Jev and both baselines"><br><b>Technical board.</b> Every metric, per race and per side, with aggregates and calibration error.</td>
-<td><img src="docs/images/backtest-calls-vs-real.webp" alt="Calls against reality: the chances Jev gave the real podium, the real winner, and the actual chaos level"><br><b>Calls vs reality.</b> The probability Jev gave to what actually happened, for every criterion.</td>
-</tr>
-</table>
+### Every call, through every storm
+
+The front page. Jev's chaos rating runs from calm to bedlam, and each race page paints both the call and what really happened.
+
+![Every call, through every storm: The front page. Jev's chaos rating runs from calm to bedlam, and each race page paints both the call and what really happened.](docs/images/landing-storm.webp)
+
+### Eight circuits, eight calls
+
+The live season at a glance: rounds 16 to 23, each with its circuit outline and its status.
+
+![Eight circuits, eight calls: The live season at a glance: rounds 16 to 23, each with its circuit outline and its status.](docs/images/landing-circuits.webp)
+
+### A race page
+
+When the call was made, with a link to its public commit history. Jev's calls and the result stay hidden behind a button until you choose to see them.
+
+![A race page: When the call was made, with a link to its public commit history. Jev's calls and the result stay hidden behind a button until you choose to see them.](docs/images/race-hero.webp)
+
+### The grid, in order
+
+Every driver's podium chance and win chance, with where they really finished.
+
+![The grid, in order: Every driver's podium chance and win chance, with where they really finished.](docs/images/race-grid.webp)
+
+### Every driver's win chance
+
+One pick and a full distribution over the grid, with the real winner marked.
+
+![Every driver's win chance: One pick and a full distribution over the grid, with the real winner marked.](docs/images/race-winner.webp)
+
+### Calm, or bedlam?
+
+Jev's chaos call against the actual level, the rubric exactly as Jev saw it, and the reason for the actual level.
+
+![Calm, or bedlam?: Jev's chaos call against the actual level, the rubric exactly as Jev saw it, and the reason for the actual level.](docs/images/race-chaos.webp)
+
+### What really happened
+
+The real podium, the scorecard against both baselines, and every call against what happened.
+
+![What really happened: The real podium, the scorecard against both baselines, and every call against what happened.](docs/images/race-result.webp)
+
+### What Jev knew
+
+Jev gives no reasons, so the page shows the exact facts it was given: race lines and one fact sheet per driver.
+
+![What Jev knew: Jev gives no reasons, so the page shows the exact facts it was given: race lines and one fact sheet per driver.](docs/images/race-facts.webp)
+
+### The backtest leaderboard
+
+Jev against both baselines, with the number of races counted as the loudest number, and a note on why every figure is uncertain.
+
+![The backtest leaderboard: Jev against both baselines, with the number of races counted as the loudest number, and a note on why every figure is uncertain.](docs/images/backtest-leaderboard.webp)
+
+### Every race, every measure
+
+The technical board: every metric per race and per side, with aggregates, consistency checks, and calibration error.
+
+![Every race, every measure: The technical board: every metric per race and per side, with aggregates, consistency checks, and calibration error.](docs/images/backtest-technical.webp)
+
+### What Jev said, what happened
+
+The chance Jev gave the real podium finishers, the real winner, and the actual chaos level, race by race.
+
+![What Jev said, what happened: The chance Jev gave the real podium finishers, the real winner, and the actual chaos level, race by race.](docs/images/backtest-calls-vs-real.webp)
+
+### When Jev said 70%, did it happen?
+
+Every podium chance in ten bands against how often it came true; sparse bands are marked low-sample.
+
+![When Jev said 70%, did it happen?: Every podium chance in ten bands against how often it came true; sparse bands are marked low-sample.](docs/images/backtest-calibration.webp)
+
+### Season, backtests, method
+
+The three ways into the record.
+
+![Season, backtests, method: The three ways into the record.](docs/images/landing-cards.webp)
 
 ## Results so far
 

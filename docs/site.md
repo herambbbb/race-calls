@@ -48,6 +48,18 @@ Page titles are set by `useDocumentTitle` as "Season - Race Calls", "Spanish Gra
 
 *The front page hero, with the next race's countdown card.*
 
+![The storm band: a painted vortex with a car racing round it, under the heading "Every call, through every storm."](images/landing-storm.webp)
+
+*The storm band, which introduces the chaos rating.*
+
+![Eight circuit cards for rounds 16 to 23, each with its outline, date, and status](images/landing-circuits.webp)
+
+*The eight live circuits, each linking to its race page.*
+
+![Three arched cards leading to the season, the backtests, and the method](images/landing-cards.webp)
+
+*The three ways into the record.*
+
 From top to bottom:
 
 - **The hero.** The headline "Called before lights out. Scored after the flag.", a two-sentence explanation of Jev, and the next race's card (`home/NextRaceCard.tsx`): the circuit outline drawing itself in, the countdown to lights out, and when the call is due. The pick itself is never shown here, so the front page cannot spoil a race. The hero fills the screen and closes into a rounded card as you scroll.

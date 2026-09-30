@@ -21,3 +21,6 @@ web/dist/
 
 # macOS folder metadata
 .DS_Store
+
+# Local Claude Code commands and skills (OpenSpec); kept on disk, not in the repository
+.claude/
