@@ -15,6 +15,19 @@ export const CONTENDER_LABEL: Record<Contender, string> = {
   form: 'Form baseline',
 }
 
+/**
+ * The leaderboard's measures explained, over many races. The leaderboard and the
+ * technical board both show these, so the two never disagree.
+ */
+export const EXPLAIN = {
+  podium_brier:
+    'Lower is better. The average squared gap between each podium chance and what happened. Saying 14% for everyone scores about 0.12.',
+  winner_log_loss: 'Lower is better. How surprised the call was by the real winner: 0.69 means it gave the winner 50%, 2.30 means 10%.',
+  winner_hits: 'Races where the most likely winner won.',
+  podium_hits: 'Of the three drivers called for the podium in each race.',
+  chaos_error: 'Lower is better. Average distance from the actual level, 0 to 4.',
+} as const
+
 interface Metric {
   label: string
   explain: string

@@ -1,9 +1,10 @@
-// The season leaderboard: Jev against both baselines over live races only, with the
-// number of races counted as the loudest thing on it, so a small sample looks small.
+// The leaderboard: Jev against both baselines, with the number of races counted as the
+// loudest thing on it, so a small sample looks small. The season shows live races only;
+// the backtests page shows the same table over the backtests, kept apart and labelled.
 import { score as fmt } from '../../data/format'
 import type { Contender } from '../../data/scores'
 import type { Standing } from '../../data/season'
-import { CONTENDER_LABEL } from '../../data/scorecard'
+import { CONTENDER_LABEL, EXPLAIN } from '../../data/scorecard'
 
 interface Column {
   label: string
@@ -18,7 +19,7 @@ const COLUMNS: Column[] = [
   {
     label: 'Podium Brier',
     short: 'Brier',
-    explain: 'Lower is better. The average squared gap between each podium chance and what happened. Saying 14% for everyone scores about 0.12.',
+    explain: EXPLAIN.podium_brier,
     value: (s) => s.podium_brier,
     show: (s) => fmt(s.podium_brier),
     better: 'lower',
@@ -26,7 +27,7 @@ const COLUMNS: Column[] = [
   {
     label: 'Winner log loss',
     short: 'Log loss',
-    explain: 'Lower is better. How surprised the call was by the real winner: 0.69 means it gave the winner 50%, 2.30 means 10%.',
+    explain: EXPLAIN.winner_log_loss,
     value: (s) => s.winner_log_loss,
     show: (s) => fmt(s.winner_log_loss, 2),
     better: 'lower',
@@ -34,7 +35,7 @@ const COLUMNS: Column[] = [
   {
     label: 'Winner picks right',
     short: 'Winners',
-    explain: 'Races where the most likely winner won.',
+    explain: EXPLAIN.winner_hits,
     value: (s) => (s.races ? s.winner_hits : null),
     show: (s) => (s.races ? `${s.winner_hits}/${s.races}` : '-'),
     better: 'higher',
@@ -42,7 +43,7 @@ const COLUMNS: Column[] = [
   {
     label: 'Podium picks right',
     short: 'Podiums',
-    explain: 'Of the three drivers called for the podium in each race.',
+    explain: EXPLAIN.podium_hits,
     value: (s) => (s.races ? s.podium_hits : null),
     show: (s) => (s.races ? `${s.podium_hits}/${s.races * 3}` : '-'),
     better: 'higher',
@@ -50,7 +51,7 @@ const COLUMNS: Column[] = [
   {
     label: 'Chaos error',
     short: 'Chaos',
-    explain: 'Lower is better. Average distance from the actual level, 0 to 4.',
+    explain: EXPLAIN.chaos_error,
     value: (s) => s.chaos_mae,
     show: (s) => (s.races && s.chaos_mae === null ? 'No call' : fmt(s.chaos_mae, 2)),
     better: 'lower',
@@ -75,13 +76,43 @@ function BestTag() {
   return <span className="tag ml-1.5 rounded-full bg-sector-purple px-1.5 align-middle text-ink">Best</span>
 }
 
-export function Leaderboard({ standings, total }: { standings: Standing[]; total: number }) {
+export type Scope = 'live' | 'backtest'
+
+const SCOPE = {
+  live: { counted: 'Live races counted', unit: 'live race', footnote: 'Backtests and late calls never count.' },
+  backtest: {
+    counted: 'Backtests counted',
+    unit: 'backtest',
+    footnote: 'Backtests only. The model may have seen these results, so they test the plumbing, not the skill.',
+  },
+} as const
+
+function sampleNote(scope: Scope, races: number): string {
+  const { unit } = SCOPE[scope]
+  if (races === 0) {
+    return scope === 'live'
+      ? 'Nothing counted yet. The leaderboard fills in the day after each live race.'
+      : 'No backtest has been scored yet.'
+  }
+  if (races < 5) return `Over ${races} ${unit}${races === 1 ? '' : 's'}: far too few to separate skill from luck. Read these as early form.`
+  return `Over ${races} ${unit}s. Still a small sample; one chaotic race can move every number.`
+}
+
+export function Leaderboard({
+  standings,
+  total,
+  scope = 'live',
+}: {
+  standings: Standing[]
+  total: number
+  scope?: Scope
+}) {
   const races = standings[0]?.races ?? 0
   const best = COLUMNS.map((c) => bestOf(c, standings))
   return (
     <div className="grid gap-4 lg:grid-cols-[minmax(0,4fr)_minmax(0,8fr)]">
       <div className="relative overflow-hidden rounded-[22px] border border-line bg-panel p-6">
-        <p className="tag text-muted">Live races counted</p>
+        <p className="tag text-muted">{SCOPE[scope].counted}</p>
         <p className="mt-2 flex items-baseline gap-3" data-testid="races-counted">
           <span className="telemetry text-8xl leading-none font-semibold tracking-tighter">{races}</span>
           <span className="text-muted">of {total}</span>
@@ -91,20 +122,16 @@ export function Leaderboard({ standings, total }: { standings: Standing[]; total
             <li key={i} className={`h-8 flex-1 rounded-[3px] ${i < races ? 'bg-sector-purple' : 'hatch border border-line text-muted'}`} />
           ))}
         </ol>
-        <p className="mt-5 text-sm leading-relaxed text-muted">
-          {races === 0
-            ? 'Nothing counted yet. The leaderboard fills in the day after each live race.'
-            : races < 5
-              ? `Over ${races} live race${races === 1 ? '' : 's'}: far too few to separate skill from luck. Read these as early form.`
-              : `Over ${races} live races. Still a small sample; one chaotic race can move every number.`}
-        </p>
-        <p className="mt-3 text-xs text-muted">Backtests and late calls never count.</p>
+        <p className="mt-5 text-sm leading-relaxed text-muted">{sampleNote(scope, races)}</p>
+        <p className="mt-3 text-xs text-muted">{SCOPE[scope].footnote}</p>
       </div>
 
       <div className="overflow-hidden rounded-[22px] border border-line bg-panel">
         {/* Wide screens: a table. */}
         <table className="hidden w-full border-collapse text-sm sm:table">
-          <caption className="sr-only">Season leaderboard over {races} live races</caption>
+          <caption className="sr-only">
+            {scope === 'live' ? 'Season leaderboard' : 'Backtest leaderboard'} over {races} {SCOPE[scope].unit}s
+          </caption>
           <thead>
             <tr className="tag border-b border-line text-left text-muted">
               <th scope="col" className="px-5 py-3 font-normal">

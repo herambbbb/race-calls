@@ -86,11 +86,14 @@ export interface Facts {
 /**
  * What the build ships for each record: the full record minus the raw response, the
  * snapshot text, the extras, and every part of the request except the chaos rubric.
- * The snapshot's fact lines survive as `facts`.
+ * The snapshot's fact lines survive as `facts`, and Jev's chance for each chaos level
+ * (response.answers.chaos.probabilities, keyed "0" to "4") as `chaos_levels`; records
+ * without them simply leave it out.
  */
 export type SlimRecord = Omit<PredictionRecord, 'response' | 'extra' | 'snapshot_text' | 'request'> & {
   request?: SlimRequest | null
   facts?: Facts | null
+  chaos_levels?: Record<string, number>
 }
 
 /** A record plus where it lives in the repository (for the commit-history link). */

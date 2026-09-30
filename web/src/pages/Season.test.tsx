@@ -2,6 +2,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router'
 import { describe, expect, it } from 'vitest'
 import example from '../../../contracts/prediction-record.example.json'
+import scoreExample from '../../../contracts/score-record.example.json'
 import type { CalendarRace } from '../data/calendar'
 import { slimRecord } from '../data/slim'
 import type { LoadedRecord, SlimRecord } from '../data/types'
@@ -84,5 +85,81 @@ describe('Backtests', () => {
 
   it('credits the circuit outlines', () => {
     expect(t).toContain('Tomislav Bacinger (MIT licence)')
+  })
+})
+
+describe('the backtest leaderboard', () => {
+  const score = { ...scoreExample, kind: 'backtest' as const, round: 3 }
+  const t = render(<Backtests records={[live, backtest]} scores={[score]} />)
+
+  it('scores the backtests on their own board, labelled, and never the live season', () => {
+    expect(t).toContain('Backtest leaderboard')
+    expect(t).toContain('Backtests counted')
+    expect(t).toMatch(/Backtests counted 1 of 1/)
+    expect(t).toContain('test the plumbing, not the skill')
+  })
+
+  it('explains why every number is uncertain', () => {
+    for (const reason of ['It is a sport', 'The samples are tiny', 'The calls are not independent', 'The inputs are imperfect', 'Backtests may be memorised']) {
+      expect(t).toContain(reason)
+    }
+  })
+
+  it('keeps backtests off the season board', () => {
+    const season = render(<Season records={[live, backtest]} scores={[score]} at={AT} calendar={calendar} />)
+    expect(season).toMatch(/Live races counted 0 of 1/)
+    expect(season).toContain('It is a sport')
+  })
+})
+
+describe('the technical and calls sections', () => {
+  const score = { ...scoreExample, kind: 'backtest' as const, round: 3 }
+  const html = renderToStaticMarkup(
+    <MemoryRouter>
+      <Backtests records={[live, backtest]} scores={[score]} />
+    </MemoryRouter>,
+  )
+  const t = text(html)
+
+  it('shows both for the backtests, numbered after the leaderboard', () => {
+    expect(t).toMatch(/02 Technical Every backtest, every measure/)
+    expect(t).toMatch(/03 Calls vs reality What Jev said, what happened/)
+    expect(t).toMatch(/04 Calibration/)
+    expect(t).toMatch(/05 Races/)
+  })
+
+  it('lays out the technical board with means, the calibration error, and how to read it', () => {
+    expect(t).toContain('Round 03 Example Grand Prix')
+    expect(t).toContain('Means, hits as totals')
+    expect(t).toContain('1.54')
+    expect(html).toContain('data-testid="podium-ece"')
+    expect(t).toContain('0.407')
+    expect(t).toContain('How to read this')
+    expect(t).toContain('Saying 14% for everyone scores about 0.12.')
+  })
+
+  it('writes every verdict in words, and says when a chance was not recorded', () => {
+    expect(t).toContain('made the podium')
+    expect(t).toContain('missed the podium')
+    expect(t).toContain('miss: the pick did not win')
+    expect(t).toContain('2 eventful a full safety car')
+    expect(t).toContain('Not recorded for this race.')
+  })
+
+  it('shows the empty state on the season with only backtest scores', () => {
+    const season = renderToStaticMarkup(
+      <MemoryRouter>
+        <Season records={[live, backtest]} scores={[score]} at={AT} calendar={calendar} />
+      </MemoryRouter>,
+    )
+    expect(season).toContain('data-testid="technical-empty"')
+    expect(season).toContain('data-testid="calls-empty"')
+    expect(text(season)).toContain('No live race scored yet.')
+    expect(text(season)).not.toContain('Example Grand Prix Jev')
+    expect(season).not.toContain('missed the podium')
+  })
+
+  it('never uses a long dash', () => {
+    expect(html).not.toMatch(/[\u2013\u2014]/)
   })
 })

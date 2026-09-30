@@ -1,4 +1,4 @@
-import { copyFileSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
@@ -47,5 +47,29 @@ describe('readSlimPredictions', () => {
     const warnings: string[] = []
     expect(Object.keys(readSlimPredictions(root, (m) => warnings.push(m)))).toEqual([PATH])
     expect(warnings).toEqual(['Skipping predictions/2026/1-broken.json: not valid JSON'])
+  })
+})
+
+describe('chaos_levels', () => {
+  const withLevels = (probabilities: unknown) => {
+    const raw = JSON.parse(readFileSync(EXAMPLE, 'utf8'))
+    raw.response.answers.chaos.probabilities = probabilities
+    writeFileSync(join(root, PATH), JSON.stringify(raw))
+    return readSlimPredictions(root)[PATH] as Record<string, unknown>
+  }
+
+  it('keeps Jev chance for each chaos level from the response, and nothing else of it', () => {
+    const levels = { '0': 0.1, '1': 0.2, '2': 0.5, '3': 0.1, '4': 0.1 }
+    const slim = withLevels(levels)
+    expect(slim.chaos_levels).toEqual(levels)
+    expect(slim).not.toHaveProperty('response')
+    const json = JSON.stringify(slim)
+    for (const text of ['legend', 'noul', 'answers', '"usage"', 'podium_NOR']) expect(json).not.toContain(text)
+  })
+
+  it('leaves it out when the response has none, or keeps only the numbers', () => {
+    expect(readSlimPredictions(root)[PATH]).not.toHaveProperty('chaos_levels')
+    expect(withLevels({ '0': 0.7, '1': 'high', '2': null })).toHaveProperty('chaos_levels', { '0': 0.7 })
+    expect(withLevels('none')).not.toHaveProperty('chaos_levels')
   })
 })
