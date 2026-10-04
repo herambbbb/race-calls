@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 16,
+  "kind": "live",
+  "scored_at": "2026-10-04T22:30:35.182312Z",
+  "prediction": "predictions/2026/16-bahrain-grand-prix-in-malaysia.json",
+  "result": {
+    "winner": "VER",
+    "podium": [
+      "VER",
+      "ANT",
+      "HAM"
+    ],
+    "finish": {
+      "VER": "1",
+      "ANT": "2",
+      "HAM": "3",
+      "LEC": "4",
+      "HAD": "5",
+      "PIA": "6",
+      "LAW": "7",
+      "ALO": "8",
+      "NOR": "9",
+      "LIN": "10",
+      "HUL": "11",
+      "STR": "12",
+      "COL": "13",
+      "BEA": "14",
+      "OCO": "15",
+      "GAS": "16",
+      "SAI": "17",
+      "BOR": "18",
+      "PER": "19",
+      "RUS": "20",
+      "ALB": "R",
+      "BOT": "R"
+    }
+  },
+  "chaos": {
+    "actual": 3,
+    "reason": "two full safety cars"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.046,
+      "winner_log_loss": 0.35667494393873245,
+      "winner_hit": true,
+      "podium_pick": [
+        "VER",
+        "ANT",
+        "HAM"
+      ],
+      "podium_hits": 3,
+      "chaos_error": 1.24
+    },
+    "grid": {
+      "podium_brier": 0.041265439879874105,
+      "winner_log_loss": 0.6248874819638541,
+      "winner_hit": true,
+      "podium_pick": [
+        "VER",
+        "HAM",
+        "HAD"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.08654794327573254,
+      "winner_log_loss": 4.48863636973214,
+      "winner_hit": false,
+      "podium_pick": [
+        "VER",
+        "HAD",
+        "ANT"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 2,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 2,
+      "lead_changes": 5,
+      "wet": false,
+      "podium_from_top_six": true
+    },
+    "lights_out": "2026-10-04T08:33:00.114000+00:00",
+    "podium_sum": 3.0,
+    "win_above_podium": [
+      "VER"
+    ],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": []
+  }
+}
