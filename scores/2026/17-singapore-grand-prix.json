@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 17,
+  "kind": "live",
+  "scored_at": "2026-10-11T20:32:53.280995Z",
+  "prediction": "predictions/2026/17-singapore-grand-prix.json",
+  "result": {
+    "winner": "VER",
+    "podium": [
+      "VER",
+      "LEC",
+      "ANT"
+    ],
+    "finish": {
+      "VER": "1",
+      "LEC": "2",
+      "ANT": "3",
+      "NOR": "4",
+      "PIA": "5",
+      "HAM": "6",
+      "LAW": "7",
+      "HUL": "8",
+      "RUS": "9",
+      "HAD": "10",
+      "GAS": "11",
+      "BEA": "12",
+      "OCO": "13",
+      "SAI": "14",
+      "LIN": "15",
+      "ALO": "16",
+      "PER": "17",
+      "ALB": "18",
+      "BOT": "19",
+      "STR": "R",
+      "COL": "R",
+      "BOR": "R"
+    }
+  },
+  "chaos": {
+    "actual": 1,
+    "reason": "3 retirements"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.03663181818181818,
+      "winner_log_loss": 0.35667494393873245,
+      "winner_hit": true,
+      "podium_pick": [
+        "VER",
+        "ANT",
+        "LEC"
+      ],
+      "podium_hits": 3,
+      "chaos_error": 0.6000000000000001
+    },
+    "grid": {
+      "podium_brier": 0.041265439879874105,
+      "winner_log_loss": 0.6248874819638541,
+      "winner_hit": true,
+      "podium_pick": [
+        "VER",
+        "LEC",
+        "HAM"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.07271383775774272,
+      "winner_log_loss": 1.3456233213889628,
+      "winner_hit": false,
+      "podium_pick": [
+        "VER",
+        "ANT",
+        "HAD"
+      ],
+      "podium_hits": 2,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 0,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 3,
+      "lead_changes": 0,
+      "wet": false,
+      "podium_from_top_six": true
+    },
+    "lights_out": "2026-10-11T12:03:39.077000+00:00",
+    "podium_sum": 3.29,
+    "win_above_podium": [],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": []
+  }
+}
