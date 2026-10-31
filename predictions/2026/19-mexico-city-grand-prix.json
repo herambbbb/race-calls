@@ -1,0 +1,723 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 19,
+  "slug": "mexico-city-grand-prix",
+  "race_name": "Mexico City Grand Prix",
+  "circuit_name": "Autódromo Hermanos Rodríguez",
+  "race_start": "2026-11-01T20:00:00Z",
+  "kind": "live",
+  "status": "ok",
+  "made_at": "2026-10-31T22:52:04.130017Z",
+  "late": false,
+  "note": null,
+  "grid_provisional": true,
+  "drivers": [
+    {
+      "code": "HAM",
+      "name": "Lewis Hamilton",
+      "number": 44,
+      "constructor": "Ferrari",
+      "constructor_id": "ferrari",
+      "grid": 1
+    },
+    {
+      "code": "RUS",
+      "name": "George Russell",
+      "number": 63,
+      "constructor": "Mercedes",
+      "constructor_id": "mercedes",
+      "grid": 2
+    },
+    {
+      "code": "LEC",
+      "name": "Charles Leclerc",
+      "number": 16,
+      "constructor": "Ferrari",
+      "constructor_id": "ferrari",
+      "grid": 3
+    },
+    {
+      "code": "VER",
+      "name": "Max Verstappen",
+      "number": 3,
+      "constructor": "Red Bull",
+      "constructor_id": "red_bull",
+      "grid": 4
+    },
+    {
+      "code": "ANT",
+      "name": "Andrea Kimi Antonelli",
+      "number": 12,
+      "constructor": "Mercedes",
+      "constructor_id": "mercedes",
+      "grid": 5
+    },
+    {
+      "code": "NOR",
+      "name": "Lando Norris",
+      "number": 1,
+      "constructor": "McLaren",
+      "constructor_id": "mclaren",
+      "grid": 6
+    },
+    {
+      "code": "HAD",
+      "name": "Isack Hadjar",
+      "number": 6,
+      "constructor": "Red Bull",
+      "constructor_id": "red_bull",
+      "grid": 7
+    },
+    {
+      "code": "LAW",
+      "name": "Liam Lawson",
+      "number": 30,
+      "constructor": "RB F1 Team",
+      "constructor_id": "rb",
+      "grid": 8
+    },
+    {
+      "code": "LIN",
+      "name": "Arvid Lindblad",
+      "number": 41,
+      "constructor": "RB F1 Team",
+      "constructor_id": "rb",
+      "grid": 9
+    },
+    {
+      "code": "GAS",
+      "name": "Pierre Gasly",
+      "number": 10,
+      "constructor": "Alpine F1 Team",
+      "constructor_id": "alpine",
+      "grid": 10
+    },
+    {
+      "code": "HUL",
+      "name": "Nico Hülkenberg",
+      "number": 27,
+      "constructor": "Audi",
+      "constructor_id": "audi",
+      "grid": 11
+    },
+    {
+      "code": "COL",
+      "name": "Franco Colapinto",
+      "number": 43,
+      "constructor": "Alpine F1 Team",
+      "constructor_id": "alpine",
+      "grid": 12
+    },
+    {
+      "code": "PIA",
+      "name": "Oscar Piastri",
+      "number": 81,
+      "constructor": "McLaren",
+      "constructor_id": "mclaren",
+      "grid": 13
+    },
+    {
+      "code": "BOR",
+      "name": "Gabriel Bortoleto",
+      "number": 5,
+      "constructor": "Audi",
+      "constructor_id": "audi",
+      "grid": 14
+    },
+    {
+      "code": "BEA",
+      "name": "Oliver Bearman",
+      "number": 87,
+      "constructor": "Haas F1 Team",
+      "constructor_id": "haas",
+      "grid": 15
+    },
+    {
+      "code": "SAI",
+      "name": "Carlos Sainz",
+      "number": 55,
+      "constructor": "Williams",
+      "constructor_id": "williams",
+      "grid": 16
+    },
+    {
+      "code": "ALB",
+      "name": "Alexander Albon",
+      "number": 23,
+      "constructor": "Williams",
+      "constructor_id": "williams",
+      "grid": 17
+    },
+    {
+      "code": "ALO",
+      "name": "Fernando Alonso",
+      "number": 14,
+      "constructor": "Aston Martin",
+      "constructor_id": "aston_martin",
+      "grid": 18
+    },
+    {
+      "code": "HIR",
+      "name": "Ryo Hirakawa",
+      "number": 50,
+      "constructor": "Haas F1 Team",
+      "constructor_id": "haas",
+      "grid": 19
+    },
+    {
+      "code": "STR",
+      "name": "Lance Stroll",
+      "number": 18,
+      "constructor": "Aston Martin",
+      "constructor_id": "aston_martin",
+      "grid": 20
+    },
+    {
+      "code": "PER",
+      "name": "Sergio Pérez",
+      "number": 11,
+      "constructor": "Cadillac F1 Team",
+      "constructor_id": "cadillac",
+      "grid": 21
+    },
+    {
+      "code": "BOT",
+      "name": "Valtteri Bottas",
+      "number": 77,
+      "constructor": "Cadillac F1 Team",
+      "constructor_id": "cadillac",
+      "grid": 22
+    }
+  ],
+  "snapshot_text": "Race: the Mexico City Grand Prix, round 19 of 23 in the 2026 season, at Autódromo Hermanos Rodríguez (Mexico City, Mexico).\nThe race starts at 20:00 UTC on 1 November 2026, with 22 drivers on the grid.\nThe grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.\nThe 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.\nThis circuit has held 25 championship races, most recently in 2025.\nQualifying was dry (air 26 C, track 45 C).\nConstructors' championship after round 18: 1st Mercedes 607 points; 2nd Ferrari 474 points; 3rd Red Bull 355 points; 4th McLaren 355 points; 5th RB F1 Team 102 points.\nPower units this season, over 18 races: Mercedes (8 cars) has 14 wins and 30 podiums; Ferrari (6 cars) has 2 wins and 12 podiums; Red Bull Ford (4 cars) has 2 wins and 12 podiums; Audi (2 cars) has 0 wins and 0 podiums; Honda (2 cars) has 0 wins and 0 podiums.\nSpeed-trap and sector rankings from qualifying are a rough proxy for straight-line speed and cornering; they are not aero measurements.\nFastest through the qualifying speed trap: Hadjar 351 km/h, Gasly 351 km/h, Colapinto 351 km/h.\nThis circuit is classed as having high altitude and long straights (this project's own classification). Earlier races this season at circuits sharing a trait: Chinese Grand Prix (long straights), Canadian Grand Prix (long straights), Austrian Grand Prix (long straights), Belgian Grand Prix (long straights), Italian Grand Prix (long straights), Azerbaijan Grand Prix (long straights).\n\nDrivers, in grid order:\nLewis Hamilton (Ferrari) starts 1st, on pole. Hamilton is 3rd in the championship with 241 points, with 1 win. Last 3 races: finished 4th in the United States Grand Prix; finished 6th in the Singapore Grand Prix; finished 3rd in the Bahrain Grand Prix in Malaysia. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts). In 2026, Hamilton has out-qualified teammate Leclerc in 8 of 18 qualifying sessions and finished ahead in 9 of 18 races. Hamilton's Ferrari uses a Ferrari power unit. In qualifying, Hamilton was joint 18th fastest through the speed trap (347 km/h) and ranked 4th, 2nd and 5th in sectors one, two and three. At those circuits, Hamilton finished 3rd in the Chinese Grand Prix, finished 2nd in the Canadian Grand Prix, finished 5th in the Austrian Grand Prix, finished 4th in the Belgian Grand Prix, finished 6th in the Italian Grand Prix and finished 6th in the Azerbaijan Grand Prix, averaging 4.3 in the 6 races finished.\nGeorge Russell (Mercedes) starts 2nd; Russell's best qualifying lap was 0.009 seconds slower than the pole lap. Russell is 2nd in the championship with 242 points, with 3 wins. Last 3 races: finished 8th in the United States Grand Prix; finished 9th in the Singapore Grand Prix; finished 20th in the Bahrain Grand Prix in Malaysia. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts). In 2026, Russell has out-qualified teammate Antonelli in 7 of 18 qualifying sessions and finished ahead in 5 of 18 races. Russell's Mercedes uses a Mercedes power unit. In qualifying, Russell was joint 4th fastest through the speed trap (350 km/h) and ranked 5th, 1st and 6th in sectors one, two and three. At those circuits, Russell finished 2nd in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 1st in the Austrian Grand Prix, retired in the Belgian Grand Prix, finished 2nd in the Italian Grand Prix and finished 1st in the Azerbaijan Grand Prix, averaging 1.5 in the 4 races finished.\nCharles Leclerc (Ferrari) starts 3rd; Leclerc's best qualifying lap was 0.119 seconds slower than the pole lap. Leclerc is 5th in the championship with 233 points, with 1 win. Last 3 races: finished 2nd in the United States Grand Prix; finished 2nd in the Singapore Grand Prix; finished 4th in the Bahrain Grand Prix in Malaysia. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts). In 2026, Leclerc has out-qualified teammate Hamilton in 10 of 18 qualifying sessions and finished ahead in 9 of 18 races. Leclerc's Ferrari uses a Ferrari power unit. In qualifying, Leclerc was joint 18th fastest through the speed trap (347 km/h) and ranked 3rd, 4th and 1st in sectors one, two and three. At those circuits, Leclerc finished 4th in the Chinese Grand Prix, finished 4th in the Canadian Grand Prix, finished 8th in the Austrian Grand Prix, finished 2nd in the Belgian Grand Prix, retired in the Italian Grand Prix and finished 4th in the Azerbaijan Grand Prix, averaging 4.4 in the 5 races finished.\nMax Verstappen (Red Bull) starts 4th; Verstappen's best qualifying lap was 0.178 seconds slower than the pole lap. Verstappen is 4th in the championship with 236 points, with 2 wins. Last 3 races: finished 3rd in the United States Grand Prix; finished 1st in the Singapore Grand Prix; finished 1st in the Bahrain Grand Prix in Malaysia. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts). In 2026, Verstappen has out-qualified teammate Hadjar in 11 of 14 qualifying sessions and finished ahead in 12 of 15 races. Verstappen's Red Bull uses a Red Bull Ford power unit. In qualifying, Verstappen was joint 4th fastest through the speed trap (350 km/h) and ranked 1st, 3rd and 3rd in sectors one, two and three. At those circuits, Verstappen retired in the Chinese Grand Prix, finished 3rd in the Canadian Grand Prix, finished 2nd in the Austrian Grand Prix, finished 3rd in the Belgian Grand Prix, finished 3rd in the Italian Grand Prix and finished 2nd in the Azerbaijan Grand Prix, averaging 2.6 in the 5 races finished.\nAndrea Kimi Antonelli (Mercedes) starts 5th; Antonelli's best qualifying lap was 0.193 seconds slower than the pole lap. Antonelli is 1st in the championship with 365 points, with 9 wins. Last 3 races: finished 1st in the United States Grand Prix; finished 3rd in the Singapore Grand Prix; finished 2nd in the Bahrain Grand Prix in Malaysia. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts). In 2026, Antonelli has out-qualified teammate Russell in 11 of 18 qualifying sessions and finished ahead in 13 of 18 races. Antonelli's Mercedes uses a Mercedes power unit. In qualifying, Antonelli was joint 4th fastest through the speed trap (350 km/h) and ranked 2nd, 5th and 7th in sectors one, two and three. At those circuits, Antonelli finished 1st in the Chinese Grand Prix, finished 1st in the Canadian Grand Prix, finished 3rd in the Austrian Grand Prix, finished 1st in the Belgian Grand Prix, finished 1st in the Italian Grand Prix and finished 5th in the Azerbaijan Grand Prix, averaging 2 in the 6 races finished.\nLando Norris (McLaren) starts 6th; Norris's best qualifying lap was 0.214 seconds slower than the pole lap. Norris is 6th in the championship with 211 points, with 2 wins. Last 3 races: finished 5th in the United States Grand Prix; finished 4th in the Singapore Grand Prix; finished 9th in the Bahrain Grand Prix in Malaysia. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts). In 2026, Norris has out-qualified teammate Piastri in 11 of 18 qualifying sessions and finished ahead in 10 of 17 races, leaving out 1 race where neither was classified. Norris's McLaren uses a Mercedes power unit. In qualifying, Norris was joint 4th fastest through the speed trap (350 km/h) and ranked 6th, 6th and 2nd in sectors one, two and three. At those circuits, Norris withdrew in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 7th in the Austrian Grand Prix, finished 7th in the Belgian Grand Prix, finished 4th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 6 in the 3 races finished.\nIsack Hadjar (Red Bull) starts 7th; Hadjar's best qualifying lap was 0.386 seconds slower than the pole lap. Hadjar is 8th in the championship with 105 points. Last 3 races: finished 6th in the United States Grand Prix; finished 10th in the Singapore Grand Prix; finished 5th in the Bahrain Grand Prix in Malaysia. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts). In 2026, Hadjar has out-qualified teammate Verstappen in 3 of 14 qualifying sessions and finished ahead in 3 of 15 races. Hadjar's Red Bull uses a Red Bull Ford power unit. In qualifying, Hadjar was joint fastest through the speed trap (351 km/h) and ranked 8th, 8th and 8th in sectors one, two and three. At those circuits, Hadjar finished 8th in the Chinese Grand Prix, finished 5th in the Canadian Grand Prix, finished 6th in the Austrian Grand Prix, finished 6th in the Belgian Grand Prix and finished 3rd in the Azerbaijan Grand Prix, averaging 5.6 in the 5 races finished.\nLiam Lawson (RB F1 Team) starts 8th; Lawson's best qualifying lap was 0.515 seconds slower than the pole lap. Lawson is 9th in the championship with 77 points. Last 3 races: finished 9th in the United States Grand Prix; finished 7th in the Singapore Grand Prix; finished 7th in the Bahrain Grand Prix in Malaysia. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts). In 2026, Lawson has out-qualified teammate Lindblad in 9 of 15 qualifying sessions and finished ahead in 11 of 15 races. Lawson's RB F1 Team uses a Red Bull Ford power unit. In qualifying, Lawson was joint 4th fastest through the speed trap (350 km/h) and ranked 11th, 7th and 9th in sectors one, two and three. At those circuits, Lawson finished 7th in the Chinese Grand Prix, finished 7th in the Canadian Grand Prix, finished 9th in the Austrian Grand Prix, finished 12th in the Belgian Grand Prix, finished 14th in the Italian Grand Prix and finished 12th in the Azerbaijan Grand Prix, averaging 10.2 in the 6 races finished.\nArvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 0.603 seconds slower than the pole lap. Lindblad is 11th in the championship with 38 points. Last 3 races: finished 12th in the United States Grand Prix; finished 15th in the Singapore Grand Prix; finished 10th in the Bahrain Grand Prix in Malaysia. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts). In 2026, Lindblad has out-qualified teammate Lawson in 6 of 15 qualifying sessions and finished ahead in 4 of 15 races. Lindblad's RB F1 Team uses a Red Bull Ford power unit. In qualifying, Lindblad was joint 4th fastest through the speed trap (350 km/h) and ranked 9th, 9th and 4th in sectors one, two and three. At those circuits, Lindblad finished 12th in the Chinese Grand Prix, withdrew in the Canadian Grand Prix, finished 10th in the Austrian Grand Prix, finished 9th in the Belgian Grand Prix, finished 8th in the Italian Grand Prix and finished 7th in the Azerbaijan Grand Prix, averaging 9.2 in the 5 races finished.\nPierre Gasly (Alpine F1 Team) starts 10th; Gasly's best qualifying lap was 0.639 seconds slower than the pole lap. Gasly is 10th in the championship with 42 points. Last 3 races: finished 10th in the United States Grand Prix; finished 11th in the Singapore Grand Prix; finished 16th in the Bahrain Grand Prix in Malaysia. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts). In 2026, Gasly has out-qualified teammate Colapinto in 14 of 18 qualifying sessions and finished ahead in 11 of 17 races, leaving out 1 race where neither was classified. Gasly's Alpine F1 Team uses a Mercedes power unit. In qualifying, Gasly was joint fastest through the speed trap (351 km/h) and ranked 7th, 10th and 13th in sectors one, two and three. At those circuits, Gasly finished 6th in the Chinese Grand Prix, finished 8th in the Canadian Grand Prix, finished 13th in the Austrian Grand Prix, finished 11th in the Belgian Grand Prix, finished 7th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 9 in the 5 races finished.\nNico Hülkenberg (Audi) starts 11th; Hülkenberg's best qualifying lap was 0.792 seconds slower than the pole lap. Hülkenberg is 14th in the championship with 13 points. Last 3 races: finished 11th in the United States Grand Prix; finished 8th in the Singapore Grand Prix; finished 11th in the Bahrain Grand Prix in Malaysia. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts). In 2026, Hülkenberg has out-qualified teammate Bortoleto in 9 of 18 qualifying sessions and finished ahead in 10 of 18 races. Hülkenberg's Audi uses a Audi power unit. In qualifying, Hülkenberg was joint 14th fastest through the speed trap (348 km/h) and ranked 12th, 11th and 12th in sectors one, two and three. At those circuits, Hülkenberg finished 11th in the Chinese Grand Prix, finished 12th in the Canadian Grand Prix, finished 12th in the Austrian Grand Prix, finished 13th in the Belgian Grand Prix, finished 12th in the Italian Grand Prix and finished 11th in the Azerbaijan Grand Prix, averaging 11.8 in the 6 races finished.\nFranco Colapinto (Alpine F1 Team) starts 12th; Colapinto's best qualifying lap was 1.126 seconds slower than the pole lap. Colapinto is 12th in the championship with 27 points. Last 3 races: retired in the United States Grand Prix; retired in the Singapore Grand Prix; finished 13th in the Bahrain Grand Prix in Malaysia. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts). In 2026, Colapinto has out-qualified teammate Gasly in 4 of 18 qualifying sessions and finished ahead in 6 of 17 races, leaving out 1 race where neither was classified. Colapinto's Alpine F1 Team uses a Mercedes power unit. In qualifying, Colapinto was joint fastest through the speed trap (351 km/h) and ranked 13th, 13th and 15th in sectors one, two and three. At those circuits, Colapinto finished 10th in the Chinese Grand Prix, finished 6th in the Canadian Grand Prix, finished 15th in the Austrian Grand Prix, finished 10th in the Belgian Grand Prix, finished 9th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 10 in the 5 races finished.\nOscar Piastri (McLaren) starts 13th; Piastri's best qualifying lap was 1.132 seconds slower than the pole lap. Piastri is 7th in the championship with 144 points. Last 3 races: finished 7th in the United States Grand Prix; finished 5th in the Singapore Grand Prix; finished 6th in the Bahrain Grand Prix in Malaysia. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts). In 2026, Piastri has out-qualified teammate Norris in 7 of 18 qualifying sessions and finished ahead in 7 of 17 races, leaving out 1 race where neither was classified. Piastri's McLaren uses a Mercedes power unit. In qualifying, Piastri was joint 12th fastest through the speed trap (349 km/h) and ranked 10th, 14th and 10th in sectors one, two and three. At those circuits, Piastri withdrew in the Chinese Grand Prix, finished 11th in the Canadian Grand Prix, finished 4th in the Austrian Grand Prix, finished 5th in the Belgian Grand Prix, finished 5th in the Italian Grand Prix and finished 13th in the Azerbaijan Grand Prix, averaging 7.6 in the 5 races finished.\nGabriel Bortoleto (Audi) starts 14th; Bortoleto's best qualifying lap was 1.166 seconds slower than the pole lap. Bortoleto is 15th in the championship with 10 points. Last 3 races: finished 13th in the United States Grand Prix; retired in the Singapore Grand Prix; finished 18th in the Bahrain Grand Prix in Malaysia. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts). In 2026, Bortoleto has out-qualified teammate Hülkenberg in 9 of 18 qualifying sessions and finished ahead in 8 of 18 races. Bortoleto's Audi uses a Audi power unit. In qualifying, Bortoleto was joint 4th fastest through the speed trap (350 km/h) and ranked 15th, 12th and 11th in sectors one, two and three. At those circuits, Bortoleto withdrew in the Chinese Grand Prix, finished 13th in the Canadian Grand Prix, finished 11th in the Austrian Grand Prix, finished 8th in the Belgian Grand Prix, finished 11th in the Italian Grand Prix and finished 15th in the Azerbaijan Grand Prix, averaging 11.6 in the 5 races finished.\nOliver Bearman (Haas F1 Team) starts 15th; Bearman's best qualifying lap was 1.569 seconds slower than the pole lap. Bearman is 13th in the championship with 23 points. Last 3 races: retired in the United States Grand Prix; finished 12th in the Singapore Grand Prix; finished 14th in the Bahrain Grand Prix in Malaysia. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts). Bearman and Hirakawa have not been teammates at an earlier round of 2026. Bearman's Haas F1 Team uses a Ferrari power unit. In qualifying, Bearman was joint 12th fastest through the speed trap (349 km/h) and ranked 14th, 15th and 14th in sectors one, two and three. At those circuits, Bearman finished 5th in the Chinese Grand Prix, finished 10th in the Canadian Grand Prix, finished 14th in the Austrian Grand Prix, finished 14th in the Belgian Grand Prix, finished 15th in the Italian Grand Prix and finished 9th in the Azerbaijan Grand Prix, averaging 11.2 in the 6 races finished.\nCarlos Sainz (Williams) starts 16th; Sainz's best qualifying lap was 2.007 seconds slower than the pole lap. Sainz is 18th in the championship with 7 points. Last 3 races: finished 18th in the United States Grand Prix; finished 14th in the Singapore Grand Prix; finished 17th in the Bahrain Grand Prix in Malaysia. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts). In 2026, Sainz has out-qualified teammate Albon in 14 of 17 qualifying sessions and finished ahead in 11 of 18 races. Sainz's Williams uses a Mercedes power unit. In qualifying, Sainz was joint 14th fastest through the speed trap (348 km/h) and ranked 16th, 17th and 17th in sectors one, two and three. At those circuits, Sainz finished 9th in the Chinese Grand Prix, finished 9th in the Canadian Grand Prix, retired in the Austrian Grand Prix, finished 16th in the Belgian Grand Prix, finished 13th in the Italian Grand Prix and finished 10th in the Azerbaijan Grand Prix, averaging 11.4 in the 5 races finished.\nAlexander Albon (Williams) starts 17th; Albon's best qualifying lap was 2.116 seconds slower than the pole lap. Albon is 19th in the championship with 5 points. Last 3 races: finished 17th in the United States Grand Prix; finished 18th in the Singapore Grand Prix; retired in the Bahrain Grand Prix in Malaysia. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts). In 2026, Albon has out-qualified teammate Sainz in 3 of 17 qualifying sessions and finished ahead in 7 of 18 races. Albon's Williams uses a Mercedes power unit. In qualifying, Albon was joint 18th fastest through the speed trap (347 km/h) and ranked 18th, 16th and 16th in sectors one, two and three. At those circuits, Albon withdrew in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 17th in the Austrian Grand Prix, finished 15th in the Belgian Grand Prix, finished 17th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 16.3 in the 3 races finished.\nFernando Alonso (Aston Martin) starts 18th; Alonso's best qualifying lap was 2.394 seconds slower than the pole lap. Alonso is 17th in the championship with 7 points. Last 3 races: finished 16th in the United States Grand Prix; finished 16th in the Singapore Grand Prix; finished 8th in the Bahrain Grand Prix in Malaysia. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts). In 2026, Alonso has out-qualified teammate Stroll in 14 of 16 qualifying sessions and finished ahead in 10 of 13 races, leaving out 5 races where neither was classified. Alonso's Aston Martin uses a Honda power unit. In qualifying, Alonso was joint 21st fastest through the speed trap (340 km/h) and ranked 22nd, 18th and 18th in sectors one, two and three. At those circuits, Alonso retired in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 18th in the Austrian Grand Prix, finished 19th in the Belgian Grand Prix, retired in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 18.5 in the 2 races finished.\nRyo Hirakawa (Haas F1 Team) starts 19th; Hirakawa's best qualifying lap was 2.444 seconds slower than the pole lap. Hirakawa has no championship points yet. Last 3 races: did not race in the United States Grand Prix; did not race in the Singapore Grand Prix; did not race in the Bahrain Grand Prix in Malaysia. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts). Hirakawa and Bearman have not been teammates at an earlier round of 2026. Hirakawa's Haas F1 Team uses a Ferrari power unit. In qualifying, Hirakawa was joint 14th fastest through the speed trap (348 km/h) and ranked 17th, 21st and 19th in sectors one, two and three. Hirakawa has not raced at those circuits this season.\nLance Stroll (Aston Martin) starts 20th; Stroll's best qualifying lap was 2.558 seconds slower than the pole lap. Stroll has no championship points yet. Last 3 races: finished 15th in the United States Grand Prix; retired in the Singapore Grand Prix; finished 12th in the Bahrain Grand Prix in Malaysia. From 20th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (170 starts). In 2026, Stroll has out-qualified teammate Alonso in 2 of 16 qualifying sessions and finished ahead in 3 of 13 races, leaving out 5 races where neither was classified. Stroll's Aston Martin uses a Honda power unit. In qualifying, Stroll was joint 21st fastest through the speed trap (340 km/h) and ranked 21st, 19th and 22nd in sectors one, two and three. At those circuits, Stroll retired in the Chinese Grand Prix, finished 15th in the Canadian Grand Prix, retired in the Austrian Grand Prix, retired in the Belgian Grand Prix, retired in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 15 in the 1 race finished.\nSergio Pérez (Cadillac F1 Team) starts 21st; Pérez's best qualifying lap was 2.591 seconds slower than the pole lap. Pérez has no championship points yet. Last 3 races: finished 19th in the United States Grand Prix; finished 17th in the Singapore Grand Prix; finished 19th in the Bahrain Grand Prix in Malaysia. From 21st on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (35 starts). In 2026, Pérez has out-qualified teammate Bottas in 10 of 18 qualifying sessions and finished ahead in 12 of 16 races, leaving out 2 races where neither was classified. Pérez's Cadillac F1 Team uses a Ferrari power unit. In qualifying, Pérez was joint 4th fastest through the speed trap (350 km/h) and ranked 20th, 20th and 21st in sectors one, two and three. At those circuits, Pérez finished 15th in the Chinese Grand Prix, retired in the Canadian Grand Prix, retired in the Austrian Grand Prix, retired in the Belgian Grand Prix, finished 18th in the Italian Grand Prix and finished 14th in the Azerbaijan Grand Prix, averaging 15.7 in the 3 races finished.\nValtteri Bottas (Cadillac F1 Team) starts 22nd; Bottas's best qualifying lap was 3.338 seconds slower than the pole lap. Bottas has no championship points yet. Last 3 races: retired in the United States Grand Prix; finished 19th in the Singapore Grand Prix; retired in the Bahrain Grand Prix in Malaysia. From 22nd on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (22 starts). In 2026, Bottas has out-qualified teammate Pérez in 8 of 18 qualifying sessions and finished ahead in 4 of 16 races, leaving out 2 races where neither was classified. Bottas's Cadillac F1 Team uses a Ferrari power unit. In qualifying, Bottas was joint 14th fastest through the speed trap (348 km/h) and ranked 19th, 22nd and 20th in sectors one, two and three. At those circuits, Bottas finished 13th in the Chinese Grand Prix, finished 16th in the Canadian Grand Prix, retired in the Austrian Grand Prix, finished 18th in the Belgian Grand Prix, finished 19th in the Italian Grand Prix and finished 16th in the Azerbaijan Grand Prix, averaging 16.4 in the 5 races finished.",
+  "request": {
+    "model": "jev-1.13.0",
+    "state": "Race: the Mexico City Grand Prix, round 19 of 23 in the 2026 season, at Autódromo Hermanos Rodríguez (Mexico City, Mexico).\nThe race starts at 20:00 UTC on 1 November 2026, with 22 drivers on the grid.\nThe grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.\nThe 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.\nThis circuit has held 25 championship races, most recently in 2025.\nQualifying was dry (air 26 C, track 45 C).\nConstructors' championship after round 18: 1st Mercedes 607 points; 2nd Ferrari 474 points; 3rd Red Bull 355 points; 4th McLaren 355 points; 5th RB F1 Team 102 points.\nPower units this season, over 18 races: Mercedes (8 cars) has 14 wins and 30 podiums; Ferrari (6 cars) has 2 wins and 12 podiums; Red Bull Ford (4 cars) has 2 wins and 12 podiums; Audi (2 cars) has 0 wins and 0 podiums; Honda (2 cars) has 0 wins and 0 podiums.\nSpeed-trap and sector rankings from qualifying are a rough proxy for straight-line speed and cornering; they are not aero measurements.\nFastest through the qualifying speed trap: Hadjar 351 km/h, Gasly 351 km/h, Colapinto 351 km/h.\nThis circuit is classed as having high altitude and long straights (this project's own classification). Earlier races this season at circuits sharing a trait: Chinese Grand Prix (long straights), Canadian Grand Prix (long straights), Austrian Grand Prix (long straights), Belgian Grand Prix (long straights), Italian Grand Prix (long straights), Azerbaijan Grand Prix (long straights).\n\nDrivers, in grid order:\nLewis Hamilton (Ferrari) starts 1st, on pole. Hamilton is 3rd in the championship with 241 points, with 1 win. Last 3 races: finished 4th in the United States Grand Prix; finished 6th in the Singapore Grand Prix; finished 3rd in the Bahrain Grand Prix in Malaysia. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts). In 2026, Hamilton has out-qualified teammate Leclerc in 8 of 18 qualifying sessions and finished ahead in 9 of 18 races. Hamilton's Ferrari uses a Ferrari power unit. In qualifying, Hamilton was joint 18th fastest through the speed trap (347 km/h) and ranked 4th, 2nd and 5th in sectors one, two and three. At those circuits, Hamilton finished 3rd in the Chinese Grand Prix, finished 2nd in the Canadian Grand Prix, finished 5th in the Austrian Grand Prix, finished 4th in the Belgian Grand Prix, finished 6th in the Italian Grand Prix and finished 6th in the Azerbaijan Grand Prix, averaging 4.3 in the 6 races finished.\nGeorge Russell (Mercedes) starts 2nd; Russell's best qualifying lap was 0.009 seconds slower than the pole lap. Russell is 2nd in the championship with 242 points, with 3 wins. Last 3 races: finished 8th in the United States Grand Prix; finished 9th in the Singapore Grand Prix; finished 20th in the Bahrain Grand Prix in Malaysia. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts). In 2026, Russell has out-qualified teammate Antonelli in 7 of 18 qualifying sessions and finished ahead in 5 of 18 races. Russell's Mercedes uses a Mercedes power unit. In qualifying, Russell was joint 4th fastest through the speed trap (350 km/h) and ranked 5th, 1st and 6th in sectors one, two and three. At those circuits, Russell finished 2nd in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 1st in the Austrian Grand Prix, retired in the Belgian Grand Prix, finished 2nd in the Italian Grand Prix and finished 1st in the Azerbaijan Grand Prix, averaging 1.5 in the 4 races finished.\nCharles Leclerc (Ferrari) starts 3rd; Leclerc's best qualifying lap was 0.119 seconds slower than the pole lap. Leclerc is 5th in the championship with 233 points, with 1 win. Last 3 races: finished 2nd in the United States Grand Prix; finished 2nd in the Singapore Grand Prix; finished 4th in the Bahrain Grand Prix in Malaysia. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts). In 2026, Leclerc has out-qualified teammate Hamilton in 10 of 18 qualifying sessions and finished ahead in 9 of 18 races. Leclerc's Ferrari uses a Ferrari power unit. In qualifying, Leclerc was joint 18th fastest through the speed trap (347 km/h) and ranked 3rd, 4th and 1st in sectors one, two and three. At those circuits, Leclerc finished 4th in the Chinese Grand Prix, finished 4th in the Canadian Grand Prix, finished 8th in the Austrian Grand Prix, finished 2nd in the Belgian Grand Prix, retired in the Italian Grand Prix and finished 4th in the Azerbaijan Grand Prix, averaging 4.4 in the 5 races finished.\nMax Verstappen (Red Bull) starts 4th; Verstappen's best qualifying lap was 0.178 seconds slower than the pole lap. Verstappen is 4th in the championship with 236 points, with 2 wins. Last 3 races: finished 3rd in the United States Grand Prix; finished 1st in the Singapore Grand Prix; finished 1st in the Bahrain Grand Prix in Malaysia. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts). In 2026, Verstappen has out-qualified teammate Hadjar in 11 of 14 qualifying sessions and finished ahead in 12 of 15 races. Verstappen's Red Bull uses a Red Bull Ford power unit. In qualifying, Verstappen was joint 4th fastest through the speed trap (350 km/h) and ranked 1st, 3rd and 3rd in sectors one, two and three. At those circuits, Verstappen retired in the Chinese Grand Prix, finished 3rd in the Canadian Grand Prix, finished 2nd in the Austrian Grand Prix, finished 3rd in the Belgian Grand Prix, finished 3rd in the Italian Grand Prix and finished 2nd in the Azerbaijan Grand Prix, averaging 2.6 in the 5 races finished.\nAndrea Kimi Antonelli (Mercedes) starts 5th; Antonelli's best qualifying lap was 0.193 seconds slower than the pole lap. Antonelli is 1st in the championship with 365 points, with 9 wins. Last 3 races: finished 1st in the United States Grand Prix; finished 3rd in the Singapore Grand Prix; finished 2nd in the Bahrain Grand Prix in Malaysia. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts). In 2026, Antonelli has out-qualified teammate Russell in 11 of 18 qualifying sessions and finished ahead in 13 of 18 races. Antonelli's Mercedes uses a Mercedes power unit. In qualifying, Antonelli was joint 4th fastest through the speed trap (350 km/h) and ranked 2nd, 5th and 7th in sectors one, two and three. At those circuits, Antonelli finished 1st in the Chinese Grand Prix, finished 1st in the Canadian Grand Prix, finished 3rd in the Austrian Grand Prix, finished 1st in the Belgian Grand Prix, finished 1st in the Italian Grand Prix and finished 5th in the Azerbaijan Grand Prix, averaging 2 in the 6 races finished.\nLando Norris (McLaren) starts 6th; Norris's best qualifying lap was 0.214 seconds slower than the pole lap. Norris is 6th in the championship with 211 points, with 2 wins. Last 3 races: finished 5th in the United States Grand Prix; finished 4th in the Singapore Grand Prix; finished 9th in the Bahrain Grand Prix in Malaysia. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts). In 2026, Norris has out-qualified teammate Piastri in 11 of 18 qualifying sessions and finished ahead in 10 of 17 races, leaving out 1 race where neither was classified. Norris's McLaren uses a Mercedes power unit. In qualifying, Norris was joint 4th fastest through the speed trap (350 km/h) and ranked 6th, 6th and 2nd in sectors one, two and three. At those circuits, Norris withdrew in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 7th in the Austrian Grand Prix, finished 7th in the Belgian Grand Prix, finished 4th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 6 in the 3 races finished.\nIsack Hadjar (Red Bull) starts 7th; Hadjar's best qualifying lap was 0.386 seconds slower than the pole lap. Hadjar is 8th in the championship with 105 points. Last 3 races: finished 6th in the United States Grand Prix; finished 10th in the Singapore Grand Prix; finished 5th in the Bahrain Grand Prix in Malaysia. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts). In 2026, Hadjar has out-qualified teammate Verstappen in 3 of 14 qualifying sessions and finished ahead in 3 of 15 races. Hadjar's Red Bull uses a Red Bull Ford power unit. In qualifying, Hadjar was joint fastest through the speed trap (351 km/h) and ranked 8th, 8th and 8th in sectors one, two and three. At those circuits, Hadjar finished 8th in the Chinese Grand Prix, finished 5th in the Canadian Grand Prix, finished 6th in the Austrian Grand Prix, finished 6th in the Belgian Grand Prix and finished 3rd in the Azerbaijan Grand Prix, averaging 5.6 in the 5 races finished.\nLiam Lawson (RB F1 Team) starts 8th; Lawson's best qualifying lap was 0.515 seconds slower than the pole lap. Lawson is 9th in the championship with 77 points. Last 3 races: finished 9th in the United States Grand Prix; finished 7th in the Singapore Grand Prix; finished 7th in the Bahrain Grand Prix in Malaysia. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts). In 2026, Lawson has out-qualified teammate Lindblad in 9 of 15 qualifying sessions and finished ahead in 11 of 15 races. Lawson's RB F1 Team uses a Red Bull Ford power unit. In qualifying, Lawson was joint 4th fastest through the speed trap (350 km/h) and ranked 11th, 7th and 9th in sectors one, two and three. At those circuits, Lawson finished 7th in the Chinese Grand Prix, finished 7th in the Canadian Grand Prix, finished 9th in the Austrian Grand Prix, finished 12th in the Belgian Grand Prix, finished 14th in the Italian Grand Prix and finished 12th in the Azerbaijan Grand Prix, averaging 10.2 in the 6 races finished.\nArvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 0.603 seconds slower than the pole lap. Lindblad is 11th in the championship with 38 points. Last 3 races: finished 12th in the United States Grand Prix; finished 15th in the Singapore Grand Prix; finished 10th in the Bahrain Grand Prix in Malaysia. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts). In 2026, Lindblad has out-qualified teammate Lawson in 6 of 15 qualifying sessions and finished ahead in 4 of 15 races. Lindblad's RB F1 Team uses a Red Bull Ford power unit. In qualifying, Lindblad was joint 4th fastest through the speed trap (350 km/h) and ranked 9th, 9th and 4th in sectors one, two and three. At those circuits, Lindblad finished 12th in the Chinese Grand Prix, withdrew in the Canadian Grand Prix, finished 10th in the Austrian Grand Prix, finished 9th in the Belgian Grand Prix, finished 8th in the Italian Grand Prix and finished 7th in the Azerbaijan Grand Prix, averaging 9.2 in the 5 races finished.\nPierre Gasly (Alpine F1 Team) starts 10th; Gasly's best qualifying lap was 0.639 seconds slower than the pole lap. Gasly is 10th in the championship with 42 points. Last 3 races: finished 10th in the United States Grand Prix; finished 11th in the Singapore Grand Prix; finished 16th in the Bahrain Grand Prix in Malaysia. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts). In 2026, Gasly has out-qualified teammate Colapinto in 14 of 18 qualifying sessions and finished ahead in 11 of 17 races, leaving out 1 race where neither was classified. Gasly's Alpine F1 Team uses a Mercedes power unit. In qualifying, Gasly was joint fastest through the speed trap (351 km/h) and ranked 7th, 10th and 13th in sectors one, two and three. At those circuits, Gasly finished 6th in the Chinese Grand Prix, finished 8th in the Canadian Grand Prix, finished 13th in the Austrian Grand Prix, finished 11th in the Belgian Grand Prix, finished 7th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 9 in the 5 races finished.\nNico Hülkenberg (Audi) starts 11th; Hülkenberg's best qualifying lap was 0.792 seconds slower than the pole lap. Hülkenberg is 14th in the championship with 13 points. Last 3 races: finished 11th in the United States Grand Prix; finished 8th in the Singapore Grand Prix; finished 11th in the Bahrain Grand Prix in Malaysia. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts). In 2026, Hülkenberg has out-qualified teammate Bortoleto in 9 of 18 qualifying sessions and finished ahead in 10 of 18 races. Hülkenberg's Audi uses a Audi power unit. In qualifying, Hülkenberg was joint 14th fastest through the speed trap (348 km/h) and ranked 12th, 11th and 12th in sectors one, two and three. At those circuits, Hülkenberg finished 11th in the Chinese Grand Prix, finished 12th in the Canadian Grand Prix, finished 12th in the Austrian Grand Prix, finished 13th in the Belgian Grand Prix, finished 12th in the Italian Grand Prix and finished 11th in the Azerbaijan Grand Prix, averaging 11.8 in the 6 races finished.\nFranco Colapinto (Alpine F1 Team) starts 12th; Colapinto's best qualifying lap was 1.126 seconds slower than the pole lap. Colapinto is 12th in the championship with 27 points. Last 3 races: retired in the United States Grand Prix; retired in the Singapore Grand Prix; finished 13th in the Bahrain Grand Prix in Malaysia. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts). In 2026, Colapinto has out-qualified teammate Gasly in 4 of 18 qualifying sessions and finished ahead in 6 of 17 races, leaving out 1 race where neither was classified. Colapinto's Alpine F1 Team uses a Mercedes power unit. In qualifying, Colapinto was joint fastest through the speed trap (351 km/h) and ranked 13th, 13th and 15th in sectors one, two and three. At those circuits, Colapinto finished 10th in the Chinese Grand Prix, finished 6th in the Canadian Grand Prix, finished 15th in the Austrian Grand Prix, finished 10th in the Belgian Grand Prix, finished 9th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 10 in the 5 races finished.\nOscar Piastri (McLaren) starts 13th; Piastri's best qualifying lap was 1.132 seconds slower than the pole lap. Piastri is 7th in the championship with 144 points. Last 3 races: finished 7th in the United States Grand Prix; finished 5th in the Singapore Grand Prix; finished 6th in the Bahrain Grand Prix in Malaysia. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts). In 2026, Piastri has out-qualified teammate Norris in 7 of 18 qualifying sessions and finished ahead in 7 of 17 races, leaving out 1 race where neither was classified. Piastri's McLaren uses a Mercedes power unit. In qualifying, Piastri was joint 12th fastest through the speed trap (349 km/h) and ranked 10th, 14th and 10th in sectors one, two and three. At those circuits, Piastri withdrew in the Chinese Grand Prix, finished 11th in the Canadian Grand Prix, finished 4th in the Austrian Grand Prix, finished 5th in the Belgian Grand Prix, finished 5th in the Italian Grand Prix and finished 13th in the Azerbaijan Grand Prix, averaging 7.6 in the 5 races finished.\nGabriel Bortoleto (Audi) starts 14th; Bortoleto's best qualifying lap was 1.166 seconds slower than the pole lap. Bortoleto is 15th in the championship with 10 points. Last 3 races: finished 13th in the United States Grand Prix; retired in the Singapore Grand Prix; finished 18th in the Bahrain Grand Prix in Malaysia. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts). In 2026, Bortoleto has out-qualified teammate Hülkenberg in 9 of 18 qualifying sessions and finished ahead in 8 of 18 races. Bortoleto's Audi uses a Audi power unit. In qualifying, Bortoleto was joint 4th fastest through the speed trap (350 km/h) and ranked 15th, 12th and 11th in sectors one, two and three. At those circuits, Bortoleto withdrew in the Chinese Grand Prix, finished 13th in the Canadian Grand Prix, finished 11th in the Austrian Grand Prix, finished 8th in the Belgian Grand Prix, finished 11th in the Italian Grand Prix and finished 15th in the Azerbaijan Grand Prix, averaging 11.6 in the 5 races finished.\nOliver Bearman (Haas F1 Team) starts 15th; Bearman's best qualifying lap was 1.569 seconds slower than the pole lap. Bearman is 13th in the championship with 23 points. Last 3 races: retired in the United States Grand Prix; finished 12th in the Singapore Grand Prix; finished 14th in the Bahrain Grand Prix in Malaysia. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts). Bearman and Hirakawa have not been teammates at an earlier round of 2026. Bearman's Haas F1 Team uses a Ferrari power unit. In qualifying, Bearman was joint 12th fastest through the speed trap (349 km/h) and ranked 14th, 15th and 14th in sectors one, two and three. At those circuits, Bearman finished 5th in the Chinese Grand Prix, finished 10th in the Canadian Grand Prix, finished 14th in the Austrian Grand Prix, finished 14th in the Belgian Grand Prix, finished 15th in the Italian Grand Prix and finished 9th in the Azerbaijan Grand Prix, averaging 11.2 in the 6 races finished.\nCarlos Sainz (Williams) starts 16th; Sainz's best qualifying lap was 2.007 seconds slower than the pole lap. Sainz is 18th in the championship with 7 points. Last 3 races: finished 18th in the United States Grand Prix; finished 14th in the Singapore Grand Prix; finished 17th in the Bahrain Grand Prix in Malaysia. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts). In 2026, Sainz has out-qualified teammate Albon in 14 of 17 qualifying sessions and finished ahead in 11 of 18 races. Sainz's Williams uses a Mercedes power unit. In qualifying, Sainz was joint 14th fastest through the speed trap (348 km/h) and ranked 16th, 17th and 17th in sectors one, two and three. At those circuits, Sainz finished 9th in the Chinese Grand Prix, finished 9th in the Canadian Grand Prix, retired in the Austrian Grand Prix, finished 16th in the Belgian Grand Prix, finished 13th in the Italian Grand Prix and finished 10th in the Azerbaijan Grand Prix, averaging 11.4 in the 5 races finished.\nAlexander Albon (Williams) starts 17th; Albon's best qualifying lap was 2.116 seconds slower than the pole lap. Albon is 19th in the championship with 5 points. Last 3 races: finished 17th in the United States Grand Prix; finished 18th in the Singapore Grand Prix; retired in the Bahrain Grand Prix in Malaysia. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts). In 2026, Albon has out-qualified teammate Sainz in 3 of 17 qualifying sessions and finished ahead in 7 of 18 races. Albon's Williams uses a Mercedes power unit. In qualifying, Albon was joint 18th fastest through the speed trap (347 km/h) and ranked 18th, 16th and 16th in sectors one, two and three. At those circuits, Albon withdrew in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 17th in the Austrian Grand Prix, finished 15th in the Belgian Grand Prix, finished 17th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 16.3 in the 3 races finished.\nFernando Alonso (Aston Martin) starts 18th; Alonso's best qualifying lap was 2.394 seconds slower than the pole lap. Alonso is 17th in the championship with 7 points. Last 3 races: finished 16th in the United States Grand Prix; finished 16th in the Singapore Grand Prix; finished 8th in the Bahrain Grand Prix in Malaysia. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts). In 2026, Alonso has out-qualified teammate Stroll in 14 of 16 qualifying sessions and finished ahead in 10 of 13 races, leaving out 5 races where neither was classified. Alonso's Aston Martin uses a Honda power unit. In qualifying, Alonso was joint 21st fastest through the speed trap (340 km/h) and ranked 22nd, 18th and 18th in sectors one, two and three. At those circuits, Alonso retired in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 18th in the Austrian Grand Prix, finished 19th in the Belgian Grand Prix, retired in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 18.5 in the 2 races finished.\nRyo Hirakawa (Haas F1 Team) starts 19th; Hirakawa's best qualifying lap was 2.444 seconds slower than the pole lap. Hirakawa has no championship points yet. Last 3 races: did not race in the United States Grand Prix; did not race in the Singapore Grand Prix; did not race in the Bahrain Grand Prix in Malaysia. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts). Hirakawa and Bearman have not been teammates at an earlier round of 2026. Hirakawa's Haas F1 Team uses a Ferrari power unit. In qualifying, Hirakawa was joint 14th fastest through the speed trap (348 km/h) and ranked 17th, 21st and 19th in sectors one, two and three. Hirakawa has not raced at those circuits this season.\nLance Stroll (Aston Martin) starts 20th; Stroll's best qualifying lap was 2.558 seconds slower than the pole lap. Stroll has no championship points yet. Last 3 races: finished 15th in the United States Grand Prix; retired in the Singapore Grand Prix; finished 12th in the Bahrain Grand Prix in Malaysia. From 20th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (170 starts). In 2026, Stroll has out-qualified teammate Alonso in 2 of 16 qualifying sessions and finished ahead in 3 of 13 races, leaving out 5 races where neither was classified. Stroll's Aston Martin uses a Honda power unit. In qualifying, Stroll was joint 21st fastest through the speed trap (340 km/h) and ranked 21st, 19th and 22nd in sectors one, two and three. At those circuits, Stroll retired in the Chinese Grand Prix, finished 15th in the Canadian Grand Prix, retired in the Austrian Grand Prix, retired in the Belgian Grand Prix, retired in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 15 in the 1 race finished.\nSergio Pérez (Cadillac F1 Team) starts 21st; Pérez's best qualifying lap was 2.591 seconds slower than the pole lap. Pérez has no championship points yet. Last 3 races: finished 19th in the United States Grand Prix; finished 17th in the Singapore Grand Prix; finished 19th in the Bahrain Grand Prix in Malaysia. From 21st on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (35 starts). In 2026, Pérez has out-qualified teammate Bottas in 10 of 18 qualifying sessions and finished ahead in 12 of 16 races, leaving out 2 races where neither was classified. Pérez's Cadillac F1 Team uses a Ferrari power unit. In qualifying, Pérez was joint 4th fastest through the speed trap (350 km/h) and ranked 20th, 20th and 21st in sectors one, two and three. At those circuits, Pérez finished 15th in the Chinese Grand Prix, retired in the Canadian Grand Prix, retired in the Austrian Grand Prix, retired in the Belgian Grand Prix, finished 18th in the Italian Grand Prix and finished 14th in the Azerbaijan Grand Prix, averaging 15.7 in the 3 races finished.\nValtteri Bottas (Cadillac F1 Team) starts 22nd; Bottas's best qualifying lap was 3.338 seconds slower than the pole lap. Bottas has no championship points yet. Last 3 races: retired in the United States Grand Prix; finished 19th in the Singapore Grand Prix; retired in the Bahrain Grand Prix in Malaysia. From 22nd on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (22 starts). In 2026, Bottas has out-qualified teammate Pérez in 8 of 18 qualifying sessions and finished ahead in 4 of 16 races, leaving out 2 races where neither was classified. Bottas's Cadillac F1 Team uses a Ferrari power unit. In qualifying, Bottas was joint 14th fastest through the speed trap (348 km/h) and ranked 19th, 22nd and 20th in sectors one, two and three. At those circuits, Bottas finished 13th in the Chinese Grand Prix, finished 16th in the Canadian Grand Prix, retired in the Austrian Grand Prix, finished 18th in the Belgian Grand Prix, finished 19th in the Italian Grand Prix and finished 16th in the Azerbaijan Grand Prix, averaging 16.4 in the 5 races finished.",
+    "questions": {
+      "podium_HAM": {
+        "type": "noul",
+        "instructions": "Will Lewis Hamilton (Ferrari) finish this race in the top three?"
+      },
+      "podium_RUS": {
+        "type": "noul",
+        "instructions": "Will George Russell (Mercedes) finish this race in the top three?"
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "instructions": "Will Charles Leclerc (Ferrari) finish this race in the top three?"
+      },
+      "podium_VER": {
+        "type": "noul",
+        "instructions": "Will Max Verstappen (Red Bull) finish this race in the top three?"
+      },
+      "podium_ANT": {
+        "type": "noul",
+        "instructions": "Will Andrea Kimi Antonelli (Mercedes) finish this race in the top three?"
+      },
+      "podium_NOR": {
+        "type": "noul",
+        "instructions": "Will Lando Norris (McLaren) finish this race in the top three?"
+      },
+      "podium_HAD": {
+        "type": "noul",
+        "instructions": "Will Isack Hadjar (Red Bull) finish this race in the top three?"
+      },
+      "podium_LAW": {
+        "type": "noul",
+        "instructions": "Will Liam Lawson (RB F1 Team) finish this race in the top three?"
+      },
+      "podium_LIN": {
+        "type": "noul",
+        "instructions": "Will Arvid Lindblad (RB F1 Team) finish this race in the top three?"
+      },
+      "podium_GAS": {
+        "type": "noul",
+        "instructions": "Will Pierre Gasly (Alpine F1 Team) finish this race in the top three?"
+      },
+      "podium_HUL": {
+        "type": "noul",
+        "instructions": "Will Nico Hülkenberg (Audi) finish this race in the top three?"
+      },
+      "podium_COL": {
+        "type": "noul",
+        "instructions": "Will Franco Colapinto (Alpine F1 Team) finish this race in the top three?"
+      },
+      "podium_PIA": {
+        "type": "noul",
+        "instructions": "Will Oscar Piastri (McLaren) finish this race in the top three?"
+      },
+      "podium_BOR": {
+        "type": "noul",
+        "instructions": "Will Gabriel Bortoleto (Audi) finish this race in the top three?"
+      },
+      "podium_BEA": {
+        "type": "noul",
+        "instructions": "Will Oliver Bearman (Haas F1 Team) finish this race in the top three?"
+      },
+      "podium_SAI": {
+        "type": "noul",
+        "instructions": "Will Carlos Sainz (Williams) finish this race in the top three?"
+      },
+      "podium_ALB": {
+        "type": "noul",
+        "instructions": "Will Alexander Albon (Williams) finish this race in the top three?"
+      },
+      "podium_ALO": {
+        "type": "noul",
+        "instructions": "Will Fernando Alonso (Aston Martin) finish this race in the top three?"
+      },
+      "podium_HIR": {
+        "type": "noul",
+        "instructions": "Will Ryo Hirakawa (Haas F1 Team) finish this race in the top three?"
+      },
+      "podium_STR": {
+        "type": "noul",
+        "instructions": "Will Lance Stroll (Aston Martin) finish this race in the top three?"
+      },
+      "podium_PER": {
+        "type": "noul",
+        "instructions": "Will Sergio Pérez (Cadillac F1 Team) finish this race in the top three?"
+      },
+      "podium_BOT": {
+        "type": "noul",
+        "instructions": "Will Valtteri Bottas (Cadillac F1 Team) finish this race in the top three?"
+      },
+      "winner": {
+        "type": "choice",
+        "instructions": "Who will win this race?",
+        "criteria": {
+          "HAM": "Lewis Hamilton (Ferrari) wins the race.",
+          "RUS": "George Russell (Mercedes) wins the race.",
+          "LEC": "Charles Leclerc (Ferrari) wins the race.",
+          "VER": "Max Verstappen (Red Bull) wins the race.",
+          "ANT": "Andrea Kimi Antonelli (Mercedes) wins the race.",
+          "NOR": "Lando Norris (McLaren) wins the race.",
+          "HAD": "Isack Hadjar (Red Bull) wins the race.",
+          "LAW": "Liam Lawson (RB F1 Team) wins the race.",
+          "LIN": "Arvid Lindblad (RB F1 Team) wins the race.",
+          "GAS": "Pierre Gasly (Alpine F1 Team) wins the race.",
+          "HUL": "Nico Hülkenberg (Audi) wins the race.",
+          "COL": "Franco Colapinto (Alpine F1 Team) wins the race.",
+          "PIA": "Oscar Piastri (McLaren) wins the race.",
+          "BOR": "Gabriel Bortoleto (Audi) wins the race.",
+          "BEA": "Oliver Bearman (Haas F1 Team) wins the race.",
+          "SAI": "Carlos Sainz (Williams) wins the race.",
+          "ALB": "Alexander Albon (Williams) wins the race.",
+          "ALO": "Fernando Alonso (Aston Martin) wins the race.",
+          "HIR": "Ryo Hirakawa (Haas F1 Team) wins the race.",
+          "STR": "Lance Stroll (Aston Martin) wins the race.",
+          "PER": "Sergio Pérez (Cadillac F1 Team) wins the race.",
+          "BOT": "Valtteri Bottas (Cadillac F1 Team) wins the race."
+        }
+      },
+      "chaos": {
+        "type": "score",
+        "instructions": "How chaotic will this race be? Rate it on the five-level rubric. The actual level will be the highest level whose condition the race meets.",
+        "criteria": [
+          "0: calm - no safety car or virtual safety car, at most 2 retirements, and the winner led most laps.",
+          "1: lively - a virtual safety car, or 3 to 4 retirements, or 3 or more lead changes.",
+          "2: eventful - one full safety car, or a first-lap incident that brought out a yellow flag or a virtual safety car.",
+          "3: chaotic - two or more full safety cars, or 5 or more retirements.",
+          "4: bedlam - a red flag, or wet running, or a podium with none of the top six starters."
+        ]
+      }
+    }
+  },
+  "request_hash": "372012fa76557b3b70342481c2d710f4c177e2cf59574947e87bb85610f3d3e6",
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "podium_HAM": {
+        "type": "noul",
+        "noul": 0.52
+      },
+      "podium_RUS": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "podium_LEC": {
+        "type": "noul",
+        "noul": 0.36
+      },
+      "podium_VER": {
+        "type": "noul",
+        "noul": 0.53
+      },
+      "podium_ANT": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "podium_NOR": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "podium_HAD": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "podium_LAW": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "podium_LIN": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_GAS": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "podium_HUL": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_COL": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_PIA": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "podium_BOR": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_BEA": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_SAI": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_ALB": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_ALO": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_HIR": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_STR": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "podium_PER": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "podium_BOT": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "winner": {
+        "type": "choice",
+        "choice": "ANT",
+        "confidence": 0.61,
+        "probabilities": {
+          "HAM": 0.33,
+          "RUS": 0.04,
+          "LEC": 0.0,
+          "VER": 0.0,
+          "ANT": 0.63,
+          "NOR": 0.0,
+          "HAD": 0.0,
+          "LAW": 0.0,
+          "LIN": 0.0,
+          "GAS": 0.0,
+          "HUL": 0.0,
+          "COL": 0.0,
+          "PIA": 0.0,
+          "BOR": 0.0,
+          "BEA": 0.0,
+          "SAI": 0.0,
+          "ALB": 0.0,
+          "ALO": 0.0,
+          "HIR": 0.0,
+          "STR": 0.0,
+          "PER": 0.0,
+          "BOT": 0.0
+        }
+      },
+      "chaos": {
+        "type": "score",
+        "score": 1.51,
+        "confidence": 0.0,
+        "legend": {
+          "0": "0: calm - no safety car or virtual safety car, at most 2 retirements, and the winner led most laps.",
+          "1": "1: lively - a virtual safety car, or 3 to 4 retirements, or 3 or more lead changes.",
+          "2": "2: eventful - one full safety car, or a first-lap incident that brought out a yellow flag or a virtual safety car.",
+          "3": "3: chaotic - two or more full safety cars, or 5 or more retirements.",
+          "4": "4: bedlam - a red flag, or wet running, or a podium with none of the top six starters."
+        },
+        "probabilities": {
+          "0": 0.38,
+          "1": 0.2,
+          "2": 0.05,
+          "3": 0.29,
+          "4": 0.08
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 8759,
+      "output_tokens": 609
+    }
+  },
+  "jev": {
+    "url": "https://api.typesafe.ai/v1/systemone",
+    "model_requested": "jev-1.13.0",
+    "model_id": "jev-1.13.0",
+    "provider": "typesafe-ai",
+    "generation_id": null,
+    "cost_usd": null,
+    "input_tokens": 8759,
+    "output_tokens": 609,
+    "latency_ms": 222,
+    "requested_at": "2026-10-31T22:52:03.908204Z"
+  },
+  "calls": {
+    "podium": {
+      "HAM": 0.52,
+      "RUS": 0.61,
+      "LEC": 0.36,
+      "VER": 0.53,
+      "ANT": 0.61,
+      "NOR": 0.09,
+      "HAD": 0.1,
+      "LAW": 0.04,
+      "LIN": 0.03,
+      "GAS": 0.05,
+      "HUL": 0.03,
+      "COL": 0.03,
+      "PIA": 0.06,
+      "BOR": 0.03,
+      "BEA": 0.03,
+      "SAI": 0.03,
+      "ALB": 0.02,
+      "ALO": 0.03,
+      "HIR": 0.02,
+      "STR": 0.02,
+      "PER": 0.03,
+      "BOT": 0.02
+    },
+    "winner": {
+      "choice": "ANT",
+      "confidence": 0.61,
+      "probabilities": {
+        "HAM": 0.33,
+        "RUS": 0.04,
+        "LEC": 0.0,
+        "VER": 0.0,
+        "ANT": 0.63,
+        "NOR": 0.0,
+        "HAD": 0.0,
+        "LAW": 0.0,
+        "LIN": 0.0,
+        "GAS": 0.0,
+        "HUL": 0.0,
+        "COL": 0.0,
+        "PIA": 0.0,
+        "BOR": 0.0,
+        "BEA": 0.0,
+        "SAI": 0.0,
+        "ALB": 0.0,
+        "ALO": 0.0,
+        "HIR": 0.0,
+        "STR": 0.0,
+        "PER": 0.0,
+        "BOT": 0.0
+      }
+    },
+    "chaos": {
+      "score": 1.51,
+      "confidence": 0.0
+    }
+  },
+  "error": null,
+  "extra": {
+    "snapshot": {
+      "season": 2026,
+      "round": 19,
+      "race_name": "Mexico City Grand Prix",
+      "built_at": "2026-10-31T22:51:35.648722Z",
+      "grid_provisional": true,
+      "drivers": [
+        {
+          "code": "HAM",
+          "name": "Lewis Hamilton",
+          "constructor": "Ferrari",
+          "grid": 1,
+          "line": "Lewis Hamilton (Ferrari) starts 1st, on pole. Hamilton is 3rd in the championship with 241 points, with 1 win. Last 3 races: finished 4th in the United States Grand Prix; finished 6th in the Singapore Grand Prix; finished 3rd in the Bahrain Grand Prix in Malaysia. From 1st on the grid in 2014 to 2025, drivers finished in the top three 81% of the time and won 54% of the time (251 starts). In 2026, Hamilton has out-qualified teammate Leclerc in 8 of 18 qualifying sessions and finished ahead in 9 of 18 races. Hamilton's Ferrari uses a Ferrari power unit. In qualifying, Hamilton was joint 18th fastest through the speed trap (347 km/h) and ranked 4th, 2nd and 5th in sectors one, two and three. At those circuits, Hamilton finished 3rd in the Chinese Grand Prix, finished 2nd in the Canadian Grand Prix, finished 5th in the Austrian Grand Prix, finished 4th in the Belgian Grand Prix, finished 6th in the Italian Grand Prix and finished 6th in the Azerbaijan Grand Prix, averaging 4.3 in the 6 races finished."
+        },
+        {
+          "code": "RUS",
+          "name": "George Russell",
+          "constructor": "Mercedes",
+          "grid": 2,
+          "line": "George Russell (Mercedes) starts 2nd; Russell's best qualifying lap was 0.009 seconds slower than the pole lap. Russell is 2nd in the championship with 242 points, with 3 wins. Last 3 races: finished 8th in the United States Grand Prix; finished 9th in the Singapore Grand Prix; finished 20th in the Bahrain Grand Prix in Malaysia. From 2nd on the grid in 2014 to 2025, drivers finished in the top three 72% of the time and won 24% of the time (250 starts). In 2026, Russell has out-qualified teammate Antonelli in 7 of 18 qualifying sessions and finished ahead in 5 of 18 races. Russell's Mercedes uses a Mercedes power unit. In qualifying, Russell was joint 4th fastest through the speed trap (350 km/h) and ranked 5th, 1st and 6th in sectors one, two and three. At those circuits, Russell finished 2nd in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 1st in the Austrian Grand Prix, retired in the Belgian Grand Prix, finished 2nd in the Italian Grand Prix and finished 1st in the Azerbaijan Grand Prix, averaging 1.5 in the 4 races finished."
+        },
+        {
+          "code": "LEC",
+          "name": "Charles Leclerc",
+          "constructor": "Ferrari",
+          "grid": 3,
+          "line": "Charles Leclerc (Ferrari) starts 3rd; Leclerc's best qualifying lap was 0.119 seconds slower than the pole lap. Leclerc is 5th in the championship with 233 points, with 1 win. Last 3 races: finished 2nd in the United States Grand Prix; finished 2nd in the Singapore Grand Prix; finished 4th in the Bahrain Grand Prix in Malaysia. From 3rd on the grid in 2014 to 2025, drivers finished in the top three 55% of the time and won 11% of the time (251 starts). In 2026, Leclerc has out-qualified teammate Hamilton in 10 of 18 qualifying sessions and finished ahead in 9 of 18 races. Leclerc's Ferrari uses a Ferrari power unit. In qualifying, Leclerc was joint 18th fastest through the speed trap (347 km/h) and ranked 3rd, 4th and 1st in sectors one, two and three. At those circuits, Leclerc finished 4th in the Chinese Grand Prix, finished 4th in the Canadian Grand Prix, finished 8th in the Austrian Grand Prix, finished 2nd in the Belgian Grand Prix, retired in the Italian Grand Prix and finished 4th in the Azerbaijan Grand Prix, averaging 4.4 in the 5 races finished."
+        },
+        {
+          "code": "VER",
+          "name": "Max Verstappen",
+          "constructor": "Red Bull",
+          "grid": 4,
+          "line": "Max Verstappen (Red Bull) starts 4th; Verstappen's best qualifying lap was 0.178 seconds slower than the pole lap. Verstappen is 4th in the championship with 236 points, with 2 wins. Last 3 races: finished 3rd in the United States Grand Prix; finished 1st in the Singapore Grand Prix; finished 1st in the Bahrain Grand Prix in Malaysia. From 4th on the grid in 2014 to 2025, drivers finished in the top three 34% of the time and won 4% of the time (252 starts). In 2026, Verstappen has out-qualified teammate Hadjar in 11 of 14 qualifying sessions and finished ahead in 12 of 15 races. Verstappen's Red Bull uses a Red Bull Ford power unit. In qualifying, Verstappen was joint 4th fastest through the speed trap (350 km/h) and ranked 1st, 3rd and 3rd in sectors one, two and three. At those circuits, Verstappen retired in the Chinese Grand Prix, finished 3rd in the Canadian Grand Prix, finished 2nd in the Austrian Grand Prix, finished 3rd in the Belgian Grand Prix, finished 3rd in the Italian Grand Prix and finished 2nd in the Azerbaijan Grand Prix, averaging 2.6 in the 5 races finished."
+        },
+        {
+          "code": "ANT",
+          "name": "Andrea Kimi Antonelli",
+          "constructor": "Mercedes",
+          "grid": 5,
+          "line": "Andrea Kimi Antonelli (Mercedes) starts 5th; Antonelli's best qualifying lap was 0.193 seconds slower than the pole lap. Antonelli is 1st in the championship with 365 points, with 9 wins. Last 3 races: finished 1st in the United States Grand Prix; finished 3rd in the Singapore Grand Prix; finished 2nd in the Bahrain Grand Prix in Malaysia. From 5th on the grid in 2014 to 2025, drivers finished in the top three 17% of the time and won 2% of the time (252 starts). In 2026, Antonelli has out-qualified teammate Russell in 11 of 18 qualifying sessions and finished ahead in 13 of 18 races. Antonelli's Mercedes uses a Mercedes power unit. In qualifying, Antonelli was joint 4th fastest through the speed trap (350 km/h) and ranked 2nd, 5th and 7th in sectors one, two and three. At those circuits, Antonelli finished 1st in the Chinese Grand Prix, finished 1st in the Canadian Grand Prix, finished 3rd in the Austrian Grand Prix, finished 1st in the Belgian Grand Prix, finished 1st in the Italian Grand Prix and finished 5th in the Azerbaijan Grand Prix, averaging 2 in the 6 races finished."
+        },
+        {
+          "code": "NOR",
+          "name": "Lando Norris",
+          "constructor": "McLaren",
+          "grid": 6,
+          "line": "Lando Norris (McLaren) starts 6th; Norris's best qualifying lap was 0.214 seconds slower than the pole lap. Norris is 6th in the championship with 211 points, with 2 wins. Last 3 races: finished 5th in the United States Grand Prix; finished 4th in the Singapore Grand Prix; finished 9th in the Bahrain Grand Prix in Malaysia. From 6th on the grid in 2014 to 2025, drivers finished in the top three 13% of the time and won 3% of the time (252 starts). In 2026, Norris has out-qualified teammate Piastri in 11 of 18 qualifying sessions and finished ahead in 10 of 17 races, leaving out 1 race where neither was classified. Norris's McLaren uses a Mercedes power unit. In qualifying, Norris was joint 4th fastest through the speed trap (350 km/h) and ranked 6th, 6th and 2nd in sectors one, two and three. At those circuits, Norris withdrew in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 7th in the Austrian Grand Prix, finished 7th in the Belgian Grand Prix, finished 4th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 6 in the 3 races finished."
+        },
+        {
+          "code": "HAD",
+          "name": "Isack Hadjar",
+          "constructor": "Red Bull",
+          "grid": 7,
+          "line": "Isack Hadjar (Red Bull) starts 7th; Hadjar's best qualifying lap was 0.386 seconds slower than the pole lap. Hadjar is 8th in the championship with 105 points. Last 3 races: finished 6th in the United States Grand Prix; finished 10th in the Singapore Grand Prix; finished 5th in the Bahrain Grand Prix in Malaysia. From 7th on the grid in 2014 to 2025, drivers finished in the top three 7% of the time and won 0% of the time (249 starts). In 2026, Hadjar has out-qualified teammate Verstappen in 3 of 14 qualifying sessions and finished ahead in 3 of 15 races. Hadjar's Red Bull uses a Red Bull Ford power unit. In qualifying, Hadjar was joint fastest through the speed trap (351 km/h) and ranked 8th, 8th and 8th in sectors one, two and three. At those circuits, Hadjar finished 8th in the Chinese Grand Prix, finished 5th in the Canadian Grand Prix, finished 6th in the Austrian Grand Prix, finished 6th in the Belgian Grand Prix and finished 3rd in the Azerbaijan Grand Prix, averaging 5.6 in the 5 races finished."
+        },
+        {
+          "code": "LAW",
+          "name": "Liam Lawson",
+          "constructor": "RB F1 Team",
+          "grid": 8,
+          "line": "Liam Lawson (RB F1 Team) starts 8th; Lawson's best qualifying lap was 0.515 seconds slower than the pole lap. Lawson is 9th in the championship with 77 points. Last 3 races: finished 9th in the United States Grand Prix; finished 7th in the Singapore Grand Prix; finished 7th in the Bahrain Grand Prix in Malaysia. From 8th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (251 starts). In 2026, Lawson has out-qualified teammate Lindblad in 9 of 15 qualifying sessions and finished ahead in 11 of 15 races. Lawson's RB F1 Team uses a Red Bull Ford power unit. In qualifying, Lawson was joint 4th fastest through the speed trap (350 km/h) and ranked 11th, 7th and 9th in sectors one, two and three. At those circuits, Lawson finished 7th in the Chinese Grand Prix, finished 7th in the Canadian Grand Prix, finished 9th in the Austrian Grand Prix, finished 12th in the Belgian Grand Prix, finished 14th in the Italian Grand Prix and finished 12th in the Azerbaijan Grand Prix, averaging 10.2 in the 6 races finished."
+        },
+        {
+          "code": "LIN",
+          "name": "Arvid Lindblad",
+          "constructor": "RB F1 Team",
+          "grid": 9,
+          "line": "Arvid Lindblad (RB F1 Team) starts 9th; Lindblad's best qualifying lap was 0.603 seconds slower than the pole lap. Lindblad is 11th in the championship with 38 points. Last 3 races: finished 12th in the United States Grand Prix; finished 15th in the Singapore Grand Prix; finished 10th in the Bahrain Grand Prix in Malaysia. From 9th on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (252 starts). In 2026, Lindblad has out-qualified teammate Lawson in 6 of 15 qualifying sessions and finished ahead in 4 of 15 races. Lindblad's RB F1 Team uses a Red Bull Ford power unit. In qualifying, Lindblad was joint 4th fastest through the speed trap (350 km/h) and ranked 9th, 9th and 4th in sectors one, two and three. At those circuits, Lindblad finished 12th in the Chinese Grand Prix, withdrew in the Canadian Grand Prix, finished 10th in the Austrian Grand Prix, finished 9th in the Belgian Grand Prix, finished 8th in the Italian Grand Prix and finished 7th in the Azerbaijan Grand Prix, averaging 9.2 in the 5 races finished."
+        },
+        {
+          "code": "GAS",
+          "name": "Pierre Gasly",
+          "constructor": "Alpine F1 Team",
+          "grid": 10,
+          "line": "Pierre Gasly (Alpine F1 Team) starts 10th; Gasly's best qualifying lap was 0.639 seconds slower than the pole lap. Gasly is 10th in the championship with 42 points. Last 3 races: finished 10th in the United States Grand Prix; finished 11th in the Singapore Grand Prix; finished 16th in the Bahrain Grand Prix in Malaysia. From 10th on the grid in 2014 to 2025, drivers finished in the top three 4% of the time and won 2% of the time (250 starts). In 2026, Gasly has out-qualified teammate Colapinto in 14 of 18 qualifying sessions and finished ahead in 11 of 17 races, leaving out 1 race where neither was classified. Gasly's Alpine F1 Team uses a Mercedes power unit. In qualifying, Gasly was joint fastest through the speed trap (351 km/h) and ranked 7th, 10th and 13th in sectors one, two and three. At those circuits, Gasly finished 6th in the Chinese Grand Prix, finished 8th in the Canadian Grand Prix, finished 13th in the Austrian Grand Prix, finished 11th in the Belgian Grand Prix, finished 7th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 9 in the 5 races finished."
+        },
+        {
+          "code": "HUL",
+          "name": "Nico Hülkenberg",
+          "constructor": "Audi",
+          "grid": 11,
+          "line": "Nico Hülkenberg (Audi) starts 11th; Hülkenberg's best qualifying lap was 0.792 seconds slower than the pole lap. Hülkenberg is 14th in the championship with 13 points. Last 3 races: finished 11th in the United States Grand Prix; finished 8th in the Singapore Grand Prix; finished 11th in the Bahrain Grand Prix in Malaysia. From 11th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (249 starts). In 2026, Hülkenberg has out-qualified teammate Bortoleto in 9 of 18 qualifying sessions and finished ahead in 10 of 18 races. Hülkenberg's Audi uses a Audi power unit. In qualifying, Hülkenberg was joint 14th fastest through the speed trap (348 km/h) and ranked 12th, 11th and 12th in sectors one, two and three. At those circuits, Hülkenberg finished 11th in the Chinese Grand Prix, finished 12th in the Canadian Grand Prix, finished 12th in the Austrian Grand Prix, finished 13th in the Belgian Grand Prix, finished 12th in the Italian Grand Prix and finished 11th in the Azerbaijan Grand Prix, averaging 11.8 in the 6 races finished."
+        },
+        {
+          "code": "COL",
+          "name": "Franco Colapinto",
+          "constructor": "Alpine F1 Team",
+          "grid": 12,
+          "line": "Franco Colapinto (Alpine F1 Team) starts 12th; Colapinto's best qualifying lap was 1.126 seconds slower than the pole lap. Colapinto is 12th in the championship with 27 points. Last 3 races: retired in the United States Grand Prix; retired in the Singapore Grand Prix; finished 13th in the Bahrain Grand Prix in Malaysia. From 12th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts). In 2026, Colapinto has out-qualified teammate Gasly in 4 of 18 qualifying sessions and finished ahead in 6 of 17 races, leaving out 1 race where neither was classified. Colapinto's Alpine F1 Team uses a Mercedes power unit. In qualifying, Colapinto was joint fastest through the speed trap (351 km/h) and ranked 13th, 13th and 15th in sectors one, two and three. At those circuits, Colapinto finished 10th in the Chinese Grand Prix, finished 6th in the Canadian Grand Prix, finished 15th in the Austrian Grand Prix, finished 10th in the Belgian Grand Prix, finished 9th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 10 in the 5 races finished."
+        },
+        {
+          "code": "PIA",
+          "name": "Oscar Piastri",
+          "constructor": "McLaren",
+          "grid": 13,
+          "line": "Oscar Piastri (McLaren) starts 13th; Piastri's best qualifying lap was 1.132 seconds slower than the pole lap. Piastri is 7th in the championship with 144 points. Last 3 races: finished 7th in the United States Grand Prix; finished 5th in the Singapore Grand Prix; finished 6th in the Bahrain Grand Prix in Malaysia. From 13th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (251 starts). In 2026, Piastri has out-qualified teammate Norris in 7 of 18 qualifying sessions and finished ahead in 7 of 17 races, leaving out 1 race where neither was classified. Piastri's McLaren uses a Mercedes power unit. In qualifying, Piastri was joint 12th fastest through the speed trap (349 km/h) and ranked 10th, 14th and 10th in sectors one, two and three. At those circuits, Piastri withdrew in the Chinese Grand Prix, finished 11th in the Canadian Grand Prix, finished 4th in the Austrian Grand Prix, finished 5th in the Belgian Grand Prix, finished 5th in the Italian Grand Prix and finished 13th in the Azerbaijan Grand Prix, averaging 7.6 in the 5 races finished."
+        },
+        {
+          "code": "BOR",
+          "name": "Gabriel Bortoleto",
+          "constructor": "Audi",
+          "grid": 14,
+          "line": "Gabriel Bortoleto (Audi) starts 14th; Bortoleto's best qualifying lap was 1.166 seconds slower than the pole lap. Bortoleto is 15th in the championship with 10 points. Last 3 races: finished 13th in the United States Grand Prix; retired in the Singapore Grand Prix; finished 18th in the Bahrain Grand Prix in Malaysia. From 14th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 1% of the time (251 starts). In 2026, Bortoleto has out-qualified teammate Hülkenberg in 9 of 18 qualifying sessions and finished ahead in 8 of 18 races. Bortoleto's Audi uses a Audi power unit. In qualifying, Bortoleto was joint 4th fastest through the speed trap (350 km/h) and ranked 15th, 12th and 11th in sectors one, two and three. At those circuits, Bortoleto withdrew in the Chinese Grand Prix, finished 13th in the Canadian Grand Prix, finished 11th in the Austrian Grand Prix, finished 8th in the Belgian Grand Prix, finished 11th in the Italian Grand Prix and finished 15th in the Azerbaijan Grand Prix, averaging 11.6 in the 5 races finished."
+        },
+        {
+          "code": "BEA",
+          "name": "Oliver Bearman",
+          "constructor": "Haas F1 Team",
+          "grid": 15,
+          "line": "Oliver Bearman (Haas F1 Team) starts 15th; Bearman's best qualifying lap was 1.569 seconds slower than the pole lap. Bearman is 13th in the championship with 23 points. Last 3 races: retired in the United States Grand Prix; finished 12th in the Singapore Grand Prix; finished 14th in the Bahrain Grand Prix in Malaysia. From 15th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (249 starts). Bearman and Hirakawa have not been teammates at an earlier round of 2026. Bearman's Haas F1 Team uses a Ferrari power unit. In qualifying, Bearman was joint 12th fastest through the speed trap (349 km/h) and ranked 14th, 15th and 14th in sectors one, two and three. At those circuits, Bearman finished 5th in the Chinese Grand Prix, finished 10th in the Canadian Grand Prix, finished 14th in the Austrian Grand Prix, finished 14th in the Belgian Grand Prix, finished 15th in the Italian Grand Prix and finished 9th in the Azerbaijan Grand Prix, averaging 11.2 in the 6 races finished."
+        },
+        {
+          "code": "SAI",
+          "name": "Carlos Sainz",
+          "constructor": "Williams",
+          "grid": 16,
+          "line": "Carlos Sainz (Williams) starts 16th; Sainz's best qualifying lap was 2.007 seconds slower than the pole lap. Sainz is 18th in the championship with 7 points. Last 3 races: finished 18th in the United States Grand Prix; finished 14th in the Singapore Grand Prix; finished 17th in the Bahrain Grand Prix in Malaysia. From 16th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (251 starts). In 2026, Sainz has out-qualified teammate Albon in 14 of 17 qualifying sessions and finished ahead in 11 of 18 races. Sainz's Williams uses a Mercedes power unit. In qualifying, Sainz was joint 14th fastest through the speed trap (348 km/h) and ranked 16th, 17th and 17th in sectors one, two and three. At those circuits, Sainz finished 9th in the Chinese Grand Prix, finished 9th in the Canadian Grand Prix, retired in the Austrian Grand Prix, finished 16th in the Belgian Grand Prix, finished 13th in the Italian Grand Prix and finished 10th in the Azerbaijan Grand Prix, averaging 11.4 in the 5 races finished."
+        },
+        {
+          "code": "ALB",
+          "name": "Alexander Albon",
+          "constructor": "Williams",
+          "grid": 17,
+          "line": "Alexander Albon (Williams) starts 17th; Albon's best qualifying lap was 2.116 seconds slower than the pole lap. Albon is 19th in the championship with 5 points. Last 3 races: finished 17th in the United States Grand Prix; finished 18th in the Singapore Grand Prix; retired in the Bahrain Grand Prix in Malaysia. From 17th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (248 starts). In 2026, Albon has out-qualified teammate Sainz in 3 of 17 qualifying sessions and finished ahead in 7 of 18 races. Albon's Williams uses a Mercedes power unit. In qualifying, Albon was joint 18th fastest through the speed trap (347 km/h) and ranked 18th, 16th and 16th in sectors one, two and three. At those circuits, Albon withdrew in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 17th in the Austrian Grand Prix, finished 15th in the Belgian Grand Prix, finished 17th in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 16.3 in the 3 races finished."
+        },
+        {
+          "code": "ALO",
+          "name": "Fernando Alonso",
+          "constructor": "Aston Martin",
+          "grid": 18,
+          "line": "Fernando Alonso (Aston Martin) starts 18th; Alonso's best qualifying lap was 2.394 seconds slower than the pole lap. Alonso is 17th in the championship with 7 points. Last 3 races: finished 16th in the United States Grand Prix; finished 16th in the Singapore Grand Prix; finished 8th in the Bahrain Grand Prix in Malaysia. From 18th on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (244 starts). In 2026, Alonso has out-qualified teammate Stroll in 14 of 16 qualifying sessions and finished ahead in 10 of 13 races, leaving out 5 races where neither was classified. Alonso's Aston Martin uses a Honda power unit. In qualifying, Alonso was joint 21st fastest through the speed trap (340 km/h) and ranked 22nd, 18th and 18th in sectors one, two and three. At those circuits, Alonso retired in the Chinese Grand Prix, retired in the Canadian Grand Prix, finished 18th in the Austrian Grand Prix, finished 19th in the Belgian Grand Prix, retired in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 18.5 in the 2 races finished."
+        },
+        {
+          "code": "HIR",
+          "name": "Ryo Hirakawa",
+          "constructor": "Haas F1 Team",
+          "grid": 19,
+          "line": "Ryo Hirakawa (Haas F1 Team) starts 19th; Hirakawa's best qualifying lap was 2.444 seconds slower than the pole lap. Hirakawa has no championship points yet. Last 3 races: did not race in the United States Grand Prix; did not race in the Singapore Grand Prix; did not race in the Bahrain Grand Prix in Malaysia. From 19th on the grid in 2014 to 2025, drivers finished in the top three 1% of the time and won 0% of the time (226 starts). Hirakawa and Bearman have not been teammates at an earlier round of 2026. Hirakawa's Haas F1 Team uses a Ferrari power unit. In qualifying, Hirakawa was joint 14th fastest through the speed trap (348 km/h) and ranked 17th, 21st and 19th in sectors one, two and three. Hirakawa has not raced at those circuits this season."
+        },
+        {
+          "code": "STR",
+          "name": "Lance Stroll",
+          "constructor": "Aston Martin",
+          "grid": 20,
+          "line": "Lance Stroll (Aston Martin) starts 20th; Stroll's best qualifying lap was 2.558 seconds slower than the pole lap. Stroll has no championship points yet. Last 3 races: finished 15th in the United States Grand Prix; retired in the Singapore Grand Prix; finished 12th in the Bahrain Grand Prix in Malaysia. From 20th on the grid in 2014 to 2025, drivers finished in the top three 2% of the time and won 0% of the time (170 starts). In 2026, Stroll has out-qualified teammate Alonso in 2 of 16 qualifying sessions and finished ahead in 3 of 13 races, leaving out 5 races where neither was classified. Stroll's Aston Martin uses a Honda power unit. In qualifying, Stroll was joint 21st fastest through the speed trap (340 km/h) and ranked 21st, 19th and 22nd in sectors one, two and three. At those circuits, Stroll retired in the Chinese Grand Prix, finished 15th in the Canadian Grand Prix, retired in the Austrian Grand Prix, retired in the Belgian Grand Prix, retired in the Italian Grand Prix and retired in the Azerbaijan Grand Prix, averaging 15 in the 1 race finished."
+        },
+        {
+          "code": "PER",
+          "name": "Sergio Pérez",
+          "constructor": "Cadillac F1 Team",
+          "grid": 21,
+          "line": "Sergio Pérez (Cadillac F1 Team) starts 21st; Pérez's best qualifying lap was 2.591 seconds slower than the pole lap. Pérez has no championship points yet. Last 3 races: finished 19th in the United States Grand Prix; finished 17th in the Singapore Grand Prix; finished 19th in the Bahrain Grand Prix in Malaysia. From 21st on the grid in 2014 to 2025, drivers finished in the top three 3% of the time and won 0% of the time (35 starts). In 2026, Pérez has out-qualified teammate Bottas in 10 of 18 qualifying sessions and finished ahead in 12 of 16 races, leaving out 2 races where neither was classified. Pérez's Cadillac F1 Team uses a Ferrari power unit. In qualifying, Pérez was joint 4th fastest through the speed trap (350 km/h) and ranked 20th, 20th and 21st in sectors one, two and three. At those circuits, Pérez finished 15th in the Chinese Grand Prix, retired in the Canadian Grand Prix, retired in the Austrian Grand Prix, retired in the Belgian Grand Prix, finished 18th in the Italian Grand Prix and finished 14th in the Azerbaijan Grand Prix, averaging 15.7 in the 3 races finished."
+        },
+        {
+          "code": "BOT",
+          "name": "Valtteri Bottas",
+          "constructor": "Cadillac F1 Team",
+          "grid": 22,
+          "line": "Valtteri Bottas (Cadillac F1 Team) starts 22nd; Bottas's best qualifying lap was 3.338 seconds slower than the pole lap. Bottas has no championship points yet. Last 3 races: retired in the United States Grand Prix; finished 19th in the Singapore Grand Prix; retired in the Bahrain Grand Prix in Malaysia. From 22nd on the grid in 2014 to 2025, drivers finished in the top three 0% of the time and won 0% of the time (22 starts). In 2026, Bottas has out-qualified teammate Pérez in 8 of 18 qualifying sessions and finished ahead in 4 of 16 races, leaving out 2 races where neither was classified. Bottas's Cadillac F1 Team uses a Ferrari power unit. In qualifying, Bottas was joint 14th fastest through the speed trap (348 km/h) and ranked 19th, 22nd and 20th in sectors one, two and three. At those circuits, Bottas finished 13th in the Chinese Grand Prix, finished 16th in the Canadian Grand Prix, retired in the Austrian Grand Prix, finished 18th in the Belgian Grand Prix, finished 19th in the Italian Grand Prix and finished 16th in the Azerbaijan Grand Prix, averaging 16.4 in the 5 races finished."
+        }
+      ],
+      "race_lines": [
+        "Race: the Mexico City Grand Prix, round 19 of 23 in the 2026 season, at Autódromo Hermanos Rodríguez (Mexico City, Mexico).",
+        "The race starts at 20:00 UTC on 1 November 2026, with 22 drivers on the grid.",
+        "The grid is provisional: it is the qualifying order, and grid penalties announced after qualifying are not included.",
+        "The 2026 season is the first under new technical rules, so the historical rates below come from 2014 to 2025 and are only a rough guide.",
+        "This circuit has held 25 championship races, most recently in 2025.",
+        "Qualifying was dry (air 26 C, track 45 C).",
+        "Constructors' championship after round 18: 1st Mercedes 607 points; 2nd Ferrari 474 points; 3rd Red Bull 355 points; 4th McLaren 355 points; 5th RB F1 Team 102 points.",
+        "Power units this season, over 18 races: Mercedes (8 cars) has 14 wins and 30 podiums; Ferrari (6 cars) has 2 wins and 12 podiums; Red Bull Ford (4 cars) has 2 wins and 12 podiums; Audi (2 cars) has 0 wins and 0 podiums; Honda (2 cars) has 0 wins and 0 podiums.",
+        "Speed-trap and sector rankings from qualifying are a rough proxy for straight-line speed and cornering; they are not aero measurements.",
+        "Fastest through the qualifying speed trap: Hadjar 351 km/h, Gasly 351 km/h, Colapinto 351 km/h.",
+        "This circuit is classed as having high altitude and long straights (this project's own classification). Earlier races this season at circuits sharing a trait: Chinese Grand Prix (long straights), Canadian Grand Prix (long straights), Austrian Grand Prix (long straights), Belgian Grand Prix (long straights), Italian Grand Prix (long straights), Azerbaijan Grand Prix (long straights)."
+      ]
+    },
+    "notes": []
+  }
+}
