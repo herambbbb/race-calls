@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "season": 2026,
+  "round": 20,
+  "kind": "live",
+  "scored_at": "2026-11-08T21:21:27.808854Z",
+  "prediction": "predictions/2026/20-brazilian-grand-prix.json",
+  "result": {
+    "winner": "NOR",
+    "podium": [
+      "NOR",
+      "VER",
+      "HAD"
+    ],
+    "finish": {
+      "NOR": "1",
+      "VER": "2",
+      "HAD": "3",
+      "RUS": "4",
+      "ANT": "5",
+      "PIA": "6",
+      "LEC": "7",
+      "LAW": "8",
+      "HAM": "9",
+      "HUL": "10",
+      "LIN": "11",
+      "ALO": "12",
+      "COL": "13",
+      "GAS": "14",
+      "ALB": "15",
+      "BOR": "16",
+      "BEA": "17",
+      "PER": "18",
+      "SAI": "19",
+      "CAM": "20",
+      "STR": "R",
+      "BOT": "W"
+    }
+  },
+  "chaos": {
+    "actual": 4,
+    "reason": "wet running and a podium with none of the top six starters"
+  },
+  "scores": {
+    "jev": {
+      "podium_brier": 0.09960909090909092,
+      "winner_log_loss": 0.7550225842780328,
+      "winner_hit": true,
+      "podium_pick": [
+        "ANT",
+        "NOR",
+        "VER"
+      ],
+      "podium_hits": 2,
+      "chaos_error": 1.25
+    },
+    "grid": {
+      "podium_brier": 0.1315393203485417,
+      "winner_log_loss": 0.6248874819638541,
+      "winner_hit": true,
+      "podium_pick": [
+        "NOR",
+        "RUS",
+        "ANT"
+      ],
+      "podium_hits": 1,
+      "chaos_error": null
+    },
+    "form": {
+      "podium_brier": 0.13315293951915852,
+      "winner_log_loss": 4.51085950651685,
+      "winner_hit": false,
+      "podium_pick": [
+        "ANT",
+        "VER",
+        "LEC"
+      ],
+      "podium_hits": 1,
+      "chaos_error": null
+    }
+  },
+  "details": {
+    "chaos_inputs": {
+      "safety_cars": 0,
+      "virtual_safety_cars": 0,
+      "red_flags": 0,
+      "first_lap_yellow_or_vsc": false,
+      "retirements": 1,
+      "lead_changes": 5,
+      "wet": true,
+      "podium_from_top_six": false
+    },
+    "lights_out": "2026-11-08T17:03:21.863000+00:00",
+    "podium_sum": 3.22,
+    "win_above_podium": [],
+    "baselines": {
+      "grid": "top-three and win rates by starting slot, f1db v2026.15.1, 2014 to 2025",
+      "form": "last 3 races, smoothed with one pseudo-race at the average"
+    },
+    "unscored_finishers": []
+  }
+}
